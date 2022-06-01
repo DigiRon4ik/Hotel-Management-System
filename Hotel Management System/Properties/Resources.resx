@@ -124,8 +124,8 @@
   <data name="Minimize_Window_Green_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Minimize_Window_Green_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Categorize_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Categorize_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_row_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_row_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Close_Window_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close_Window_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +136,14 @@
   <data name="Hide_Sidepanel_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hide_Sidepanel_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Hide_Sidepanel_Primary_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hide_Sidepanel_Primary_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Show_Sidepanel_Primary_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Show_Sidepanel_Primary_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserLogin_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserLogin_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Enter_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enter_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +163,9 @@
   <data name="Password_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Password_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Settings_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Rooms_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rooms_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,22 +181,22 @@
   <data name="Contact_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Contact_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hide_Sidepanel_Primary_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hide_Sidepanel_Primary_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Categorize_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Categorize_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Show_Sidepanel_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Show_Sidepanel_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UserLogin_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UserLogin_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Marriott_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Marriott_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_row_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_row_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Admin_Settings_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Admin_Settings_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Settings_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Settings_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Show_Sidepanel_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Show_Sidepanel_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marriott_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marriott_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_row_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_row_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

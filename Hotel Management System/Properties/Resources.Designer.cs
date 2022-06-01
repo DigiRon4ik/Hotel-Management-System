@@ -63,6 +63,16 @@ namespace Hotel_Management_System.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_row_32px {
+            get {
+                object obj = ResourceManager.GetObject("add_row_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Admin_Settings_32 {
             get {
                 object obj = ResourceManager.GetObject("Admin_Settings_32", resourceCulture);
@@ -116,6 +126,26 @@ namespace Hotel_Management_System.Properties {
         internal static System.Drawing.Bitmap Customers_32 {
             get {
                 object obj = ResourceManager.GetObject("Customers_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_row_32px {
+            get {
+                object obj = ResourceManager.GetObject("delete_row_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_row_32px {
+            get {
+                object obj = ResourceManager.GetObject("edit_row_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
