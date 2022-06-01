@@ -310,10 +310,10 @@
             this.bnfPages.Location = new System.Drawing.Point(0, 0);
             this.bnfPages.Multiline = true;
             this.bnfPages.Name = "bnfPages";
-            this.bnfPages.Page = this.Page_Rooms;
-            this.bnfPages.PageIndex = 1;
-            this.bnfPages.PageName = "Page_Rooms";
-            this.bnfPages.PageTitle = "Rooms";
+            this.bnfPages.Page = this.Page_Settings;
+            this.bnfPages.PageIndex = 5;
+            this.bnfPages.PageName = "Page_Settings";
+            this.bnfPages.PageTitle = "Settings";
             this.bnfPages.SelectedIndex = 0;
             this.bnfPages.Size = new System.Drawing.Size(820, 564);
             this.bnfPages.TabIndex = 0;
@@ -356,39 +356,39 @@
             // 
             // Page_Customers
             // 
+            this.Page_Customers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.Page_Customers.Location = new System.Drawing.Point(4, 4);
             this.Page_Customers.Name = "Page_Customers";
             this.Page_Customers.Size = new System.Drawing.Size(812, 538);
             this.Page_Customers.TabIndex = 2;
             this.Page_Customers.Text = "Customers";
-            this.Page_Customers.UseVisualStyleBackColor = true;
             // 
             // Page_Categories
             // 
+            this.Page_Categories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.Page_Categories.Location = new System.Drawing.Point(4, 4);
             this.Page_Categories.Name = "Page_Categories";
             this.Page_Categories.Size = new System.Drawing.Size(812, 538);
             this.Page_Categories.TabIndex = 3;
             this.Page_Categories.Text = "Categories";
-            this.Page_Categories.UseVisualStyleBackColor = true;
             // 
             // Page_Users
             // 
+            this.Page_Users.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.Page_Users.Location = new System.Drawing.Point(4, 4);
             this.Page_Users.Name = "Page_Users";
             this.Page_Users.Size = new System.Drawing.Size(812, 538);
             this.Page_Users.TabIndex = 4;
             this.Page_Users.Text = "Users";
-            this.Page_Users.UseVisualStyleBackColor = true;
             // 
             // Page_Settings
             // 
+            this.Page_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.Page_Settings.Location = new System.Drawing.Point(4, 4);
             this.Page_Settings.Name = "Page_Settings";
             this.Page_Settings.Size = new System.Drawing.Size(812, 538);
             this.Page_Settings.TabIndex = 5;
             this.Page_Settings.Text = "Settings";
-            this.Page_Settings.UseVisualStyleBackColor = true;
             // 
             // pnlSidebar
             // 
