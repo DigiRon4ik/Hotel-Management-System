@@ -1350,8 +1350,8 @@
             this.txtSearch.HideSelection = true;
             this.txtSearch.IconLeft = null;
             this.txtSearch.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.IconPadding = 7;
-            this.txtSearch.IconRight = null;
+            this.txtSearch.IconPadding = 8;
+            this.txtSearch.IconRight = ((System.Drawing.Image)(resources.GetObject("txtSearch.IconRight")));
             this.txtSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearch.Lines = new string[0];
             this.txtSearch.Location = new System.Drawing.Point(14, 10);
