@@ -266,11 +266,11 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTitle.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(46, 6);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(301, 24);
+            this.lblTitle.Size = new System.Drawing.Size(313, 24);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Система Управления Отелем";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -443,7 +443,7 @@
             this.btnPageSettings.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPageSettings.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPageSettings.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnPageSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPageSettings.Font = new System.Drawing.Font("Leto Text Sans Defect", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPageSettings.ForeColor = System.Drawing.Color.White;
             this.btnPageSettings.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPageSettings.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -536,7 +536,7 @@
             this.btnPageCategories.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPageCategories.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPageCategories.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnPageCategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPageCategories.Font = new System.Drawing.Font("Leto Text Sans Defect", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPageCategories.ForeColor = System.Drawing.Color.White;
             this.btnPageCategories.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPageCategories.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -629,7 +629,7 @@
             this.btnPageUsers.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPageUsers.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPageUsers.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnPageUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPageUsers.Font = new System.Drawing.Font("Leto Text Sans Defect", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPageUsers.ForeColor = System.Drawing.Color.White;
             this.btnPageUsers.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPageUsers.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -722,7 +722,7 @@
             this.btnPageCustomers.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPageCustomers.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPageCustomers.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnPageCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPageCustomers.Font = new System.Drawing.Font("Leto Text Sans Defect", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPageCustomers.ForeColor = System.Drawing.Color.White;
             this.btnPageCustomers.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPageCustomers.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -807,11 +807,11 @@
             this.lblUserRole.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblUserRole.AutoSize = true;
             this.lblUserRole.BackColor = System.Drawing.Color.Transparent;
-            this.lblUserRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblUserRole.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblUserRole.ForeColor = System.Drawing.Color.White;
             this.lblUserRole.Location = new System.Drawing.Point(51, 27);
             this.lblUserRole.Name = "lblUserRole";
-            this.lblUserRole.Size = new System.Drawing.Size(110, 16);
+            this.lblUserRole.Size = new System.Drawing.Size(119, 18);
             this.lblUserRole.TabIndex = 2;
             this.lblUserRole.Text = "Администратор";
             this.lblUserRole.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -842,11 +842,11 @@
             this.lblUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblUserName.AutoSize = true;
             this.lblUserName.BackColor = System.Drawing.Color.Transparent;
-            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblUserName.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblUserName.ForeColor = System.Drawing.Color.White;
             this.lblUserName.Location = new System.Drawing.Point(51, 9);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(128, 16);
+            this.lblUserName.Size = new System.Drawing.Size(114, 18);
             this.lblUserName.TabIndex = 1;
             this.lblUserName.Text = "Абдулла Анхаев";
             this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -882,7 +882,7 @@
             this.btnPageRooms.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPageRooms.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPageRooms.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnPageRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPageRooms.Font = new System.Drawing.Font("Leto Text Sans Defect", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPageRooms.ForeColor = System.Drawing.Color.White;
             this.btnPageRooms.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPageRooms.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -975,7 +975,7 @@
             this.btnPageHome.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPageHome.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPageHome.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnPageHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPageHome.Font = new System.Drawing.Font("Leto Text Sans Defect", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPageHome.ForeColor = System.Drawing.Color.White;
             this.btnPageHome.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPageHome.IconLeftCursor = System.Windows.Forms.Cursors.Default;
