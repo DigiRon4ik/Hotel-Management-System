@@ -40,6 +40,10 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.pnlTitle = new Bunifu.UI.WinForms.BunifuPanel();
             this.pctrSidebar = new System.Windows.Forms.PictureBox();
@@ -70,6 +74,7 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.btnPageRooms = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnPageHome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.txtSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -382,6 +387,7 @@
             // Page_Users
             // 
             this.Page_Users.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.Page_Users.Controls.Add(this.txtSearch);
             this.Page_Users.Controls.Add(this.btnRowAdd);
             this.Page_Users.Controls.Add(this.btnRowEdit);
             this.Page_Users.Controls.Add(this.btnRowDelete);
@@ -439,7 +445,7 @@
             this.btnRowAdd.IdleIconLeftImage = global::Hotel_Management_System.Properties.Resources.add_row_32px;
             this.btnRowAdd.IdleIconRightImage = null;
             this.btnRowAdd.IndicateFocus = false;
-            this.btnRowAdd.Location = new System.Drawing.Point(679, 10);
+            this.btnRowAdd.Location = new System.Drawing.Point(675, 10);
             this.btnRowAdd.Name = "btnRowAdd";
             this.btnRowAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRowAdd.OnDisabledState.BorderRadius = 25;
@@ -530,7 +536,7 @@
             this.btnRowEdit.IdleIconLeftImage = global::Hotel_Management_System.Properties.Resources.edit_row_32px;
             this.btnRowEdit.IdleIconRightImage = null;
             this.btnRowEdit.IndicateFocus = false;
-            this.btnRowEdit.Location = new System.Drawing.Point(720, 10);
+            this.btnRowEdit.Location = new System.Drawing.Point(716, 10);
             this.btnRowEdit.Name = "btnRowEdit";
             this.btnRowEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRowEdit.OnDisabledState.BorderRadius = 25;
@@ -621,7 +627,7 @@
             this.btnRowDelete.IdleIconLeftImage = global::Hotel_Management_System.Properties.Resources.delete_row_32px;
             this.btnRowDelete.IdleIconRightImage = null;
             this.btnRowDelete.IndicateFocus = false;
-            this.btnRowDelete.Location = new System.Drawing.Point(761, 10);
+            this.btnRowDelete.Location = new System.Drawing.Point(757, 10);
             this.btnRowDelete.Name = "btnRowDelete";
             this.btnRowDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRowDelete.OnDisabledState.BorderRadius = 25;
@@ -1319,6 +1325,83 @@
             this.btnPageHome.UseDefaultRadiusAndThickness = true;
             this.btnPageHome.Enter += new System.EventHandler(this.btnPageHome_Enter);
             // 
+            // txtSearch
+            // 
+            this.txtSearch.AcceptsReturn = false;
+            this.txtSearch.AcceptsTab = false;
+            this.txtSearch.AnimationSpeed = 200;
+            this.txtSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtSearch.AutoSizeHeight = true;
+            this.txtSearch.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearch.BackgroundImage")));
+            this.txtSearch.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.txtSearch.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtSearch.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            this.txtSearch.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.txtSearch.BorderRadius = 10;
+            this.txtSearch.BorderThickness = 2;
+            this.txtSearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultFont = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.txtSearch.ForeColor = System.Drawing.Color.White;
+            this.txtSearch.HideSelection = true;
+            this.txtSearch.IconLeft = null;
+            this.txtSearch.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.IconPadding = 7;
+            this.txtSearch.IconRight = null;
+            this.txtSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.Lines = new string[0];
+            this.txtSearch.Location = new System.Drawing.Point(14, 10);
+            this.txtSearch.MaxLength = 30;
+            this.txtSearch.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtSearch.Modified = false;
+            this.txtSearch.Multiline = false;
+            this.txtSearch.Name = "txtSearch";
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearch.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtSearch.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearch.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            stateProperties4.ForeColor = System.Drawing.Color.White;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearch.OnIdleState = stateProperties4;
+            this.txtSearch.Padding = new System.Windows.Forms.Padding(3);
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
+            this.txtSearch.PlaceholderText = "Поиск...";
+            this.txtSearch.ReadOnly = false;
+            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.SelectionLength = 0;
+            this.txtSearch.SelectionStart = 0;
+            this.txtSearch.ShortcutsEnabled = true;
+            this.txtSearch.Size = new System.Drawing.Size(250, 40);
+            this.txtSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtSearch.TabIndex = 0;
+            this.txtSearch.TabStop = false;
+            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSearch.TextMarginBottom = 0;
+            this.txtSearch.TextMarginLeft = 5;
+            this.txtSearch.TextMarginTop = 1;
+            this.txtSearch.TextPlaceholder = "Поиск...";
+            this.txtSearch.UseSystemPasswordChar = false;
+            this.txtSearch.WordWrap = true;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1380,5 +1463,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowDelete;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowAdd;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowEdit;
+        private Bunifu.UI.WinForms.BunifuTextBox txtSearch;
     }
 }
