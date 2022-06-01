@@ -439,7 +439,7 @@
             this.btnRowAdd.IdleIconLeftImage = global::Hotel_Management_System.Properties.Resources.add_row_32px;
             this.btnRowAdd.IdleIconRightImage = null;
             this.btnRowAdd.IndicateFocus = false;
-            this.btnRowAdd.Location = new System.Drawing.Point(677, 10);
+            this.btnRowAdd.Location = new System.Drawing.Point(679, 10);
             this.btnRowAdd.Name = "btnRowAdd";
             this.btnRowAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRowAdd.OnDisabledState.BorderRadius = 25;
@@ -455,7 +455,7 @@
             this.btnRowAdd.onHoverState.BorderThickness = 2;
             this.btnRowAdd.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowAdd.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnRowAdd.onHoverState.IconLeftImage = null;
+            this.btnRowAdd.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage")));
             this.btnRowAdd.onHoverState.IconRightImage = null;
             this.btnRowAdd.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
             this.btnRowAdd.OnIdleState.BorderRadius = 25;
@@ -471,7 +471,7 @@
             this.btnRowAdd.OnPressedState.BorderThickness = 2;
             this.btnRowAdd.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnRowAdd.OnPressedState.IconLeftImage = null;
+            this.btnRowAdd.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage1")));
             this.btnRowAdd.OnPressedState.IconRightImage = null;
             this.btnRowAdd.Size = new System.Drawing.Size(40, 40);
             this.btnRowAdd.TabIndex = 0;
@@ -530,7 +530,7 @@
             this.btnRowEdit.IdleIconLeftImage = global::Hotel_Management_System.Properties.Resources.edit_row_32px;
             this.btnRowEdit.IdleIconRightImage = null;
             this.btnRowEdit.IndicateFocus = false;
-            this.btnRowEdit.Location = new System.Drawing.Point(719, 10);
+            this.btnRowEdit.Location = new System.Drawing.Point(720, 10);
             this.btnRowEdit.Name = "btnRowEdit";
             this.btnRowEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRowEdit.OnDisabledState.BorderRadius = 25;
@@ -546,7 +546,7 @@
             this.btnRowEdit.onHoverState.BorderThickness = 2;
             this.btnRowEdit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowEdit.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnRowEdit.onHoverState.IconLeftImage = null;
+            this.btnRowEdit.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage2")));
             this.btnRowEdit.onHoverState.IconRightImage = null;
             this.btnRowEdit.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
             this.btnRowEdit.OnIdleState.BorderRadius = 25;
@@ -562,7 +562,7 @@
             this.btnRowEdit.OnPressedState.BorderThickness = 2;
             this.btnRowEdit.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnRowEdit.OnPressedState.IconLeftImage = null;
+            this.btnRowEdit.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage3")));
             this.btnRowEdit.OnPressedState.IconRightImage = null;
             this.btnRowEdit.Size = new System.Drawing.Size(40, 40);
             this.btnRowEdit.TabIndex = 0;
@@ -637,7 +637,7 @@
             this.btnRowDelete.onHoverState.BorderThickness = 2;
             this.btnRowDelete.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowDelete.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnRowDelete.onHoverState.IconLeftImage = null;
+            this.btnRowDelete.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage4")));
             this.btnRowDelete.onHoverState.IconRightImage = null;
             this.btnRowDelete.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
             this.btnRowDelete.OnIdleState.BorderRadius = 25;
@@ -653,7 +653,7 @@
             this.btnRowDelete.OnPressedState.BorderThickness = 2;
             this.btnRowDelete.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnRowDelete.OnPressedState.IconLeftImage = null;
+            this.btnRowDelete.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage5")));
             this.btnRowDelete.OnPressedState.IconRightImage = null;
             this.btnRowDelete.Size = new System.Drawing.Size(40, 40);
             this.btnRowDelete.TabIndex = 0;
