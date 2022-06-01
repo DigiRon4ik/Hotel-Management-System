@@ -161,36 +161,25 @@ namespace Hotel_Management_System.Forms
                 btnPageUsers.Enabled = false;
             }
         }
+
         #endregion
 
-        private void btnPageHome_Click(object sender, EventArgs e)
-        {
+        private void btnPageHome_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Home");
-        }
 
-        private void btnPageRooms_Click(object sender, EventArgs e)
-        {
+        private void btnPageRooms_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Rooms");
-        }
 
-        private void btnPageCustomers_Click(object sender, EventArgs e)
-        {
+        private void btnPageCustomers_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Customers");
-        }
 
-        private void btnPageCategories_Click(object sender, EventArgs e)
-        {
+        private void btnPageCategories_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Categories");
-        }
 
-        private void btnPageUsers_Click(object sender, EventArgs e)
-        {
+        private void btnPageUsers_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Users");
-        }
 
-        private void btnPageSettings_Click(object sender, EventArgs e)
-        {
+        private void btnPageSettings_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Settings");
-        }
     }
 }

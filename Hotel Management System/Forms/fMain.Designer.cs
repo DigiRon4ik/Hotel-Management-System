@@ -786,7 +786,7 @@
             this.btnPageSettings.TextMarginLeft = 0;
             this.btnPageSettings.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnPageSettings.UseDefaultRadiusAndThickness = true;
-            this.btnPageSettings.Click += new System.EventHandler(this.btnPageSettings_Click);
+            this.btnPageSettings.Enter += new System.EventHandler(this.btnPageSettings_Enter);
             // 
             // btnPageCategories
             // 
@@ -879,7 +879,7 @@
             this.btnPageCategories.TextMarginLeft = 0;
             this.btnPageCategories.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnPageCategories.UseDefaultRadiusAndThickness = true;
-            this.btnPageCategories.Click += new System.EventHandler(this.btnPageCategories_Click);
+            this.btnPageCategories.Enter += new System.EventHandler(this.btnPageCategories_Enter);
             // 
             // btnPageUsers
             // 
@@ -972,7 +972,7 @@
             this.btnPageUsers.TextMarginLeft = 0;
             this.btnPageUsers.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnPageUsers.UseDefaultRadiusAndThickness = true;
-            this.btnPageUsers.Click += new System.EventHandler(this.btnPageUsers_Click);
+            this.btnPageUsers.Enter += new System.EventHandler(this.btnPageUsers_Enter);
             // 
             // btnPageCustomers
             // 
@@ -1065,7 +1065,7 @@
             this.btnPageCustomers.TextMarginLeft = 0;
             this.btnPageCustomers.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnPageCustomers.UseDefaultRadiusAndThickness = true;
-            this.btnPageCustomers.Click += new System.EventHandler(this.btnPageCustomers_Click);
+            this.btnPageCustomers.Enter += new System.EventHandler(this.btnPageCustomers_Enter);
             // 
             // bunifuPanel1
             // 
@@ -1225,7 +1225,7 @@
             this.btnPageRooms.TextMarginLeft = 0;
             this.btnPageRooms.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnPageRooms.UseDefaultRadiusAndThickness = true;
-            this.btnPageRooms.Click += new System.EventHandler(this.btnPageRooms_Click);
+            this.btnPageRooms.Enter += new System.EventHandler(this.btnPageRooms_Enter);
             // 
             // btnPageHome
             // 
@@ -1317,7 +1317,7 @@
             this.btnPageHome.TextMarginLeft = 0;
             this.btnPageHome.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnPageHome.UseDefaultRadiusAndThickness = true;
-            this.btnPageHome.Click += new System.EventHandler(this.btnPageHome_Click);
+            this.btnPageHome.Enter += new System.EventHandler(this.btnPageHome_Enter);
             // 
             // fMain
             // 
