@@ -90,6 +90,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bnfDropdownUsers = new Bunifu.UI.WinForms.BunifuDropdown();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -403,6 +404,7 @@
             // Page_Users
             // 
             this.Page_Users.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.Page_Users.Controls.Add(this.bnfDropdownUsers);
             this.Page_Users.Controls.Add(this.bnfVScrollBarUsers);
             this.Page_Users.Controls.Add(this.gridUsers);
             this.Page_Users.Controls.Add(this.txtSearch);
@@ -1590,6 +1592,56 @@
             this.Column5.MaxInputLength = 10;
             this.Column5.Name = "Column5";
             // 
+            // bnfDropdownUsers
+            // 
+            this.bnfDropdownUsers.BackColor = System.Drawing.Color.Transparent;
+            this.bnfDropdownUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfDropdownUsers.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownUsers.BorderRadius = 10;
+            this.bnfDropdownUsers.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownUsers.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.bnfDropdownUsers.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.bnfDropdownUsers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bnfDropdownUsers.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.bnfDropdownUsers.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.bnfDropdownUsers.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.bnfDropdownUsers.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.bnfDropdownUsers.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.bnfDropdownUsers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bnfDropdownUsers.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.bnfDropdownUsers.FillDropDown = true;
+            this.bnfDropdownUsers.FillIndicator = false;
+            this.bnfDropdownUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnfDropdownUsers.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bnfDropdownUsers.ForeColor = System.Drawing.Color.Gainsboro;
+            this.bnfDropdownUsers.FormattingEnabled = true;
+            this.bnfDropdownUsers.Icon = null;
+            this.bnfDropdownUsers.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.bnfDropdownUsers.IndicatorColor = System.Drawing.Color.Gainsboro;
+            this.bnfDropdownUsers.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.bnfDropdownUsers.IndicatorThickness = 13;
+            this.bnfDropdownUsers.IsDropdownOpened = false;
+            this.bnfDropdownUsers.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            this.bnfDropdownUsers.ItemBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownUsers.ItemForeColor = System.Drawing.Color.White;
+            this.bnfDropdownUsers.ItemHeight = 26;
+            this.bnfDropdownUsers.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.bnfDropdownUsers.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.bnfDropdownUsers.Items.AddRange(new object[] {
+            "Все",
+            "Администратор",
+            "Тех. Поддержка"});
+            this.bnfDropdownUsers.ItemTopMargin = 3;
+            this.bnfDropdownUsers.Location = new System.Drawing.Point(324, 14);
+            this.bnfDropdownUsers.MaxDropDownItems = 3;
+            this.bnfDropdownUsers.Name = "bnfDropdownUsers";
+            this.bnfDropdownUsers.Size = new System.Drawing.Size(170, 32);
+            this.bnfDropdownUsers.TabIndex = 0;
+            this.bnfDropdownUsers.TabStop = false;
+            this.bnfDropdownUsers.Text = "Роли...";
+            this.bnfDropdownUsers.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.bnfDropdownUsers.TextLeftMargin = 5;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1660,5 +1712,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private Bunifu.UI.WinForms.BunifuDropdown bnfDropdownUsers;
     }
 }
