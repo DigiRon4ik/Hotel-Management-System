@@ -34,6 +34,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -47,11 +52,6 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.pnlTitle = new Bunifu.UI.WinForms.BunifuPanel();
             this.pctrSidebar = new System.Windows.Forms.PictureBox();
@@ -67,7 +67,14 @@
             this.Page_Customers = new System.Windows.Forms.TabPage();
             this.Page_Categories = new System.Windows.Forms.TabPage();
             this.Page_Users = new System.Windows.Forms.TabPage();
+            this.bnfDropdownUsers = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.bnfVScrollBarUsers = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.gridUsers = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnRowAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnRowEdit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -84,13 +91,6 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.btnPageRooms = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnPageHome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.bnfVScrollBarUsers = new Bunifu.UI.WinForms.BunifuVScrollBar();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bnfDropdownUsers = new Bunifu.UI.WinForms.BunifuDropdown();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -417,6 +417,97 @@
             this.Page_Users.TabIndex = 4;
             this.Page_Users.Text = "Users";
             // 
+            // bnfDropdownUsers
+            // 
+            this.bnfDropdownUsers.BackColor = System.Drawing.Color.Transparent;
+            this.bnfDropdownUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfDropdownUsers.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownUsers.BorderRadius = 10;
+            this.bnfDropdownUsers.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownUsers.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.bnfDropdownUsers.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.bnfDropdownUsers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bnfDropdownUsers.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.bnfDropdownUsers.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.bnfDropdownUsers.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.bnfDropdownUsers.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.bnfDropdownUsers.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.bnfDropdownUsers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bnfDropdownUsers.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.bnfDropdownUsers.FillDropDown = true;
+            this.bnfDropdownUsers.FillIndicator = false;
+            this.bnfDropdownUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnfDropdownUsers.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bnfDropdownUsers.ForeColor = System.Drawing.Color.Gainsboro;
+            this.bnfDropdownUsers.FormattingEnabled = true;
+            this.bnfDropdownUsers.Icon = null;
+            this.bnfDropdownUsers.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.bnfDropdownUsers.IndicatorColor = System.Drawing.Color.Gainsboro;
+            this.bnfDropdownUsers.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.bnfDropdownUsers.IndicatorThickness = 13;
+            this.bnfDropdownUsers.IsDropdownOpened = false;
+            this.bnfDropdownUsers.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            this.bnfDropdownUsers.ItemBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownUsers.ItemForeColor = System.Drawing.Color.White;
+            this.bnfDropdownUsers.ItemHeight = 26;
+            this.bnfDropdownUsers.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.bnfDropdownUsers.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.bnfDropdownUsers.Items.AddRange(new object[] {
+            "Все",
+            "Администратор",
+            "Тех. Поддержка"});
+            this.bnfDropdownUsers.ItemTopMargin = 3;
+            this.bnfDropdownUsers.Location = new System.Drawing.Point(324, 14);
+            this.bnfDropdownUsers.MaxDropDownItems = 3;
+            this.bnfDropdownUsers.Name = "bnfDropdownUsers";
+            this.bnfDropdownUsers.Size = new System.Drawing.Size(170, 32);
+            this.bnfDropdownUsers.TabIndex = 0;
+            this.bnfDropdownUsers.TabStop = false;
+            this.bnfDropdownUsers.Text = "Роли...";
+            this.bnfDropdownUsers.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.bnfDropdownUsers.TextLeftMargin = 5;
+            // 
+            // bnfVScrollBarUsers
+            // 
+            this.bnfVScrollBarUsers.AllowCursorChanges = false;
+            this.bnfVScrollBarUsers.AllowHomeEndKeysDetection = false;
+            this.bnfVScrollBarUsers.AllowIncrementalClickMoves = true;
+            this.bnfVScrollBarUsers.AllowMouseDownEffects = true;
+            this.bnfVScrollBarUsers.AllowMouseHoverEffects = true;
+            this.bnfVScrollBarUsers.AllowScrollingAnimations = true;
+            this.bnfVScrollBarUsers.AllowScrollKeysDetection = false;
+            this.bnfVScrollBarUsers.AllowScrollOptionsMenu = false;
+            this.bnfVScrollBarUsers.AllowShrinkingOnFocusLost = false;
+            this.bnfVScrollBarUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bnfVScrollBarUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfVScrollBarUsers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfVScrollBarUsers.BackgroundImage")));
+            this.bnfVScrollBarUsers.BindingContainer = null;
+            this.bnfVScrollBarUsers.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfVScrollBarUsers.BorderRadius = 10;
+            this.bnfVScrollBarUsers.BorderThickness = 1;
+            this.bnfVScrollBarUsers.DurationBeforeShrink = 2000;
+            this.bnfVScrollBarUsers.LargeChange = 2;
+            this.bnfVScrollBarUsers.Location = new System.Drawing.Point(781, 56);
+            this.bnfVScrollBarUsers.Maximum = 1;
+            this.bnfVScrollBarUsers.Minimum = 0;
+            this.bnfVScrollBarUsers.MinimumThumbLength = 18;
+            this.bnfVScrollBarUsers.Name = "bnfVScrollBarUsers";
+            this.bnfVScrollBarUsers.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.bnfVScrollBarUsers.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
+            this.bnfVScrollBarUsers.OnDisable.ThumbColor = System.Drawing.Color.Silver;
+            this.bnfVScrollBarUsers.ScrollBarBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfVScrollBarUsers.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfVScrollBarUsers.ShrinkSizeLimit = 3;
+            this.bnfVScrollBarUsers.Size = new System.Drawing.Size(16, 470);
+            this.bnfVScrollBarUsers.SmallChange = 1;
+            this.bnfVScrollBarUsers.TabIndex = 1;
+            this.bnfVScrollBarUsers.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
+            this.bnfVScrollBarUsers.ThumbLength = 468;
+            this.bnfVScrollBarUsers.ThumbMargin = 1;
+            this.bnfVScrollBarUsers.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
+            this.bnfVScrollBarUsers.Value = 0;
+            // 
             // gridUsers
             // 
             this.gridUsers.AllowCustomTheming = true;
@@ -492,6 +583,58 @@
             this.gridUsers.TabIndex = 0;
             this.gridUsers.TabStop = false;
             this.gridUsers.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column1.FillWeight = 140F;
+            this.Column1.HeaderText = "ФИО";
+            this.Column1.MaxInputLength = 45;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column2.FillWeight = 75F;
+            this.Column2.HeaderText = "Роль";
+            this.Column2.MaxInputLength = 15;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column3.FillWeight = 75F;
+            this.Column3.HeaderText = "Телефон";
+            this.Column3.MaxInputLength = 20;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Column4.FillWeight = 88F;
+            this.Column4.HeaderText = "Логин";
+            this.Column4.MaxInputLength = 20;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Format = "d";
+            dataGridViewCellStyle7.NullValue = null;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column5.FillWeight = 46F;
+            this.Column5.HeaderText = "Создано";
+            this.Column5.MaxInputLength = 10;
+            this.Column5.Name = "Column5";
             // 
             // txtSearch
             // 
@@ -615,7 +758,7 @@
             this.btnRowAdd.IdleBorderRadius = 25;
             this.btnRowAdd.IdleBorderThickness = 2;
             this.btnRowAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.btnRowAdd.IdleIconLeftImage = global::Hotel_Management_System.Properties.Resources.add_row_32px;
+            this.btnRowAdd.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnRowAdd.IdleIconLeftImage")));
             this.btnRowAdd.IdleIconRightImage = null;
             this.btnRowAdd.IndicateFocus = false;
             this.btnRowAdd.Location = new System.Drawing.Point(675, 10);
@@ -642,7 +785,7 @@
             this.btnRowAdd.OnIdleState.BorderThickness = 2;
             this.btnRowAdd.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowAdd.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnRowAdd.OnIdleState.IconLeftImage = global::Hotel_Management_System.Properties.Resources.add_row_32px;
+            this.btnRowAdd.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnRowAdd.OnIdleState.IconLeftImage")));
             this.btnRowAdd.OnIdleState.IconRightImage = null;
             this.btnRowAdd.OnPressedState.BorderColor = System.Drawing.Color.Green;
             this.btnRowAdd.OnPressedState.BorderRadius = 25;
@@ -706,7 +849,7 @@
             this.btnRowEdit.IdleBorderRadius = 25;
             this.btnRowEdit.IdleBorderThickness = 2;
             this.btnRowEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.btnRowEdit.IdleIconLeftImage = global::Hotel_Management_System.Properties.Resources.edit_row_32px;
+            this.btnRowEdit.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnRowEdit.IdleIconLeftImage")));
             this.btnRowEdit.IdleIconRightImage = null;
             this.btnRowEdit.IndicateFocus = false;
             this.btnRowEdit.Location = new System.Drawing.Point(716, 10);
@@ -733,7 +876,7 @@
             this.btnRowEdit.OnIdleState.BorderThickness = 2;
             this.btnRowEdit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowEdit.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnRowEdit.OnIdleState.IconLeftImage = global::Hotel_Management_System.Properties.Resources.edit_row_32px;
+            this.btnRowEdit.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnRowEdit.OnIdleState.IconLeftImage")));
             this.btnRowEdit.OnIdleState.IconRightImage = null;
             this.btnRowEdit.OnPressedState.BorderColor = System.Drawing.Color.Olive;
             this.btnRowEdit.OnPressedState.BorderRadius = 25;
@@ -797,7 +940,7 @@
             this.btnRowDelete.IdleBorderRadius = 25;
             this.btnRowDelete.IdleBorderThickness = 2;
             this.btnRowDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.btnRowDelete.IdleIconLeftImage = global::Hotel_Management_System.Properties.Resources.delete_row_32px;
+            this.btnRowDelete.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnRowDelete.IdleIconLeftImage")));
             this.btnRowDelete.IdleIconRightImage = null;
             this.btnRowDelete.IndicateFocus = false;
             this.btnRowDelete.Location = new System.Drawing.Point(757, 10);
@@ -824,7 +967,7 @@
             this.btnRowDelete.OnIdleState.BorderThickness = 2;
             this.btnRowDelete.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.btnRowDelete.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnRowDelete.OnIdleState.IconLeftImage = global::Hotel_Management_System.Properties.Resources.delete_row_32px;
+            this.btnRowDelete.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnRowDelete.OnIdleState.IconLeftImage")));
             this.btnRowDelete.OnIdleState.IconRightImage = null;
             this.btnRowDelete.OnPressedState.BorderColor = System.Drawing.Color.DarkRed;
             this.btnRowDelete.OnPressedState.BorderRadius = 25;
@@ -1497,150 +1640,6 @@
             this.btnPageHome.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnPageHome.UseDefaultRadiusAndThickness = true;
             this.btnPageHome.Enter += new System.EventHandler(this.btnPageHome_Enter);
-            // 
-            // bnfVScrollBarUsers
-            // 
-            this.bnfVScrollBarUsers.AllowCursorChanges = false;
-            this.bnfVScrollBarUsers.AllowHomeEndKeysDetection = false;
-            this.bnfVScrollBarUsers.AllowIncrementalClickMoves = true;
-            this.bnfVScrollBarUsers.AllowMouseDownEffects = true;
-            this.bnfVScrollBarUsers.AllowMouseHoverEffects = true;
-            this.bnfVScrollBarUsers.AllowScrollingAnimations = true;
-            this.bnfVScrollBarUsers.AllowScrollKeysDetection = false;
-            this.bnfVScrollBarUsers.AllowScrollOptionsMenu = false;
-            this.bnfVScrollBarUsers.AllowShrinkingOnFocusLost = false;
-            this.bnfVScrollBarUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnfVScrollBarUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfVScrollBarUsers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfVScrollBarUsers.BackgroundImage")));
-            this.bnfVScrollBarUsers.BindingContainer = null;
-            this.bnfVScrollBarUsers.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfVScrollBarUsers.BorderRadius = 10;
-            this.bnfVScrollBarUsers.BorderThickness = 1;
-            this.bnfVScrollBarUsers.DurationBeforeShrink = 2000;
-            this.bnfVScrollBarUsers.LargeChange = 10;
-            this.bnfVScrollBarUsers.Location = new System.Drawing.Point(781, 56);
-            this.bnfVScrollBarUsers.Maximum = 100;
-            this.bnfVScrollBarUsers.Minimum = 0;
-            this.bnfVScrollBarUsers.MinimumThumbLength = 18;
-            this.bnfVScrollBarUsers.Name = "bnfVScrollBarUsers";
-            this.bnfVScrollBarUsers.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bnfVScrollBarUsers.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
-            this.bnfVScrollBarUsers.OnDisable.ThumbColor = System.Drawing.Color.Silver;
-            this.bnfVScrollBarUsers.ScrollBarBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfVScrollBarUsers.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfVScrollBarUsers.ShrinkSizeLimit = 3;
-            this.bnfVScrollBarUsers.Size = new System.Drawing.Size(16, 470);
-            this.bnfVScrollBarUsers.SmallChange = 1;
-            this.bnfVScrollBarUsers.TabIndex = 0;
-            this.bnfVScrollBarUsers.TabStop = false;
-            this.bnfVScrollBarUsers.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
-            this.bnfVScrollBarUsers.ThumbLength = 46;
-            this.bnfVScrollBarUsers.ThumbMargin = 1;
-            this.bnfVScrollBarUsers.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
-            this.bnfVScrollBarUsers.Value = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column1.FillWeight = 140F;
-            this.Column1.HeaderText = "ФИО";
-            this.Column1.MaxInputLength = 45;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column2.FillWeight = 75F;
-            this.Column2.HeaderText = "Роль";
-            this.Column2.MaxInputLength = 15;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column3.FillWeight = 75F;
-            this.Column3.HeaderText = "Телефон";
-            this.Column3.MaxInputLength = 20;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Column4.FillWeight = 88F;
-            this.Column4.HeaderText = "Логин";
-            this.Column4.MaxInputLength = 20;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Format = "d";
-            dataGridViewCellStyle7.NullValue = null;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column5.FillWeight = 46F;
-            this.Column5.HeaderText = "Создано";
-            this.Column5.MaxInputLength = 10;
-            this.Column5.Name = "Column5";
-            // 
-            // bnfDropdownUsers
-            // 
-            this.bnfDropdownUsers.BackColor = System.Drawing.Color.Transparent;
-            this.bnfDropdownUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfDropdownUsers.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownUsers.BorderRadius = 10;
-            this.bnfDropdownUsers.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownUsers.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.bnfDropdownUsers.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bnfDropdownUsers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bnfDropdownUsers.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bnfDropdownUsers.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.bnfDropdownUsers.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.bnfDropdownUsers.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.bnfDropdownUsers.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
-            this.bnfDropdownUsers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.bnfDropdownUsers.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bnfDropdownUsers.FillDropDown = true;
-            this.bnfDropdownUsers.FillIndicator = false;
-            this.bnfDropdownUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnfDropdownUsers.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bnfDropdownUsers.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bnfDropdownUsers.FormattingEnabled = true;
-            this.bnfDropdownUsers.Icon = null;
-            this.bnfDropdownUsers.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bnfDropdownUsers.IndicatorColor = System.Drawing.Color.Gainsboro;
-            this.bnfDropdownUsers.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bnfDropdownUsers.IndicatorThickness = 13;
-            this.bnfDropdownUsers.IsDropdownOpened = false;
-            this.bnfDropdownUsers.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            this.bnfDropdownUsers.ItemBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownUsers.ItemForeColor = System.Drawing.Color.White;
-            this.bnfDropdownUsers.ItemHeight = 26;
-            this.bnfDropdownUsers.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            this.bnfDropdownUsers.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.bnfDropdownUsers.Items.AddRange(new object[] {
-            "Все",
-            "Администратор",
-            "Тех. Поддержка"});
-            this.bnfDropdownUsers.ItemTopMargin = 3;
-            this.bnfDropdownUsers.Location = new System.Drawing.Point(324, 14);
-            this.bnfDropdownUsers.MaxDropDownItems = 3;
-            this.bnfDropdownUsers.Name = "bnfDropdownUsers";
-            this.bnfDropdownUsers.Size = new System.Drawing.Size(170, 32);
-            this.bnfDropdownUsers.TabIndex = 0;
-            this.bnfDropdownUsers.TabStop = false;
-            this.bnfDropdownUsers.Text = "Роли...";
-            this.bnfDropdownUsers.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bnfDropdownUsers.TextLeftMargin = 5;
             // 
             // fMain
             // 
