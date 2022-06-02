@@ -42,6 +42,8 @@ namespace Hotel_Management_System.Forms
                 pctrSidebar.Image = Properties.Resources.Show_Sidepanel_32;
                 isSidebarOpened = false;
             }
+
+            bnfVScrollBarUsers.BindTo(gridUsers, true);
         }
 
         #region Кнопка Закрытия
