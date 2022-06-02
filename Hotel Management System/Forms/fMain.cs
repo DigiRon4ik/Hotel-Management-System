@@ -164,6 +164,7 @@ namespace Hotel_Management_System.Forms
 
         #endregion
 
+        #region Кнопки Переключения Страниц
         private void btnPageHome_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Home");
 
@@ -181,5 +182,6 @@ namespace Hotel_Management_System.Forms
 
         private void btnPageSettings_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Settings");
+        #endregion
     }
 }
