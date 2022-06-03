@@ -83,7 +83,7 @@ namespace Hotel_Management_System.Forms
             btnImgTitleMinimaze.BringToFront();
         #endregion
 
-        #region Кнопка Бокового Меню и Таймер
+        #region Кнопка Бокового Меню
         private void pctrSidebar_Click(object sender, EventArgs e)
         {
             if (pnlSidebar.Width >= sidebarWithOpen)

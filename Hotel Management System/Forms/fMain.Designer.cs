@@ -511,7 +511,6 @@
             // gridUsers
             // 
             this.gridUsers.AllowCustomTheming = true;
-            this.gridUsers.AllowUserToResizeColumns = false;
             this.gridUsers.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
