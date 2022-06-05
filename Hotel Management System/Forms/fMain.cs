@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu.UI.WinForms;
 using ServiceStack.OrmLite;
+using Hotel_Management_System.DataBase.Models;
 
 namespace Hotel_Management_System.Forms
 {
@@ -16,9 +18,10 @@ namespace Hotel_Management_System.Forms
     {
         private fLogin fl = new fLogin();
 
-        public bool isSidebarOpened;
-        public int sidebarWithOpen = 180; public int sidebarWithClose = 50;
-        public DataBase.Models.User account;
+        private bool isSidebarOpened;
+        private int sidebarWithOpen = 180; public int sidebarWithClose = 50;
+        private User account;
+        private IEnumerable<User> users;
 
         public fMain()
         {
@@ -29,8 +32,6 @@ namespace Hotel_Management_System.Forms
                 account = fl.account;
             else
                 Environment.Exit(0);
-
-            InitUser();
 
             if (pnlSidebar.Width >= sidebarWithOpen)
             {
@@ -43,7 +44,8 @@ namespace Hotel_Management_System.Forms
                 isSidebarOpened = false;
             }
 
-            bnfVScrollBarUsers.BindTo(gridUsers, true);
+            InitUser();
+            PageUsers_Load();
         }
 
         #region Кнопка Закрытия
@@ -125,7 +127,7 @@ namespace Hotel_Management_System.Forms
         }
         #endregion
 
-        #region Изображения и Кнопка выхода
+        #region Кнопка выхода и Изображения
         private void bnfUserPicture_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -143,27 +145,7 @@ namespace Hotel_Management_System.Forms
             bnfUserPicture.Image = Properties.Resources.Logout_512;
 
         private void bnfUserPicture_MouseLeave(object sender, EventArgs e) =>
-            bnfUserPicture.Image = Properties.Resources.Contact_512;
-        #endregion
-
-        #region Инициализация Пользователя
-        private void InitUser()
-        {
-            lblUserName.Text = $"{account.Name.ToString()} {account.Surname.ToString()}";
-            lblUserRole.Text = account.Role.ToString();
-
-            if (account.Role.ToString() == "Support")
-            {
-                btnPageUsers.Visible = true;
-                btnPageUsers.Enabled = true;
-            }
-            else
-            {
-                btnPageUsers.Visible = false;
-                btnPageUsers.Enabled = false;
-            }
-        }
-
+            bnfUserPicture.Image = GetImageFromBytes(account.Photo);
         #endregion
 
         #region Кнопки Переключения Страниц
@@ -184,6 +166,144 @@ namespace Hotel_Management_System.Forms
 
         private void btnPageSettings_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Settings");
+        #endregion
+
+        #region Инициализация Пользователя
+        private void InitUser()
+        {
+            lblUserName.Text = account.FullName;
+            lblUserRole.Text = account.Role;
+
+            if (account.Role == "Support")
+            {
+                btnPageUsers.Visible = true;
+                btnPageUsers.Enabled = true;
+            }
+            else
+            {
+                btnPageUsers.Visible = false;
+                btnPageUsers.Enabled = false;
+            }
+        }
+
+        #endregion
+
+        #region Функция Возвращающая Изображение в двух видах
+        public static byte[] GetImageFromBytes(string path)
+        {
+            return File.ReadAllBytes(path);
+        }
+
+        public static byte[] GetImageFromBytes(Bitmap bitmap)
+        {
+            return (byte[])new ImageConverter().ConvertTo(bitmap, typeof(byte[]));
+        }
+
+        public static Image GetImageFromBytes(byte[] imageBytes)
+        {
+            return (Bitmap)new ImageConverter().ConvertFrom(imageBytes);
+        }
+        #endregion
+
+        #region Page_Users Загрузка Страницы
+        private void PageUsers_Load()
+        {
+            bnfVScrollBarUsers.BindTo(gridUsers, true);
+            LoadUsers();
+            FillGridUsers();
+        }
+        #endregion
+
+        #region Page_Users Загрузить из БД
+        private void LoadUsers()
+        {
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+            {
+                users = db.Select<User>();
+                bnfDropdownUsers.Items.Clear();
+                bnfDropdownUsers.Items.Add("Все Роли");
+                bnfDropdownUsers.Items.AddRange(db.Column<string>("SELECT Role FROM users GROUP BY Role").ToArray());
+            }
+        }
+        #endregion
+
+        #region Page_Users События для Поиска
+        private void txtSearchUsers_TextChange(object sender, EventArgs e)
+        {
+            try
+            {
+                FillGridUsers(txtSearchUsers.Text.Trim().ToLower(), bnfDropdownUsers.SelectedItem.ToString());
+            }
+            catch (Exception)
+            {
+                FillGridUsers(txtSearchUsers.Text.Trim().ToLower());
+            }
+        }
+        private void bnfDropdownUsers_SelectionChangeCommitted(object sender, EventArgs e) =>
+            FillGridUsers(txtSearchUsers.Text.Trim().ToLower(), bnfDropdownUsers.SelectedItem.ToString());
+        #endregion
+
+        #region Page_Users Заполнение Таблицы
+        private void FillGridUsers(string userName = "", string userRole = "Все Роли")
+        {
+            gridUsers.Rows.Clear();
+
+            foreach (var user in users)
+            {
+                if (user.FullName.ToLower().Contains(userName) && user.Role.Contains(userRole == "Все Роли" ? "" : userRole))
+                    gridUsers.Rows.Add(new object[] {
+                        user.Photo,
+                        user.FullName,
+                        user.Role,
+                        user.Phone,
+                        user.Login,
+                        user.CreatedAt }
+                    );
+            }
+        }
+        #endregion
+
+        #region Page_Users Обновление Таблицы
+        private void UpdateGridUsers()
+        {
+            string role;
+            try
+            {
+                role = bnfDropdownUsers.SelectedItem.ToString();
+            }
+            catch (Exception)
+            {
+
+                role = "Все Роли";
+            }
+            
+            LoadUsers();
+            FillGridUsers(txtSearchUsers.Text.Trim().ToLower(), role);
+        }
+        #endregion
+
+        #region Page_Users Кнопки для Редактирования БД
+        private void btnRowAddUser_Click(object sender, EventArgs e)
+        {
+            fUser fu = new fUser();
+            fu.Show();
+            UpdateGridUsers();
+        }
+
+        private void btnRowEditUser_Click(object sender, EventArgs e)
+        {
+
+
+            UpdateGridUsers();
+        }
+
+        private void btnRowDeleteUser_Click(object sender, EventArgs e)
+        {
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+                db.Delete<User>(x => x.FullName == gridUsers[1, gridUsers.CurrentRow.Index].Value.ToString());
+
+            UpdateGridUsers();
+        }
         #endregion
     }
 }

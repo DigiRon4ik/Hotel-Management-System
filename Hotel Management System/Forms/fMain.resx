@@ -211,7 +211,10 @@
   <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="txtSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtSearchUsers.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAAoCAYAAABEm8fXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN0SURBVHhe7d1PSBRhGMdxjx0NOohQGCRZkYQViVEZBUqS
@@ -232,7 +235,7 @@
         jheKoqiDVHV1/wEMmP8uLeq8AwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="txtSearch.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtSearchUsers.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAhZJREFUWEft
         lr9KHUEUh6/RaCUI+gApEhTB+Ac0WCXRIqYNBIsQoj6FjYWCkqAvEAs1lSIWPosKQQtfIDFqNBCisH6/
@@ -247,7 +250,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="btnRowAdd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowAddUser.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIESURBVFhH7Zg9S8NAGMc7ugoORRDqUPAFRXQpHaSCYFF8
@@ -262,7 +265,7 @@
         QqFfVudZwLcRWRwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnRowAdd.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowAddUser.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAdFJREFUWEft
         lTsvBFEYhndjSyJCyVaUG1GTtVEJ2q00hMIfEKJziUK04gfQ2AgKiYgfIBKFu59A4dJQEet9z7yzc9kZ
@@ -288,7 +291,7 @@
         VyUsrdadI4ItN+cauxskrSbAvXVcpe/AGLuaIK1yoEByrKaqUUr9Ah7E0z9+1hD0AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnRowAdd.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowAddUser.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAdFJREFUWEft
         lTsvBFEYhndjSyJCyVaUG1GTtVEJ2q00hMIfEKJziUK04gfQ2AgKiYgfIBKFu59A4dJQEet9z7yzc9kZ
@@ -314,7 +317,7 @@
         VyUsrdadI4ItN+cauxskrSbAvXVcpe/AGLuaIK1yoEByrKaqUUr9Ah7E0z9+1hD0AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnRowEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowEditUser.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACHSURBVFhH7dihDYAwEEbhroDFs0cFlhWQMEJxxTIKMCS0
@@ -323,7 +326,7 @@
         YII=
 </value>
   </data>
-  <data name="btnRowEdit.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowEditUser.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAVxJREFUWEft
         lbFKw1AUhjMUB1Gh4EP4Bg7axyhCHRTRSQTBwQrtUwhCN1cdnBwEQVxFF19FN7WN30lOzM1tTHNbc7GQ
@@ -347,7 +350,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="btnRowEdit.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowEditUser.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAVxJREFUWEft
         lbFKw1AUhjMUB1Gh4EP4Bg7axyhCHRTRSQTBwQrtUwhCN1cdnBwEQVxFF19FN7WN30lOzM1tTHNbc7GQ
@@ -371,7 +374,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="btnRowDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowDeleteUser.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVFhH7dg9S8NAGAfwjo4KTgVFQfENHKqiVERFoWKx
@@ -385,7 +388,7 @@
         HOhVYQxMFZ38embt+hCd11ythmbT8icUegPvx2Ki+rfZKAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnRowDelete.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowDeleteUser.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAcVJREFUWEft
         lr0vQ1EYxtsObJpaxNaBWNBYiVia+IipSQ0shMF/gSiJxCpmqRELs5h8JGYWiYlNDBgM1POc81ztrXvb
@@ -411,7 +414,7 @@
         4EkL2XgEo4q3R1ggA9YB/17x2xJer4EuxRIlCinH+QbU395FBf540wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnRowDelete.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRowDeleteUser.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAcVJREFUWEft
         lr0vQ1EYxtsObJpaxNaBWNBYiVia+IipSQ0shMF/gSiJxCpmqRELs5h8JGYWiYlNDBgM1POc81ztrXvb
