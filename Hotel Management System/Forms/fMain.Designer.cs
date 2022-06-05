@@ -664,7 +664,7 @@
             this.txtSearchUsers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearchUsers.BackgroundImage")));
             this.txtSearchUsers.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
             this.txtSearchUsers.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtSearchUsers.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            this.txtSearchUsers.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
             this.txtSearchUsers.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
             this.txtSearchUsers.BorderRadius = 25;
             this.txtSearchUsers.BorderThickness = 2;
