@@ -339,7 +339,7 @@
             this.txtLogin.IconRight = null;
             this.txtLogin.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLogin.Lines = new string[0];
-            this.txtLogin.Location = new System.Drawing.Point(176, 22);
+            this.txtLogin.Location = new System.Drawing.Point(176, 21);
             this.txtLogin.MaxLength = 30;
             this.txtLogin.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtLogin.Modified = false;
