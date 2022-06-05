@@ -2,12 +2,13 @@
 using System;
 using System.Linq;
 using System.Windows.Forms;
+using Hotel_Management_System.DataBase.Models;
 
 namespace Hotel_Management_System.Forms
 {
     public partial class fLogin : Form
     {
-        public DataBase.Models.User account;
+        public User account;
 
         public fLogin()
         {
@@ -15,7 +16,7 @@ namespace Hotel_Management_System.Forms
             DataBase.ApplicationContext.InitDB();
 
             using (var db = DataBase.ApplicationContext.GetDbConnection())
-                lblSupport.Text = "Тех. Поддержка: " + db.SingleById<DataBase.Models.User>(1).Phone.ToString();
+                lblSupport.Text = "Тех. Поддержка: " + db.SingleById<User>(1).Phone.ToString();
         }
 
         #region Кнопка Закрытия
@@ -45,15 +46,14 @@ namespace Hotel_Management_System.Forms
             {
                 skbarValidation.Show(this, "Заполните поля!",
                                      Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning,
-                                     2000, "",
-                                     Bunifu.UI.WinForms.BunifuSnackbar.Positions.BottomCenter,
+                                     2000, "", Bunifu.UI.WinForms.BunifuSnackbar.Positions.BottomCenter,
                                      Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner);
                 return;
             }
 
             using (var db = DataBase.ApplicationContext.GetDbConnection())
             {
-                account = db.Select<DataBase.Models.User>(x =>
+                account = db.Select<User>(x =>
                                 x.Login.ToString() == txtLogin.Text &&
                                 x.Password.ToString() == txtPassword.Text).FirstOrDefault();
             }
@@ -62,8 +62,7 @@ namespace Hotel_Management_System.Forms
             {
                 skbarValidation.Show(this, "Неверный Логин или Пароль.",
                                      Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error,
-                                     2000, "",
-                                     Bunifu.UI.WinForms.BunifuSnackbar.Positions.BottomCenter,
+                                     2000, "", Bunifu.UI.WinForms.BunifuSnackbar.Positions.BottomCenter,
                                      Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner);
                 return;
             }

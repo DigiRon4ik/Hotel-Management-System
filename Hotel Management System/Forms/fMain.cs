@@ -187,7 +187,6 @@ namespace Hotel_Management_System.Forms
                 btnPageUsers.Enabled = false;
             }
         }
-
         #endregion
 
         #region Функция Возвращающая Изображение в двух видах
@@ -287,13 +286,11 @@ namespace Hotel_Management_System.Forms
         #region Page_Users Кнопки для Редактирования БД
         private void btnRowAddUser_Click(object sender, EventArgs e)
         {
-            OpenFormUser(true);
-            if (fu.IsDisposed)
+            fu = new fUser(true);
+            if (fu.ShowDialog() == DialogResult.Yes)
             {
-                skbarValidation.Show(this, "Добавлено.",
-                                         BunifuSnackbar.MessageTypes.Success,
-                                         2000, "",
-                                         BunifuSnackbar.Positions.BottomCenter,
+                skbarValidation.Show(this, "Добавлено!", BunifuSnackbar.MessageTypes.Success,
+                                         2500, "", BunifuSnackbar.Positions.BottomCenter,
                                          BunifuSnackbar.Hosts.FormOwner);
                 UpdateGridUsers();
             }
@@ -301,37 +298,25 @@ namespace Hotel_Management_System.Forms
 
         private void btnRowEditUser_Click(object sender, EventArgs e)
         {
-            OpenFormUser(false);
+            User currentUser;
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+                currentUser = db.Single<User>(x => x.Login == gridUsers[4, gridUsers.CurrentRow.Index].Value.ToString());
+
+            fu = new fUser(false, currentUser);
+            if (fu.ShowDialog() == DialogResult.Yes)
+            {
+                skbarValidation.Show(this, "Изменено!", BunifuSnackbar.MessageTypes.Success,
+                                         2500, "", BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+                UpdateGridUsers();
+            }
         }
 
         private void btnRowDeleteUser_Click(object sender, EventArgs e)
         {
-            if (fu == null || fu.IsDisposed)
-            {
-                using (var db = DataBase.ApplicationContext.GetDbConnection())
-                    db.Delete<User>(x => x.FullName == gridUsers[1, gridUsers.CurrentRow.Index].Value.ToString());
-                UpdateGridUsers();
-            }
-            else
-                skbarValidation.Show(this, "Открыто окно Добавления/Изменения Пользователя!",
-                                         BunifuSnackbar.MessageTypes.Warning,
-                                         3000, "",
-                                         BunifuSnackbar.Positions.BottomCenter,
-                                         BunifuSnackbar.Hosts.FormOwner);
-        }
-
-        private void OpenFormUser(bool isAdd = true)
-        {
-            if (fu == null || fu.IsDisposed)
-                fu = new fUser(isAdd);
-            else
-                skbarValidation.Show(this, "Окно уже открыто!",
-                                         BunifuSnackbar.MessageTypes.Warning,
-                                         2000, "",
-                                         BunifuSnackbar.Positions.BottomCenter,
-                                         BunifuSnackbar.Hosts.FormOwner);
-
-            fu.Show();
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+                db.Delete<User>(x => x.FullName == gridUsers[1, gridUsers.CurrentRow.Index].Value.ToString());
+            UpdateGridUsers();
         }
         #endregion
     }

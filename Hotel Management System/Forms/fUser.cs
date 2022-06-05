@@ -16,20 +16,77 @@ namespace Hotel_Management_System.Forms
 {
     public partial class fUser : Form
     {
-        public fUser(bool isAdd = true)
+        private int updateId = 0;
+        public fUser(bool isAdd = true, User user = null)
         {
             InitializeComponent();
             FormDock.SubscribeControlToDragEvents(lblTitle, true);
+            if (user != null)
+                updateId = user.Id;
 
             if (isAdd)
                 SetDataForm("Добавить Пользователя", 0, 2, imgList.Images[2], Color.Lime, Color.Green);
             else
+            {
                 SetDataForm("Изменить Пользователя", 1, 4, imgList.Images[4], Color.Yellow, Color.Olive);
+                txtFullName.Text = user.FullName;
+                txtPhone.Text = user.Phone;
+                txtRole.Text = user.Role;
+                txtLogin.Text = user.Login;
+                txtPassword.Text = user.Password;
+            }
         }
 
         #region Кнопка Закрытия
         private void btnImgTitleClose_Click(object sender, EventArgs e) =>
             this.Close();
+        #endregion
+
+        #region Кнопка Изменения Изображения
+        private void bnfUserImage_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+                bnfUserImage.Image = Image.FromFile(openFileDialog.FileName);
+        }
+        #endregion
+
+        #region Кнопка Добавления/Изменения
+        private void btnAddOrChange_Click(object sender, EventArgs e)
+        {
+            if (txtFullName.TextLength < 10 || txtPhone.TextLength < 17 ||
+                txtRole.TextLength < 4 || txtLogin.TextLength < 4 || txtPassword.TextLength < 8)
+            {
+                skbarValidation.Show(this, "Заполните все поля!", BunifuSnackbar.MessageTypes.Warning,
+                                         3000, "", BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+                return;
+            }
+
+            User user = new User { 
+                FullName = txtFullName.Text,
+                Phone = txtPhone.Text,
+                Role = txtRole.Text,
+                Login = txtLogin.Text, 
+                Password = txtPassword.Text,
+                Photo = fMain.GetImageFromBytes((Bitmap)bnfUserImage.Image) };
+
+
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+            {
+                if (updateId == 0)
+                    db.Save(user);
+                else
+                {
+                    user.Id = updateId;
+                    user.CreatedAt = DateTime.Now;
+                    db.Update(user);
+                }
+            }
+
+
+            this.DialogResult = DialogResult.Yes;
+            this.Close();
+        }
         #endregion
 
         #region Метод для Настройки Формы
@@ -56,38 +113,5 @@ namespace Hotel_Management_System.Forms
             btnAddOrChange.OnPressedState.ForeColor = pressed;
         }
         #endregion
-
-        private void btnAddOrChange_Click(object sender, EventArgs e)
-        {
-            if (txtFullName.TextLength < 10 || txtPhone.TextLength < 17 ||
-                txtRole.TextLength < 4 || txtLogin.TextLength < 6 || txtPassword.TextLength < 8)
-            {
-                skbarValidation.Show(this, "Заполните все поля!",
-                                         BunifuSnackbar.MessageTypes.Warning,
-                                         3000, "",
-                                         BunifuSnackbar.Positions.BottomCenter,
-                                         BunifuSnackbar.Hosts.FormOwner);
-                return;
-            }
-
-            User user = new User { 
-                FullName = txtFullName.Text,
-                Phone = txtPhone.Text,
-                Role = txtRole.Text,
-                Login = txtLogin.Text, 
-                Password = txtPassword.Text,
-                Photo = fMain.GetImageFromBytes((Bitmap)bnfUserImage.Image) };
-
-            using (var db = DataBase.ApplicationContext.GetDbConnection())
-                db.Save(user);
-
-            this.Close();
-        }
-
-        private void bnfUserImage_Click(object sender, EventArgs e)
-        {
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-                bnfUserImage.Image = Image.FromFile(openFileDialog.FileName);
-        }
     }
 }

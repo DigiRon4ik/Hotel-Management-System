@@ -332,8 +332,8 @@
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            stateProperties1.ForeColor = System.Drawing.Color.White;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPassword.OnActiveState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -342,14 +342,14 @@
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txtPassword.OnDisabledState = stateProperties2;
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            stateProperties3.ForeColor = System.Drawing.Color.White;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPassword.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
             stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             stateProperties4.ForeColor = System.Drawing.Color.White;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
             this.txtPassword.OnIdleState = stateProperties4;
             this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
             this.txtPassword.PasswordChar = '●';
@@ -425,8 +425,8 @@
             this.txtLogin.Multiline = false;
             this.txtLogin.Name = "txtLogin";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            stateProperties5.ForeColor = System.Drawing.Color.White;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtLogin.OnActiveState = stateProperties5;
             stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -435,14 +435,14 @@
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txtLogin.OnDisabledState = stateProperties6;
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            stateProperties7.ForeColor = System.Drawing.Color.White;
             stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtLogin.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
             stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             stateProperties8.ForeColor = System.Drawing.Color.White;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
             this.txtLogin.OnIdleState = stateProperties8;
             this.txtLogin.Padding = new System.Windows.Forms.Padding(3);
             this.txtLogin.PasswordChar = '\0';
@@ -481,7 +481,7 @@
             this.skbarValidation.ErrorOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
             this.skbarValidation.ErrorOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
             this.skbarValidation.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
-            this.skbarValidation.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.ErrorOptions.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.skbarValidation.ErrorOptions.ForeColor = System.Drawing.Color.White;
             this.skbarValidation.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
             this.skbarValidation.ErrorOptions.IconLeftMargin = 12;
@@ -513,11 +513,11 @@
             this.skbarValidation.SuccessOptions.ActionBorderRadius = 1;
             this.skbarValidation.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.skbarValidation.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.skbarValidation.SuccessOptions.BackColor = System.Drawing.Color.White;
-            this.skbarValidation.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.skbarValidation.SuccessOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            this.skbarValidation.SuccessOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
             this.skbarValidation.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.skbarValidation.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.skbarValidation.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.SuccessOptions.Font = new System.Drawing.Font("Comfortaa", 9.75F);
+            this.skbarValidation.SuccessOptions.ForeColor = System.Drawing.Color.White;
             this.skbarValidation.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
             this.skbarValidation.SuccessOptions.IconLeftMargin = 12;
             this.skbarValidation.ViewsMargin = 7;
@@ -529,7 +529,7 @@
             this.skbarValidation.WarningOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
             this.skbarValidation.WarningOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
             this.skbarValidation.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
-            this.skbarValidation.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.WarningOptions.Font = new System.Drawing.Font("Comfortaa", 9.75F);
             this.skbarValidation.WarningOptions.ForeColor = System.Drawing.Color.White;
             this.skbarValidation.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
             this.skbarValidation.WarningOptions.IconLeftMargin = 12;
@@ -572,7 +572,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnLogin;
         private Bunifu.UI.WinForms.BunifuPanel pnlSupport;
         private System.Windows.Forms.Label lblSupport;
-        private Bunifu.UI.WinForms.BunifuSnackbar skbarValidation;
         private Bunifu.UI.WinForms.BunifuImageButton btnImgTitleClose;
+        private Bunifu.UI.WinForms.BunifuSnackbar skbarValidation;
     }
 }

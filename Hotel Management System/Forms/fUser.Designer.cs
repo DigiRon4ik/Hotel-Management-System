@@ -66,8 +66,8 @@
             this.ElipseFormUser = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.imgList = new System.Windows.Forms.ImageList(this.components);
-            this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrIcon)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -733,6 +733,12 @@
             this.imgList.Images.SetKeyName(4, "edit_row_32px.png");
             this.imgList.Images.SetKeyName(5, "edit_row_yellow_32px.png");
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
+            this.openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+            this.openFileDialog.InitialDirectory = "C:\\";
+            // 
             // skbarValidation
             // 
             this.skbarValidation.AllowDragging = false;
@@ -748,7 +754,7 @@
             this.skbarValidation.ErrorOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
             this.skbarValidation.ErrorOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
             this.skbarValidation.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
-            this.skbarValidation.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.ErrorOptions.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.skbarValidation.ErrorOptions.ForeColor = System.Drawing.Color.White;
             this.skbarValidation.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
             this.skbarValidation.ErrorOptions.IconLeftMargin = 12;
@@ -780,11 +786,11 @@
             this.skbarValidation.SuccessOptions.ActionBorderRadius = 1;
             this.skbarValidation.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.skbarValidation.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.skbarValidation.SuccessOptions.BackColor = System.Drawing.Color.White;
-            this.skbarValidation.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.skbarValidation.SuccessOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            this.skbarValidation.SuccessOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
             this.skbarValidation.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.skbarValidation.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.skbarValidation.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.SuccessOptions.Font = new System.Drawing.Font("Comfortaa", 9.75F);
+            this.skbarValidation.SuccessOptions.ForeColor = System.Drawing.Color.White;
             this.skbarValidation.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
             this.skbarValidation.SuccessOptions.IconLeftMargin = 12;
             this.skbarValidation.ViewsMargin = 7;
@@ -796,17 +802,11 @@
             this.skbarValidation.WarningOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
             this.skbarValidation.WarningOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
             this.skbarValidation.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
-            this.skbarValidation.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.WarningOptions.Font = new System.Drawing.Font("Comfortaa", 9.75F);
             this.skbarValidation.WarningOptions.ForeColor = System.Drawing.Color.White;
             this.skbarValidation.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
             this.skbarValidation.WarningOptions.IconLeftMargin = 12;
             this.skbarValidation.ZoomCloseIcon = true;
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog";
-            this.openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
-            this.openFileDialog.InitialDirectory = "C:\\";
             // 
             // fUser
             // 
@@ -848,7 +848,7 @@
         private Bunifu.UI.WinForms.BunifuTextBox txtRole;
         private Bunifu.UI.WinForms.BunifuTextBox txtPassword;
         private Bunifu.UI.WinForms.BunifuTextBox txtLogin;
-        private Bunifu.UI.WinForms.BunifuSnackbar skbarValidation;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private Bunifu.UI.WinForms.BunifuSnackbar skbarValidation;
     }
 }
