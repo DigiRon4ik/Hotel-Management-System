@@ -230,11 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fUser.resx">
       <DependentUpon>fUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -257,90 +258,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Enter_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Password_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\UserLogin_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Marriot_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Maximize_Window_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Maximize_Window_Yellow_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Close_Window_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Close_Window_Red_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Minimize_Window_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Minimize_Window_Green_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Hide_Sidepanel_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Hide_Sidepanel_Primary_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Show_Sidepanel_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Show_Sidepanel_Primary_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Marriott_64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Home_Page_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Rooms_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Contact_512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Logout_512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Customers_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\User_Accounts_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Categorize_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Admin_Settings_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Settings_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_row_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\edit_row_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete_row_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_row_green_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />

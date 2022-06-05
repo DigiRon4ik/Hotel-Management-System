@@ -114,7 +114,7 @@
             // 
             // btnImgTitleClose
             // 
-            this.btnImgTitleClose.ActiveImage = global::Hotel_Management_System.Properties.Resources.Close_Window_Red_32;
+            this.btnImgTitleClose.ActiveImage = ((System.Drawing.Image)(resources.GetObject("btnImgTitleClose.ActiveImage")));
             this.btnImgTitleClose.AllowAnimations = true;
             this.btnImgTitleClose.AllowBuffering = true;
             this.btnImgTitleClose.AllowToggling = false;
@@ -126,8 +126,8 @@
             this.btnImgTitleClose.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnImgTitleClose.ErrorImage")));
             this.btnImgTitleClose.FadeWhenInactive = false;
             this.btnImgTitleClose.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnImgTitleClose.Image = global::Hotel_Management_System.Properties.Resources.Close_Window_32;
-            this.btnImgTitleClose.ImageActive = global::Hotel_Management_System.Properties.Resources.Close_Window_Red_32;
+            this.btnImgTitleClose.Image = ((System.Drawing.Image)(resources.GetObject("btnImgTitleClose.Image")));
+            this.btnImgTitleClose.ImageActive = ((System.Drawing.Image)(resources.GetObject("btnImgTitleClose.ImageActive")));
             this.btnImgTitleClose.ImageLocation = null;
             this.btnImgTitleClose.ImageMargin = 10;
             this.btnImgTitleClose.ImageSize = new System.Drawing.Size(24, 24);
@@ -248,7 +248,7 @@
             this.btnLogin.IdleBorderThickness = 2;
             this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(90)))), ((int)(((byte)(125)))));
             this.btnLogin.IdleIconLeftImage = null;
-            this.btnLogin.IdleIconRightImage = global::Hotel_Management_System.Properties.Resources.Enter_32;
+            this.btnLogin.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.IdleIconRightImage")));
             this.btnLogin.IndicateFocus = false;
             this.btnLogin.Location = new System.Drawing.Point(50, 138);
             this.btnLogin.Name = "btnLogin";
@@ -275,7 +275,7 @@
             this.btnLogin.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(90)))), ((int)(((byte)(125)))));
             this.btnLogin.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnLogin.OnIdleState.IconLeftImage = null;
-            this.btnLogin.OnIdleState.IconRightImage = global::Hotel_Management_System.Properties.Resources.Enter_32;
+            this.btnLogin.OnIdleState.IconRightImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.OnIdleState.IconRightImage")));
             this.btnLogin.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
             this.btnLogin.OnPressedState.BorderRadius = 10;
             this.btnLogin.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
@@ -319,7 +319,7 @@
             this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.HideSelection = true;
-            this.txtPassword.IconLeft = global::Hotel_Management_System.Properties.Resources.Password_32;
+            this.txtPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPassword.IconLeft")));
             this.txtPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.IconPadding = 7;
             this.txtPassword.IconRight = null;
@@ -412,7 +412,7 @@
             this.txtLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.txtLogin.ForeColor = System.Drawing.Color.White;
             this.txtLogin.HideSelection = true;
-            this.txtLogin.IconLeft = global::Hotel_Management_System.Properties.Resources.UserLogin_32;
+            this.txtLogin.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtLogin.IconLeft")));
             this.txtLogin.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLogin.IconPadding = 7;
             this.txtLogin.IconRight = null;

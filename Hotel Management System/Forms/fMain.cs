@@ -23,25 +23,26 @@ namespace Hotel_Management_System.Forms
         private int sidebarWithOpen = 180; public int sidebarWithClose = 50;
         private User account;
         private IEnumerable<User> users;
-
+        
         public fMain()
         {
             InitializeComponent();
             FormDock.SubscribeControlToDragEvents(lblTitle, true);
+            DataBase.ApplicationContext.defaultImage = GetImageFromBytes((Bitmap)imgListFromSidebar.Images[5]);
 
             if (fl.ShowDialog() == DialogResult.Yes)
                 account = fl.account;
             else
                 Environment.Exit(0);
-
+            
             if (pnlSidebar.Width >= sidebarWithOpen)
             {
-                pctrSidebar.Image = Properties.Resources.Hide_Sidepanel_32;
+                pctrSidebar.Image = imgListFromSidebar.Images[0];
                 isSidebarOpened = true;
             }
             else if (pnlSidebar.Width <= sidebarWithClose)
             {
-                pctrSidebar.Image = Properties.Resources.Show_Sidepanel_32;
+                pctrSidebar.Image = imgListFromSidebar.Images[2];
                 isSidebarOpened = false;
             }
 
@@ -113,16 +114,16 @@ namespace Hotel_Management_System.Forms
             {
                 case true:
                     if (isSidebarOpened)
-                        pctrSidebar.Image = Properties.Resources.Hide_Sidepanel_Primary_32;
+                        pctrSidebar.Image = imgListFromSidebar.Images[1];
                     else
-                        pctrSidebar.Image = Properties.Resources.Show_Sidepanel_Primary_32;
+                        pctrSidebar.Image = imgListFromSidebar.Images[3];
                     break;
 
                 case false:
                     if (isSidebarOpened)
-                        pctrSidebar.Image = Properties.Resources.Hide_Sidepanel_32;
+                        pctrSidebar.Image = imgListFromSidebar.Images[0];
                     else
-                        pctrSidebar.Image = Properties.Resources.Show_Sidepanel_32;
+                        pctrSidebar.Image = imgListFromSidebar.Images[2];
                     break;
             }
         }
@@ -143,7 +144,7 @@ namespace Hotel_Management_System.Forms
         }
 
         private void bnfUserPicture_MouseMove(object sender, MouseEventArgs e) =>
-            bnfUserPicture.Image = Properties.Resources.Logout_512;
+            bnfUserPicture.Image = imgListFromSidebar.Images[4];
 
         private void bnfUserPicture_MouseLeave(object sender, EventArgs e) =>
             bnfUserPicture.Image = GetImageFromBytes(account.Photo);
@@ -265,7 +266,7 @@ namespace Hotel_Management_System.Forms
         #endregion
 
         #region Page_Users Обновление Таблицы
-        private void UpdateGridUsers()
+        public void UpdateGridUsers()
         {
             string role;
             try
@@ -287,13 +288,20 @@ namespace Hotel_Management_System.Forms
         private void btnRowAddUser_Click(object sender, EventArgs e)
         {
             OpenFormUser(true);
-            UpdateGridUsers();
+            if (fu.IsDisposed)
+            {
+                skbarValidation.Show(this, "Добавлено.",
+                                         BunifuSnackbar.MessageTypes.Success,
+                                         2000, "",
+                                         BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+                UpdateGridUsers();
+            }
         }
 
         private void btnRowEditUser_Click(object sender, EventArgs e)
         {
             OpenFormUser(false);
-            UpdateGridUsers();
         }
 
         private void btnRowDeleteUser_Click(object sender, EventArgs e)

@@ -9,6 +9,7 @@ namespace Hotel_Management_System.DataBase
     public static class ApplicationContext
     {
         public static string connectionString = "Data Source=Data\\HMS.db;charset=utf8";
+        public static byte[] defaultImage;
 
         public static IDbConnection GetDbConnection()
         {
@@ -31,14 +32,14 @@ namespace Hotel_Management_System.DataBase
                             Password = "support",
                             Role = "Support",
                             Phone = "8-(800)-555-35-35",
-                            Photo = fMain.GetImageFromBytes(Properties.Resources.Contact_512) },
+                            Photo = defaultImage },
                         new User {
                             FullName = "Абдулла Анхаев",
                             Login = "Abdul",
                             Password = "123",
                             Role = "Администратор",
                             Phone = "8-(928)-999-75-75",
-                            Photo = fMain.GetImageFromBytes(Properties.Resources.Contact_512) }
+                            Photo = defaultImage }
                     );
                 }
             }

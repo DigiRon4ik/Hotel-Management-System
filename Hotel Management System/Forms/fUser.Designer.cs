@@ -66,6 +66,8 @@
             this.ElipseFormUser = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.imgList = new System.Windows.Forms.ImageList(this.components);
+            this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrIcon)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -97,13 +99,13 @@
             this.pctrIcon.Location = new System.Drawing.Point(9, 2);
             this.pctrIcon.Name = "pctrIcon";
             this.pctrIcon.Size = new System.Drawing.Size(32, 32);
-            this.pctrIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pctrIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrIcon.TabIndex = 1;
             this.pctrIcon.TabStop = false;
             // 
             // btnImgTitleClose
             // 
-            this.btnImgTitleClose.ActiveImage = global::Hotel_Management_System.Properties.Resources.Close_Window_Red_32;
+            this.btnImgTitleClose.ActiveImage = ((System.Drawing.Image)(resources.GetObject("btnImgTitleClose.ActiveImage")));
             this.btnImgTitleClose.AllowAnimations = true;
             this.btnImgTitleClose.AllowBuffering = true;
             this.btnImgTitleClose.AllowToggling = false;
@@ -115,8 +117,8 @@
             this.btnImgTitleClose.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnImgTitleClose.ErrorImage")));
             this.btnImgTitleClose.FadeWhenInactive = false;
             this.btnImgTitleClose.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnImgTitleClose.Image = global::Hotel_Management_System.Properties.Resources.Close_Window_32;
-            this.btnImgTitleClose.ImageActive = global::Hotel_Management_System.Properties.Resources.Close_Window_Red_32;
+            this.btnImgTitleClose.Image = ((System.Drawing.Image)(resources.GetObject("btnImgTitleClose.Image")));
+            this.btnImgTitleClose.ImageActive = ((System.Drawing.Image)(resources.GetObject("btnImgTitleClose.ImageActive")));
             this.btnImgTitleClose.ImageLocation = null;
             this.btnImgTitleClose.ImageMargin = 10;
             this.btnImgTitleClose.ImageSize = new System.Drawing.Size(24, 24);
@@ -198,7 +200,7 @@
             this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.HideSelection = true;
-            this.txtPassword.IconLeft = global::Hotel_Management_System.Properties.Resources.Password_32;
+            this.txtPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPassword.IconLeft")));
             this.txtPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.IconPadding = 6;
             this.txtPassword.IconRight = null;
@@ -233,7 +235,7 @@
             this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
             this.txtPassword.PasswordChar = '\0';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
-            this.txtPassword.PlaceholderText = "Пароль...";
+            this.txtPassword.PlaceholderText = "Пароль";
             this.txtPassword.ReadOnly = false;
             this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPassword.SelectedText = "";
@@ -247,7 +249,7 @@
             this.txtPassword.TextMarginBottom = 0;
             this.txtPassword.TextMarginLeft = 6;
             this.txtPassword.TextMarginTop = 1;
-            this.txtPassword.TextPlaceholder = "Пароль...";
+            this.txtPassword.TextPlaceholder = "Пароль";
             this.txtPassword.UseSystemPasswordChar = false;
             this.txtPassword.WordWrap = true;
             // 
@@ -276,7 +278,7 @@
             this.txtLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.txtLogin.ForeColor = System.Drawing.Color.White;
             this.txtLogin.HideSelection = true;
-            this.txtLogin.IconLeft = global::Hotel_Management_System.Properties.Resources.UserLogin_32;
+            this.txtLogin.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtLogin.IconLeft")));
             this.txtLogin.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLogin.IconPadding = 6;
             this.txtLogin.IconRight = null;
@@ -311,7 +313,7 @@
             this.txtLogin.Padding = new System.Windows.Forms.Padding(3);
             this.txtLogin.PasswordChar = '\0';
             this.txtLogin.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
-            this.txtLogin.PlaceholderText = "Логин...";
+            this.txtLogin.PlaceholderText = "Логин";
             this.txtLogin.ReadOnly = false;
             this.txtLogin.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtLogin.SelectedText = "";
@@ -325,7 +327,7 @@
             this.txtLogin.TextMarginBottom = 0;
             this.txtLogin.TextMarginLeft = 6;
             this.txtLogin.TextMarginTop = 1;
-            this.txtLogin.TextPlaceholder = "Логин...";
+            this.txtLogin.TextPlaceholder = "Логин";
             this.txtLogin.UseSystemPasswordChar = false;
             this.txtLogin.WordWrap = true;
             // 
@@ -354,7 +356,7 @@
             this.txtRole.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.txtRole.ForeColor = System.Drawing.Color.White;
             this.txtRole.HideSelection = true;
-            this.txtRole.IconLeft = global::Hotel_Management_System.Properties.Resources.Contact_512;
+            this.txtRole.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtRole.IconLeft")));
             this.txtRole.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRole.IconPadding = 8;
             this.txtRole.IconRight = null;
@@ -389,7 +391,7 @@
             this.txtRole.Padding = new System.Windows.Forms.Padding(3);
             this.txtRole.PasswordChar = '\0';
             this.txtRole.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
-            this.txtRole.PlaceholderText = "Роль...";
+            this.txtRole.PlaceholderText = "Роль";
             this.txtRole.ReadOnly = false;
             this.txtRole.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtRole.SelectedText = "";
@@ -403,7 +405,7 @@
             this.txtRole.TextMarginBottom = 0;
             this.txtRole.TextMarginLeft = 6;
             this.txtRole.TextMarginTop = 1;
-            this.txtRole.TextPlaceholder = "Роль...";
+            this.txtRole.TextPlaceholder = "Роль";
             this.txtRole.UseSystemPasswordChar = false;
             this.txtRole.WordWrap = true;
             // 
@@ -432,7 +434,7 @@
             this.txtPhone.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.txtPhone.ForeColor = System.Drawing.Color.White;
             this.txtPhone.HideSelection = true;
-            this.txtPhone.IconLeft = global::Hotel_Management_System.Properties.Resources.Contact_512;
+            this.txtPhone.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPhone.IconLeft")));
             this.txtPhone.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.IconPadding = 8;
             this.txtPhone.IconRight = null;
@@ -467,7 +469,7 @@
             this.txtPhone.Padding = new System.Windows.Forms.Padding(3);
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
-            this.txtPhone.PlaceholderText = "x-(xxx)-xx-xx-xx...";
+            this.txtPhone.PlaceholderText = "x-(xxx)-xxx-xx-xx";
             this.txtPhone.ReadOnly = false;
             this.txtPhone.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPhone.SelectedText = "";
@@ -481,7 +483,7 @@
             this.txtPhone.TextMarginBottom = 0;
             this.txtPhone.TextMarginLeft = 6;
             this.txtPhone.TextMarginTop = 1;
-            this.txtPhone.TextPlaceholder = "x-(xxx)-xx-xx-xx...";
+            this.txtPhone.TextPlaceholder = "x-(xxx)-xxx-xx-xx";
             this.txtPhone.UseSystemPasswordChar = false;
             this.txtPhone.WordWrap = true;
             // 
@@ -510,7 +512,7 @@
             this.txtFullName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.txtFullName.ForeColor = System.Drawing.Color.White;
             this.txtFullName.HideSelection = true;
-            this.txtFullName.IconLeft = global::Hotel_Management_System.Properties.Resources.Contact_512;
+            this.txtFullName.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtFullName.IconLeft")));
             this.txtFullName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFullName.IconPadding = 8;
             this.txtFullName.IconRight = null;
@@ -545,7 +547,7 @@
             this.txtFullName.Padding = new System.Windows.Forms.Padding(3);
             this.txtFullName.PasswordChar = '\0';
             this.txtFullName.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
-            this.txtFullName.PlaceholderText = "Полное Имя...";
+            this.txtFullName.PlaceholderText = "Полное Имя";
             this.txtFullName.ReadOnly = false;
             this.txtFullName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtFullName.SelectedText = "";
@@ -559,7 +561,7 @@
             this.txtFullName.TextMarginBottom = 0;
             this.txtFullName.TextMarginLeft = 6;
             this.txtFullName.TextMarginTop = 1;
-            this.txtFullName.TextPlaceholder = "Полное Имя...";
+            this.txtFullName.TextPlaceholder = "Полное Имя";
             this.txtFullName.UseSystemPasswordChar = false;
             this.txtFullName.WordWrap = true;
             // 
@@ -571,7 +573,7 @@
             this.bnfUserImage.BackColor = System.Drawing.Color.Transparent;
             this.bnfUserImage.BorderRadius = 20;
             this.bnfUserImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bnfUserImage.Image = global::Hotel_Management_System.Properties.Resources.Contact_512;
+            this.bnfUserImage.Image = ((System.Drawing.Image)(resources.GetObject("bnfUserImage.Image")));
             this.bnfUserImage.IsCircle = false;
             this.bnfUserImage.Location = new System.Drawing.Point(10, 10);
             this.bnfUserImage.Name = "bnfUserImage";
@@ -580,6 +582,7 @@
             this.bnfUserImage.TabIndex = 3;
             this.bnfUserImage.TabStop = false;
             this.bnfUserImage.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.bnfUserImage.Click += new System.EventHandler(this.bnfUserImage_Click);
             // 
             // btnAddOrChange
             // 
@@ -672,6 +675,7 @@
             this.btnAddOrChange.TextMarginLeft = 0;
             this.btnAddOrChange.TextPadding = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.btnAddOrChange.UseDefaultRadiusAndThickness = true;
+            this.btnAddOrChange.Click += new System.EventHandler(this.btnAddOrChange_Click);
             // 
             // ElipseFormUser
             // 
@@ -729,6 +733,81 @@
             this.imgList.Images.SetKeyName(4, "edit_row_32px.png");
             this.imgList.Images.SetKeyName(5, "edit_row_yellow_32px.png");
             // 
+            // skbarValidation
+            // 
+            this.skbarValidation.AllowDragging = false;
+            this.skbarValidation.AllowMultipleViews = false;
+            this.skbarValidation.ClickToClose = true;
+            this.skbarValidation.DoubleClickToClose = false;
+            this.skbarValidation.DurationAfterIdle = 2000;
+            this.skbarValidation.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.ErrorOptions.ActionBorderRadius = 1;
+            this.skbarValidation.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.skbarValidation.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.ErrorOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
+            this.skbarValidation.ErrorOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
+            this.skbarValidation.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.skbarValidation.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.ErrorOptions.ForeColor = System.Drawing.Color.White;
+            this.skbarValidation.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.skbarValidation.ErrorOptions.IconLeftMargin = 12;
+            this.skbarValidation.FadeCloseIcon = false;
+            this.skbarValidation.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.skbarValidation.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.InformationOptions.ActionBorderRadius = 1;
+            this.skbarValidation.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.skbarValidation.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.skbarValidation.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.skbarValidation.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.skbarValidation.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.skbarValidation.InformationOptions.IconLeftMargin = 12;
+            this.skbarValidation.Margin = 4;
+            this.skbarValidation.MaximumSize = new System.Drawing.Size(0, 0);
+            this.skbarValidation.MaximumViews = 1;
+            this.skbarValidation.MessageRightMargin = 15;
+            this.skbarValidation.MinimumSize = new System.Drawing.Size(0, 0);
+            this.skbarValidation.ShowBorders = false;
+            this.skbarValidation.ShowCloseIcon = false;
+            this.skbarValidation.ShowIcon = true;
+            this.skbarValidation.ShowShadows = true;
+            this.skbarValidation.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.SuccessOptions.ActionBorderRadius = 1;
+            this.skbarValidation.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.skbarValidation.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.skbarValidation.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.skbarValidation.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.skbarValidation.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.skbarValidation.SuccessOptions.IconLeftMargin = 12;
+            this.skbarValidation.ViewsMargin = 7;
+            this.skbarValidation.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.WarningOptions.ActionBorderRadius = 1;
+            this.skbarValidation.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.skbarValidation.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.WarningOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            this.skbarValidation.WarningOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            this.skbarValidation.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.skbarValidation.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.WarningOptions.ForeColor = System.Drawing.Color.White;
+            this.skbarValidation.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.skbarValidation.WarningOptions.IconLeftMargin = 12;
+            this.skbarValidation.ZoomCloseIcon = true;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
+            this.openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+            this.openFileDialog.InitialDirectory = "C:\\";
+            // 
             // fUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -769,5 +848,7 @@
         private Bunifu.UI.WinForms.BunifuTextBox txtRole;
         private Bunifu.UI.WinForms.BunifuTextBox txtPassword;
         private Bunifu.UI.WinForms.BunifuTextBox txtLogin;
+        private Bunifu.UI.WinForms.BunifuSnackbar skbarValidation;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }
