@@ -17,6 +17,7 @@ namespace Hotel_Management_System.Forms
     public partial class fMain : Form
     {
         private fLogin fl = new fLogin();
+        private fUser fu;
 
         private bool isSidebarOpened;
         private int sidebarWithOpen = 180; public int sidebarWithClose = 50;
@@ -285,24 +286,44 @@ namespace Hotel_Management_System.Forms
         #region Page_Users Кнопки для Редактирования БД
         private void btnRowAddUser_Click(object sender, EventArgs e)
         {
-            fUser fu = new fUser();
-            fu.Show();
+            OpenFormUser(true);
             UpdateGridUsers();
         }
 
         private void btnRowEditUser_Click(object sender, EventArgs e)
         {
-
-
+            OpenFormUser(false);
             UpdateGridUsers();
         }
 
         private void btnRowDeleteUser_Click(object sender, EventArgs e)
         {
-            using (var db = DataBase.ApplicationContext.GetDbConnection())
-                db.Delete<User>(x => x.FullName == gridUsers[1, gridUsers.CurrentRow.Index].Value.ToString());
+            if (fu == null || fu.IsDisposed)
+            {
+                using (var db = DataBase.ApplicationContext.GetDbConnection())
+                    db.Delete<User>(x => x.FullName == gridUsers[1, gridUsers.CurrentRow.Index].Value.ToString());
+                UpdateGridUsers();
+            }
+            else
+                skbarValidation.Show(this, "Открыто окно Добавления/Изменения Пользователя!",
+                                         BunifuSnackbar.MessageTypes.Warning,
+                                         3000, "",
+                                         BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+        }
 
-            UpdateGridUsers();
+        private void OpenFormUser(bool isAdd = true)
+        {
+            if (fu == null || fu.IsDisposed)
+                fu = new fUser(isAdd);
+            else
+                skbarValidation.Show(this, "Окно уже открыто!",
+                                         BunifuSnackbar.MessageTypes.Warning,
+                                         2000, "",
+                                         BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+
+            fu.Show();
         }
         #endregion
     }

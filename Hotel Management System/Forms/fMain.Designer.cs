@@ -92,6 +92,7 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.btnPageRooms = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnPageHome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -1660,6 +1661,75 @@
             this.btnPageHome.UseDefaultRadiusAndThickness = true;
             this.btnPageHome.Enter += new System.EventHandler(this.btnPageHome_Enter);
             // 
+            // skbarValidation
+            // 
+            this.skbarValidation.AllowDragging = false;
+            this.skbarValidation.AllowMultipleViews = false;
+            this.skbarValidation.ClickToClose = true;
+            this.skbarValidation.DoubleClickToClose = false;
+            this.skbarValidation.DurationAfterIdle = 2000;
+            this.skbarValidation.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.ErrorOptions.ActionBorderRadius = 1;
+            this.skbarValidation.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.skbarValidation.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.ErrorOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
+            this.skbarValidation.ErrorOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
+            this.skbarValidation.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.skbarValidation.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.ErrorOptions.ForeColor = System.Drawing.Color.White;
+            this.skbarValidation.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.skbarValidation.ErrorOptions.IconLeftMargin = 12;
+            this.skbarValidation.FadeCloseIcon = false;
+            this.skbarValidation.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.skbarValidation.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.InformationOptions.ActionBorderRadius = 1;
+            this.skbarValidation.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.skbarValidation.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.skbarValidation.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.skbarValidation.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.skbarValidation.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.skbarValidation.InformationOptions.IconLeftMargin = 12;
+            this.skbarValidation.Margin = 4;
+            this.skbarValidation.MaximumSize = new System.Drawing.Size(0, 0);
+            this.skbarValidation.MaximumViews = 1;
+            this.skbarValidation.MessageRightMargin = 15;
+            this.skbarValidation.MinimumSize = new System.Drawing.Size(0, 0);
+            this.skbarValidation.ShowBorders = false;
+            this.skbarValidation.ShowCloseIcon = false;
+            this.skbarValidation.ShowIcon = true;
+            this.skbarValidation.ShowShadows = true;
+            this.skbarValidation.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.SuccessOptions.ActionBorderRadius = 1;
+            this.skbarValidation.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.skbarValidation.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.skbarValidation.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.skbarValidation.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.skbarValidation.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.skbarValidation.SuccessOptions.IconLeftMargin = 12;
+            this.skbarValidation.ViewsMargin = 7;
+            this.skbarValidation.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.skbarValidation.WarningOptions.ActionBorderRadius = 1;
+            this.skbarValidation.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.skbarValidation.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.skbarValidation.WarningOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            this.skbarValidation.WarningOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            this.skbarValidation.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.skbarValidation.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.skbarValidation.WarningOptions.ForeColor = System.Drawing.Color.White;
+            this.skbarValidation.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.skbarValidation.WarningOptions.IconLeftMargin = 12;
+            this.skbarValidation.ZoomCloseIcon = true;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1732,5 +1802,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private Bunifu.UI.WinForms.BunifuSnackbar skbarValidation;
     }
 }
