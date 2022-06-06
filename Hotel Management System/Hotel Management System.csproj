@@ -201,6 +201,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase\ApplicationContext.cs" />
+    <Compile Include="DataBase\Models\Category.cs" />
+    <Compile Include="DataBase\Models\Customer.cs" />
     <Compile Include="DataBase\Models\User.cs" />
     <Compile Include="Forms\fLogin.cs">
       <SubType>Form</SubType>

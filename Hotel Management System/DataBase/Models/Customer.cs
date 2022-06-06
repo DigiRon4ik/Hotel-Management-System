@@ -3,8 +3,8 @@ using System;
 
 namespace Hotel_Management_System.DataBase.Models
 {
-    [Alias("users")]
-    internal class User
+    [Alias("customers")]
+    internal class Customer
     {
         [PrimaryKey, AutoIncrement, Unique]
         public int Id { get; set; }
@@ -14,20 +14,16 @@ namespace Hotel_Management_System.DataBase.Models
         public string FullName { get; set; }
 
 
+        [Required, StringLength(20)]
+        public string Country { get; set; }
+
+
         [Required, StringLength(20), Unique]
-        public string Login { get; set; }
-
-
-        [Required, StringLength(30)]
-        public string Password { get; set; }
+        public string Passport { get; set; }
 
 
         [Required, StringLength(20), Unique]
         public string Phone { get; set; }
-
-
-        [Required, StringLength(15)]
-        public string Role { get; set; }
 
 
         [Required]
