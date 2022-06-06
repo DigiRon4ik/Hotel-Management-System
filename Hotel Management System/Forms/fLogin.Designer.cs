@@ -51,6 +51,7 @@
             this.lblLogin = new System.Windows.Forms.Label();
             this.txtLogin = new Bunifu.UI.WinForms.BunifuTextBox();
             this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.imgLst = new System.Windows.Forms.ImageList(this.components);
             this.pnlTitle.SuspendLayout();
             this.pnlSupport.SuspendLayout();
             this.pnlForm.SuspendLayout();
@@ -535,6 +536,12 @@
             this.skbarValidation.WarningOptions.IconLeftMargin = 12;
             this.skbarValidation.ZoomCloseIcon = true;
             // 
+            // imgLst
+            // 
+            this.imgLst.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgLst.ImageStream")));
+            this.imgLst.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgLst.Images.SetKeyName(0, "Contact_512.png");
+            // 
             // fLogin
             // 
             this.AcceptButton = this.btnLogin;
@@ -574,5 +581,6 @@
         private System.Windows.Forms.Label lblSupport;
         private Bunifu.UI.WinForms.BunifuImageButton btnImgTitleClose;
         private Bunifu.UI.WinForms.BunifuSnackbar skbarValidation;
+        private System.Windows.Forms.ImageList imgLst;
     }
 }

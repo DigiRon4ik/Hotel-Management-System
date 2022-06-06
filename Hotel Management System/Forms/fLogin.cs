@@ -3,6 +3,8 @@ using System;
 using System.Linq;
 using System.Windows.Forms;
 using Hotel_Management_System.DataBase.Models;
+using Hotel_Management_System.Forms;
+using System.Drawing;
 
 namespace Hotel_Management_System.Forms
 {
@@ -13,7 +15,8 @@ namespace Hotel_Management_System.Forms
         public fLogin()
         {
             InitializeComponent();
-            DataBase.ApplicationContext.InitDB();
+            byte[] dfImage = fMain.GetImageFromBytes((Bitmap)imgLst.Images[0]);
+            DataBase.ApplicationContext.InitDB(dfImage);
 
             using (var db = DataBase.ApplicationContext.GetDbConnection())
                 lblSupport.Text = "Тех. Поддержка: " + db.SingleById<User>(1).Phone.ToString();

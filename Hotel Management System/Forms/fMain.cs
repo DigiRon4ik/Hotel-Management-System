@@ -23,12 +23,13 @@ namespace Hotel_Management_System.Forms
         private int sidebarWithOpen = 180; public int sidebarWithClose = 50;
         private User account;
         private IEnumerable<User> users;
+
+        public static byte[] defaultImage;
         
         public fMain()
         {
             InitializeComponent();
             FormDock.SubscribeControlToDragEvents(lblTitle, true);
-            DataBase.ApplicationContext.defaultImage = GetImageFromBytes((Bitmap)imgListFromSidebar.Images[5]);
 
             if (fl.ShowDialog() == DialogResult.Yes)
                 account = fl.account;
@@ -152,22 +153,22 @@ namespace Hotel_Management_System.Forms
 
         #region Кнопки Переключения Страниц
         private void btnPageHome_Enter(object sender, EventArgs e) =>
-            bnfPages.SetPage("Home");
+            bnfVScrollBarRooms.SetPage("Home");
 
         private void btnPageRooms_Enter(object sender, EventArgs e) =>
-            bnfPages.SetPage("Rooms");
+            bnfVScrollBarRooms.SetPage("Rooms");
 
         private void btnPageCustomers_Enter(object sender, EventArgs e) =>
-            bnfPages.SetPage("Customers");
+            bnfVScrollBarRooms.SetPage("Customers");
 
         private void btnPageCategories_Enter(object sender, EventArgs e) =>
-            bnfPages.SetPage("Categories");
+            bnfVScrollBarRooms.SetPage("Categories");
 
         private void btnPageUsers_Enter(object sender, EventArgs e) =>
-            bnfPages.SetPage("Users");
+            bnfVScrollBarRooms.SetPage("Users");
 
         private void btnPageSettings_Enter(object sender, EventArgs e) =>
-            bnfPages.SetPage("Settings");
+            bnfVScrollBarRooms.SetPage("Settings");
         #endregion
 
         #region Инициализация Пользователя
