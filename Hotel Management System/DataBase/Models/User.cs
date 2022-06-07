@@ -4,7 +4,7 @@ using System;
 namespace Hotel_Management_System.DataBase.Models
 {
     [Alias("users")]
-    internal class User
+    public class User
     {
         [PrimaryKey, AutoIncrement, Unique]
         public int Id { get; set; }

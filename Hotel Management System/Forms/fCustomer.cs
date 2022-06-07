@@ -7,26 +7,25 @@ using System.Windows.Forms;
 
 namespace Hotel_Management_System.Forms
 {
-    public partial class fUser : Form
+    public partial class fCustomer : Form
     {
         private int updateId = 0;
-        public fUser(bool isAdd = true, User user = null)
+        public fCustomer(bool isAdd = true, Customer customer = null)
         {
             InitializeComponent();
             FormDock.SubscribeControlToDragEvents(lblTitle, true);
-            if (user != null)
-                updateId = user.Id;
+            if (customer != null)
+                updateId = customer.Id;
 
             if (isAdd)
-                SetDataForm("Добавить Пользователя", 0, 2, imgList.Images[2], Color.Lime, Color.Green);
+                SetDataForm("Добавить Клиента", 0, 2, imgList.Images[2], Color.Lime, Color.Green);
             else
             {
-                SetDataForm("Изменить Пользователя", 1, 4, imgList.Images[4], Color.Yellow, Color.Olive);
-                txtFullName.Text = user.FullName;
-                txtPhone.Text = user.Phone;
-                txtRole.Text = user.Role;
-                txtLogin.Text = user.Login;
-                txtPassword.Text = user.Password;
+                SetDataForm("Изменить Клиента", 1, 4, imgList.Images[4], Color.Yellow, Color.Olive);
+                txtFullName.Text = customer.FullName;
+                txtPhone.Text = customer.Phone;
+                txtCountry.Text = customer.Country;
+                txtPassport.Text = customer.Passport;
             }
         }
 
@@ -36,10 +35,10 @@ namespace Hotel_Management_System.Forms
         #endregion
 
         #region Кнопка Изменения Изображения
-        private void bnfUserImage_Click(object sender, EventArgs e)
+        private void bnfCustomerImage_Click(object sender, EventArgs e)
         {
             if (openFileDialog.ShowDialog() == DialogResult.OK)
-                bnfUserImage.Image = Image.FromFile(openFileDialog.FileName);
+                bnfCustomerImage.Image = Image.FromFile(openFileDialog.FileName);
         }
         #endregion
 
@@ -47,7 +46,7 @@ namespace Hotel_Management_System.Forms
         private void btnAddOrChange_Click(object sender, EventArgs e)
         {
             if (txtFullName.TextLength < 10 || txtPhone.TextLength < 11 ||
-                txtRole.TextLength < 4 || txtLogin.TextLength < 4 || txtPassword.TextLength < 8)
+                txtCountry.TextLength < 3 || txtPassport.TextLength < 6)
             {
                 skbarValidation.Show(this, "Заполните все поля!", BunifuSnackbar.MessageTypes.Warning,
                                          3000, "", BunifuSnackbar.Positions.BottomCenter,
@@ -55,27 +54,27 @@ namespace Hotel_Management_System.Forms
                 return;
             }
 
-            User user = new User
+            Customer customer = new Customer
             {
                 FullName = txtFullName.Text,
                 Phone = txtPhone.Text,
-                Role = txtRole.Text,
-                Login = txtLogin.Text,
-                Password = txtPassword.Text,
-                Photo = fMain.GetImageFromBytes((Bitmap)bnfUserImage.Image)
+                Country = txtCountry.Text,
+                Passport = txtPassport.Text,
+                Photo = fMain.GetImageFromBytes((Bitmap)bnfCustomerImage.Image)
             };
 
             using (var db = DataBase.ApplicationContext.GetDbConnection())
             {
                 if (updateId == 0)
-                    db.Save(user);
+                    db.Save(customer);
                 else
                 {
-                    user.Id = updateId;
-                    user.CreatedAt = DateTime.Now;
-                    db.Update(user);
+                    customer.Id = updateId;
+                    customer.CreatedAt = DateTime.Now;
+                    db.Update(customer);
                 }
             }
+
 
             this.DialogResult = DialogResult.Yes;
             this.Close();

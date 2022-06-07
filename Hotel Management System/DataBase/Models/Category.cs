@@ -4,7 +4,7 @@ using System;
 namespace Hotel_Management_System.DataBase.Models
 {
     [Alias("categories")]
-    internal class Category
+    public class Category
     {
         [PrimaryKey, AutoIncrement, Unique]
         public int Id { get; set; }
@@ -26,6 +26,7 @@ namespace Hotel_Management_System.DataBase.Models
         public bool isTV { get; set; }
 
 
+        [StringLength(StringLengthAttribute.MaxText)]
         public string Discription { get; set; }
 
 

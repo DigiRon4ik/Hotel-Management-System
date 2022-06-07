@@ -16,13 +16,15 @@ namespace Hotel_Management_System.Forms
 {
     public partial class fMain : Form
     {
-        private fLogin fl = new fLogin();
-        private fUser fu;
+        private fLogin flogin = new fLogin();
+        private fUser fuser;
+        private fCustomer fcustomer;
 
         private bool isSidebarOpened;
         private int sidebarWithOpen = 180; public int sidebarWithClose = 50;
         private User account;
         private IEnumerable<User> users;
+        private IEnumerable<Customer> customers;
 
         public static byte[] defaultImage;
         
@@ -31,8 +33,8 @@ namespace Hotel_Management_System.Forms
             InitializeComponent();
             FormDock.SubscribeControlToDragEvents(lblTitle, true);
 
-            if (fl.ShowDialog() == DialogResult.Yes)
-                account = fl.account;
+            if (flogin.ShowDialog() == DialogResult.Yes)
+                account = flogin.account;
             else
                 Environment.Exit(0);
             
@@ -49,6 +51,7 @@ namespace Hotel_Management_System.Forms
 
             InitUser();
             PageUsers_Load();
+            PageCustomers_Load();
         }
 
         #region Кнопка Закрытия
@@ -134,9 +137,9 @@ namespace Hotel_Management_System.Forms
         private void bnfUserPicture_Click(object sender, EventArgs e)
         {
             this.Hide();
-            if (fl.ShowDialog() == DialogResult.Yes)
+            if (flogin.ShowDialog() == DialogResult.Yes)
             {
-                account = fl.account;
+                account = flogin.account;
                 InitUser();
                 this.Show();
             }
@@ -207,7 +210,11 @@ namespace Hotel_Management_System.Forms
         }
         #endregion
 
-        #region Page_Users Загрузка Страницы
+
+
+        #region Page_Users
+
+        #region Загрузка Страницы
         private void PageUsers_Load()
         {
             bnfVScrollBarUsers.BindTo(gridUsers, true);
@@ -216,7 +223,7 @@ namespace Hotel_Management_System.Forms
         }
         #endregion
 
-        #region Page_Users Загрузить из БД
+        #region Загрузить из БД
         private void LoadUsers()
         {
             using (var db = DataBase.ApplicationContext.GetDbConnection())
@@ -229,7 +236,7 @@ namespace Hotel_Management_System.Forms
         }
         #endregion
 
-        #region Page_Users События для Поиска
+        #region События для Поиска
         private void txtSearchUsers_TextChange(object sender, EventArgs e)
         {
             try
@@ -245,7 +252,7 @@ namespace Hotel_Management_System.Forms
             FillGridUsers(txtSearchUsers.Text.Trim().ToLower(), bnfDropdownUsers.SelectedItem.ToString());
         #endregion
 
-        #region Page_Users Заполнение Таблицы
+        #region Заполнение Таблицы
         private void FillGridUsers(string userName = "", string userRole = "Все Роли")
         {
             gridUsers.Rows.Clear();
@@ -265,7 +272,7 @@ namespace Hotel_Management_System.Forms
         }
         #endregion
 
-        #region Page_Users Обновление Таблицы
+        #region Обновление Таблицы
         public void UpdateGridUsers()
         {
             string role;
@@ -284,11 +291,11 @@ namespace Hotel_Management_System.Forms
         }
         #endregion
 
-        #region Page_Users Кнопки для Редактирования БД
+        #region Кнопки для Редактирования БД
         private void btnRowAddUser_Click(object sender, EventArgs e)
         {
-            fu = new fUser(true);
-            if (fu.ShowDialog() == DialogResult.Yes)
+            fuser = new fUser(true);
+            if (fuser.ShowDialog() == DialogResult.Yes)
             {
                 skbarValidation.Show(this, "Добавлено!", BunifuSnackbar.MessageTypes.Success,
                                          2500, "", BunifuSnackbar.Positions.BottomCenter,
@@ -303,8 +310,8 @@ namespace Hotel_Management_System.Forms
             using (var db = DataBase.ApplicationContext.GetDbConnection())
                 currentUser = db.Single<User>(x => x.Login == gridUsers[4, gridUsers.CurrentRow.Index].Value.ToString());
 
-            fu = new fUser(false, currentUser);
-            if (fu.ShowDialog() == DialogResult.Yes)
+            fuser = new fUser(false, currentUser);
+            if (fuser.ShowDialog() == DialogResult.Yes)
             {
                 skbarValidation.Show(this, "Изменено!", BunifuSnackbar.MessageTypes.Success,
                                          2500, "", BunifuSnackbar.Positions.BottomCenter,
@@ -316,9 +323,131 @@ namespace Hotel_Management_System.Forms
         private void btnRowDeleteUser_Click(object sender, EventArgs e)
         {
             using (var db = DataBase.ApplicationContext.GetDbConnection())
-                db.Delete<User>(x => x.FullName == gridUsers[1, gridUsers.CurrentRow.Index].Value.ToString());
+                db.Delete<User>(x => x.Login == gridUsers[4, gridUsers.CurrentRow.Index].Value.ToString());
             UpdateGridUsers();
         }
+        #endregion
+
+        #endregion
+
+
+
+        #region Page_Customers
+
+        #region Загрузка Страницы
+        private void PageCustomers_Load()
+        {
+            bnfVScrollBarCustomers.BindTo(gridCustomers, true);
+            LoadCustomers();
+            FillGridCustomers();
+        }
+        #endregion
+
+        #region Загрузить из БД
+        private void LoadCustomers()
+        {
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+            {
+                customers = db.Select<Customer>();
+                bnfDropdownCustomers.Items.Clear();
+                bnfDropdownCustomers.Items.Add("Все Страны");
+                bnfDropdownCustomers.Items.AddRange(db.Column<string>("SELECT Country FROM customers GROUP BY Country").ToArray());
+            }
+        }
+        #endregion
+
+        #region События для Поиска
+        private void txtSearchCustomers_TextChange(object sender, EventArgs e)
+        {
+            try
+            {
+                FillGridCustomers(txtSearchCustomers.Text.Trim().ToLower(), bnfDropdownCustomers.SelectedItem.ToString());
+            }
+            catch (Exception)
+            {
+                FillGridCustomers(txtSearchCustomers.Text.Trim().ToLower());
+            }
+        }
+        private void bnfDropdownCustomers_SelectionChangeCommitted(object sender, EventArgs e) =>
+            FillGridCustomers(txtSearchCustomers.Text.Trim().ToLower(), bnfDropdownCustomers.SelectedItem.ToString());
+        #endregion
+
+        #region Заполнение Таблицы
+        private void FillGridCustomers(string сustomerName = "", string сustomerCountry = "Все Страны")
+        {
+            gridCustomers.Rows.Clear();
+
+            foreach (var сustomer in customers)
+            {
+                if (сustomer.FullName.ToLower().Contains(сustomerName) && сustomer.Country.Contains(сustomerCountry == "Все Страны" ? "" : сustomerCountry))
+                    gridCustomers.Rows.Add(new object[] {
+                        сustomer.Photo,
+                        сustomer.FullName,
+                        сustomer.Country,
+                        сustomer.Passport,
+                        сustomer.Phone,
+                        сustomer.CreatedAt }
+                    );
+            }
+        }
+        #endregion
+
+        #region Обновление Таблицы
+        public void UpdateGridCustomers()
+        {
+            string country;
+            try
+            {
+                country = bnfDropdownCustomers.SelectedItem.ToString();
+            }
+            catch (Exception)
+            {
+
+                country = "Все Страны";
+            }
+
+            LoadCustomers();
+            FillGridCustomers(txtSearchCustomers.Text.Trim().ToLower(), country);
+        }
+        #endregion
+
+        #region Кнопки для Редактирования БД
+        private void btnRowAddCustomer_Click(object sender, EventArgs e)
+        {
+            fcustomer = new fCustomer(true);
+            if (fcustomer.ShowDialog() == DialogResult.Yes)
+            {
+                skbarValidation.Show(this, "Добавлено!", BunifuSnackbar.MessageTypes.Success,
+                                         2500, "", BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+                UpdateGridCustomers();
+            }
+        }
+
+        private void btnRowEditCustomer_Click(object sender, EventArgs e)
+        {
+            Customer currentCustomer;
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+                currentCustomer = db.Single<Customer>(x => x.Passport == gridCustomers[3, gridCustomers.CurrentRow.Index].Value.ToString());
+
+            fcustomer = new fCustomer(false, currentCustomer);
+            if (fcustomer.ShowDialog() == DialogResult.Yes)
+            {
+                skbarValidation.Show(this, "Изменено!", BunifuSnackbar.MessageTypes.Success,
+                                         2500, "", BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+                UpdateGridCustomers();
+            }
+        }
+
+        private void btnRowDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+                db.Delete<Customer>(x => x.Passport == gridCustomers[3, gridCustomers.CurrentRow.Index].Value.ToString());
+            UpdateGridCustomers();
+        }
+        #endregion
+
         #endregion
     }
 }

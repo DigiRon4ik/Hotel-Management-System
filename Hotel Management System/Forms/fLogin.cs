@@ -1,10 +1,9 @@
-﻿using ServiceStack.OrmLite;
+﻿using Hotel_Management_System.DataBase.Models;
+using ServiceStack.OrmLite;
 using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Hotel_Management_System.DataBase.Models;
-using Hotel_Management_System.Forms;
-using System.Drawing;
 
 namespace Hotel_Management_System.Forms
 {
