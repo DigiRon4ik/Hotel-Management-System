@@ -19,12 +19,15 @@ namespace Hotel_Management_System.Forms
         private fLogin flogin = new fLogin();
         private fUser fuser;
         private fCustomer fcustomer;
+        private fCategory fcategory;
 
         private bool isSidebarOpened;
         private int sidebarWithOpen = 180; public int sidebarWithClose = 50;
         private User account;
+
         private IEnumerable<User> users;
         private IEnumerable<Customer> customers;
+        private IEnumerable<Category> categories;
 
         public static byte[] defaultImage;
         
@@ -51,6 +54,7 @@ namespace Hotel_Management_System.Forms
 
             InitUser();
             PageUsers_Load();
+            PageCategories_Load();
             PageCustomers_Load();
         }
 
@@ -239,14 +243,17 @@ namespace Hotel_Management_System.Forms
         #region События для Поиска
         private void txtSearchUsers_TextChange(object sender, EventArgs e)
         {
-            try
-            {
-                FillGridUsers(txtSearchUsers.Text.Trim().ToLower(), bnfDropdownUsers.SelectedItem.ToString());
-            }
-            catch (Exception)
-            {
-                FillGridUsers(txtSearchUsers.Text.Trim().ToLower());
-            }
+            string text = txtSearchUsers.Text.ToLower().Trim();
+
+            if (text.Length > 0)
+                try
+                {
+                    FillGridUsers(text, bnfDropdownUsers.SelectedItem.ToString());
+                }
+                catch (Exception)
+                {
+                    FillGridUsers(text);
+                }
         }
         private void bnfDropdownUsers_SelectionChangeCommitted(object sender, EventArgs e) =>
             FillGridUsers(txtSearchUsers.Text.Trim().ToLower(), bnfDropdownUsers.SelectedItem.ToString());
@@ -332,6 +339,146 @@ namespace Hotel_Management_System.Forms
 
 
 
+        #region Page_Category
+        private string cr, fp;
+
+        #region Загрузка Страницы
+        private void PageCategories_Load()
+        {
+            bnfVScrollBarCategories.BindTo(gridCategories, true);
+            LoadCategories();
+            FillGridCategories();
+        }
+        #endregion
+
+        #region Загрузить из БД
+        private void LoadCategories()
+        {
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+            {
+                categories = db.Select<Category>();
+                bnfDropdownCategoriesCountRooms.Items.Clear();
+                bnfDropdownCategoriesCountRooms.Items.Add("Все Комнаты");
+                bnfDropdownCategoriesCountRooms.Items.AddRange(db.Column<string>("SELECT CountRooms FROM categories GROUP BY CountRooms").ToArray());
+                bnfDropdownCategoriesForPeople.Items.Clear();
+                bnfDropdownCategoriesForPeople.Items.Add("Все Люди");
+                bnfDropdownCategoriesForPeople.Items.AddRange(db.Column<string>("SELECT ForPeople FROM categories GROUP BY ForPeople").ToArray());
+            }
+        }
+        #endregion
+
+        #region События для Поиска
+        private void SetValueFromDropDowns()
+        {
+            try
+            {
+                cr = bnfDropdownCategoriesCountRooms.SelectedItem.ToString();
+            }
+            catch (Exception)
+            {
+                if (string.IsNullOrEmpty(cr))
+                    cr = "Все Комнаты";
+            }
+
+            try
+            {
+                fp = bnfDropdownCategoriesForPeople.SelectedItem.ToString();
+            }
+            catch (Exception)
+            {
+                if (string.IsNullOrEmpty(fp))
+                    fp = "Все Люди";
+            }
+        }
+
+        private void bnfDropdownCategoriesCountRooms_SelectionChangeCommitted(object sender, EventArgs e) =>
+            UpdateGridCategories(true);
+
+        private void bnfDropdownCategoriesForPeople_SelectionChangeCommitted(object sender, EventArgs e) =>
+            UpdateGridCategories(true);
+
+        private void bnfCheckBoxWiFi_CheckedChanged(object sender, BunifuCheckBox.CheckedChangedEventArgs e) =>
+            UpdateGridCategories(true);
+
+        private void bnfCheckBoxTV_CheckedChanged(object sender, BunifuCheckBox.CheckedChangedEventArgs e) =>
+            UpdateGridCategories(true);
+        #endregion
+
+        #region Заполнение Таблицы
+        private void FillGridCategories(string categoryCountRooms = "Все Комнаты", string categoryForPeople = "Все Люди",
+                                        bool withWIFI = false, bool withTV = false)
+        {
+            gridCategories.Rows.Clear();
+
+            foreach (var category in categories)
+            {
+                if (category.CountRooms.ToString().Contains(categoryCountRooms == "Все Комнаты" ? "" : categoryCountRooms) &&
+                    category.ForPeople.ToString().Contains(categoryForPeople == "Все Люди" ? "" : categoryForPeople) &&
+                    (withWIFI ? category.isWIFI : true) && (withTV ? category.isTV : true))
+                    gridCategories.Rows.Add(new object[] {
+                        category.Title,
+                        category.CountRooms,
+                        category.ForPeople,
+                        category.isWIFI ? imgMarks.Images[1] : imgMarks.Images[0],
+                        category.isTV ? imgMarks.Images[1] : imgMarks.Images[0],
+                        category.CreatedAt }
+                    );
+            }
+        }
+        #endregion
+
+        #region Обновление Таблицы
+        public void UpdateGridCategories(bool filtered = false)
+        {
+            SetValueFromDropDowns();
+            if (!filtered)
+                LoadCategories();
+            FillGridCategories(cr, fp, bnfCheckBoxWiFi.Checked, bnfCheckBoxTV.Checked);
+        }
+
+        #endregion
+
+        #region Кнопки для Редактирования БД
+        private void btnRowAddCategory_Click(object sender, EventArgs e)
+        {
+            fcategory = new fCategory(true);
+            if (fcategory.ShowDialog() == DialogResult.Yes)
+            {
+                skbarValidation.Show(this, "Добавлено!", BunifuSnackbar.MessageTypes.Success,
+                                         2500, "", BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+                UpdateGridCategories();
+            }
+        }
+
+        private void btnRowEditCategory_Click(object sender, EventArgs e)
+        {
+            Category currentCategory;
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+                currentCategory = db.Single<Category>(x => x.Title == gridCategories[0, gridCategories.CurrentRow.Index].Value.ToString());
+
+            fcategory = new fCategory(false, currentCategory);
+            if (fcategory.ShowDialog() == DialogResult.Yes)
+            {
+                skbarValidation.Show(this, "Изменено!", BunifuSnackbar.MessageTypes.Success,
+                                         2500, "", BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+                UpdateGridCategories();
+            }
+        }
+
+        private void btnRowDeleteCategory_Click(object sender, EventArgs e)
+        {
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+                db.Delete<Category>(x => x.Title == gridCategories[0, gridCategories.CurrentRow.Index].Value.ToString());
+            UpdateGridCategories();
+        }
+        #endregion
+
+        #endregion
+
+
+
         #region Page_Customers
 
         #region Загрузка Страницы
@@ -359,14 +506,17 @@ namespace Hotel_Management_System.Forms
         #region События для Поиска
         private void txtSearchCustomers_TextChange(object sender, EventArgs e)
         {
-            try
-            {
-                FillGridCustomers(txtSearchCustomers.Text.Trim().ToLower(), bnfDropdownCustomers.SelectedItem.ToString());
-            }
-            catch (Exception)
-            {
-                FillGridCustomers(txtSearchCustomers.Text.Trim().ToLower());
-            }
+            string text = txtSearchCustomers.Text.ToLower().Trim();
+
+            if (text.Length > 0)
+                try
+                {
+                    FillGridCustomers(text, bnfDropdownCustomers.SelectedItem.ToString());
+                }
+                catch (Exception)
+                {
+                    FillGridCustomers(text);
+                }
         }
         private void bnfDropdownCustomers_SelectionChangeCommitted(object sender, EventArgs e) =>
             FillGridCustomers(txtSearchCustomers.Text.Trim().ToLower(), bnfDropdownCustomers.SelectedItem.ToString());

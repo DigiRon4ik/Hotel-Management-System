@@ -41,8 +41,7 @@ namespace Hotel_Management_System.DataBase
                             Role = "Администратор",
                             Phone = "8-(928)-999-75-75",
                             Photo = defaultImage
-                        }
-                    );
+                        });
                 }
 
                 if (db.CreateTableIfNotExists<Customer>())
@@ -63,8 +62,57 @@ namespace Hotel_Management_System.DataBase
                             Passport = "984 722092",
                             Phone = "303-568-5660",
                             Photo = defaultImage
-                        }
-                    );
+                        });
+                }
+
+                if (db.CreateTableIfNotExists<Category>())
+                {
+                    db.Save(
+                        new Category
+                        {
+                            Title = "Переночёвка",
+                            CountRooms = 1,
+                            ForPeople = 1,
+                            isWIFI = false,
+                            isTV = false,
+                            Description = "Простая комната для быстрой переночёвки пару дней."
+                        },
+                        new Category
+                        {
+                            Title = "Эконом",
+                            CountRooms = 1,
+                            ForPeople = 1,
+                            isWIFI = true,
+                            isTV = false,
+                            Description = "Номера эконом-класса на пару дней."
+                        },
+                        new Category
+                        {
+                            Title = "Бизнес",
+                            CountRooms = 3,
+                            ForPeople = 4,
+                            isWIFI = true,
+                            isTV = true,
+                            Description = "Бизнес-Класс для деловых людей."
+                        },
+                        new Category
+                        {
+                            Title = "Пара",
+                            CountRooms = 1,
+                            ForPeople = 2,
+                            isWIFI = true,
+                            isTV = true,
+                            Description = "Номера для молодых влюблённых."
+                        },
+                        new Category
+                        {
+                            Title = "Пати",
+                            CountRooms = 2,
+                            ForPeople = 4,
+                            isWIFI = true,
+                            isTV = false,
+                            Description = "Эти номера предназначены для групп туристов из 4-х и меньше человек."
+                        });
                 }
             }
         }

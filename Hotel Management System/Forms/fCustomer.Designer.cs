@@ -246,6 +246,7 @@
             this.txtPassport.TextPlaceholder = "Пасспорт";
             this.txtPassport.UseSystemPasswordChar = false;
             this.txtPassport.WordWrap = true;
+            this.txtPassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassport_KeyPress);
             // 
             // txtCountry
             // 
@@ -402,6 +403,7 @@
             this.txtPhone.TextPlaceholder = "x-(xxx)-xxx-xx-xx";
             this.txtPhone.UseSystemPasswordChar = false;
             this.txtPhone.WordWrap = true;
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // txtFullName
             // 

@@ -105,5 +105,21 @@ namespace Hotel_Management_System.Forms
             btnAddOrChange.OnPressedState.ForeColor = pressed;
         }
         #endregion
+
+        #region События для ограничения ввода под цифры
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 40 && ch != 41 && ch != 45)
+                e.Handled = true;
+        }
+
+        private void txtPassport_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 32)
+                e.Handled = true;
+        }
+        #endregion
     }
 }

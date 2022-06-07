@@ -14,9 +14,9 @@ namespace Hotel_Management_System.DataBase.Models
         public string Title { get; set; }
 
 
-        [Required]
+        [Required, Default(1)]
         public int CountRooms { get; set; }
-        [Required]
+        [Required, Default(1)]
         public int ForPeople { get; set; }
 
 
@@ -26,8 +26,8 @@ namespace Hotel_Management_System.DataBase.Models
         public bool isTV { get; set; }
 
 
-        [StringLength(StringLengthAttribute.MaxText)]
-        public string Discription { get; set; }
+        [StringLength(500)]
+        public string Description { get; set; }
 
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;

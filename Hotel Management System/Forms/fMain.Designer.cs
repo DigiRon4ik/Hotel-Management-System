@@ -66,12 +66,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
@@ -97,6 +91,12 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.pnlTitle = new Bunifu.UI.WinForms.BunifuPanel();
             this.pctrSidebar = new System.Windows.Forms.PictureBox();
@@ -141,18 +141,12 @@
             this.Page_Categories = new System.Windows.Forms.TabPage();
             this.bnfCheckBoxTV = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.lblTV = new System.Windows.Forms.Label();
-            this.bnfCheckWiFi = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.bnfCheckBoxWiFi = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.lblWiFi = new System.Windows.Forms.Label();
             this.bnfDropdownCategoriesForPeople = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bnfDropdownCategoriesCountRooms = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bnfVScrollBarCategories = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.gridCategories = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.CColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.CColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.CColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRowAddCategory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnRowEditCategory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnRowDeleteCategory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -184,6 +178,13 @@
             this.btnPageHome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.imgListFromSidebar = new System.Windows.Forms.ImageList(this.components);
+            this.imgMarks = new System.Windows.Forms.ImageList(this.components);
+            this.CColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.CColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.CColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -438,10 +439,10 @@
             this.bnfVScrollBarRooms.Location = new System.Drawing.Point(0, 0);
             this.bnfVScrollBarRooms.Multiline = true;
             this.bnfVScrollBarRooms.Name = "bnfVScrollBarRooms";
-            this.bnfVScrollBarRooms.Page = this.Page_Customers;
-            this.bnfVScrollBarRooms.PageIndex = 2;
-            this.bnfVScrollBarRooms.PageName = "Page_Customers";
-            this.bnfVScrollBarRooms.PageTitle = "Customers";
+            this.bnfVScrollBarRooms.Page = this.Page_Categories;
+            this.bnfVScrollBarRooms.PageIndex = 3;
+            this.bnfVScrollBarRooms.PageName = "Page_Categories";
+            this.bnfVScrollBarRooms.PageTitle = "Categories";
             this.bnfVScrollBarRooms.SelectedIndex = 0;
             this.bnfVScrollBarRooms.Size = new System.Drawing.Size(820, 564);
             this.bnfVScrollBarRooms.TabIndex = 0;
@@ -735,6 +736,7 @@
             this.RColumn1.DefaultCellStyle = dataGridViewCellStyle3;
             this.RColumn1.FillWeight = 35F;
             this.RColumn1.HeaderText = "Статус";
+            this.RColumn1.Image = ((System.Drawing.Image)(resources.GetObject("RColumn1.Image")));
             this.RColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.RColumn1.Name = "RColumn1";
             this.RColumn1.ReadOnly = true;
@@ -1200,7 +1202,7 @@
             this.bnfDropdownCustomers.ItemHighLightForeColor = System.Drawing.Color.White;
             this.bnfDropdownCustomers.ItemTopMargin = 3;
             this.bnfDropdownCustomers.Location = new System.Drawing.Point(324, 14);
-            this.bnfDropdownCustomers.MaxDropDownItems = 3;
+            this.bnfDropdownCustomers.MaxDropDownItems = 6;
             this.bnfDropdownCustomers.Name = "bnfDropdownCustomers";
             this.bnfDropdownCustomers.Size = new System.Drawing.Size(200, 32);
             this.bnfDropdownCustomers.TabIndex = 2;
@@ -1390,7 +1392,6 @@
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle17.Format = "g";
             dataGridViewCellStyle17.NullValue = null;
             this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle17;
@@ -1759,7 +1760,7 @@
             this.Page_Categories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.Page_Categories.Controls.Add(this.bnfCheckBoxTV);
             this.Page_Categories.Controls.Add(this.lblTV);
-            this.Page_Categories.Controls.Add(this.bnfCheckWiFi);
+            this.Page_Categories.Controls.Add(this.bnfCheckBoxWiFi);
             this.Page_Categories.Controls.Add(this.lblWiFi);
             this.Page_Categories.Controls.Add(this.bnfDropdownCategoriesForPeople);
             this.Page_Categories.Controls.Add(this.bnfDropdownCategoriesCountRooms);
@@ -1828,6 +1829,7 @@
             this.bnfCheckBoxTV.TabStop = false;
             this.bnfCheckBoxTV.ThreeState = false;
             this.bnfCheckBoxTV.ToolTipText = null;
+            this.bnfCheckBoxTV.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.bnfCheckBoxTV_CheckedChanged);
             // 
             // lblTV
             // 
@@ -1843,60 +1845,61 @@
             this.lblTV.TabIndex = 13;
             this.lblTV.Text = "TV";
             // 
-            // bnfCheckWiFi
+            // bnfCheckBoxWiFi
             // 
-            this.bnfCheckWiFi.AllowBindingControlAnimation = false;
-            this.bnfCheckWiFi.AllowBindingControlColorChanges = false;
-            this.bnfCheckWiFi.AllowBindingControlLocation = false;
-            this.bnfCheckWiFi.AllowCheckBoxAnimation = false;
-            this.bnfCheckWiFi.AllowCheckmarkAnimation = true;
-            this.bnfCheckWiFi.AllowOnHoverStates = true;
-            this.bnfCheckWiFi.AutoCheck = true;
-            this.bnfCheckWiFi.BackColor = System.Drawing.Color.Transparent;
-            this.bnfCheckWiFi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfCheckWiFi.BackgroundImage")));
-            this.bnfCheckWiFi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bnfCheckWiFi.BindingControl = this.lblWiFi;
-            this.bnfCheckWiFi.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.bnfCheckWiFi.BorderRadius = 25;
-            this.bnfCheckWiFi.Checked = false;
-            this.bnfCheckWiFi.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
-            this.bnfCheckWiFi.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bnfCheckWiFi.CustomCheckmarkImage = null;
-            this.bnfCheckWiFi.Location = new System.Drawing.Point(330, 18);
-            this.bnfCheckWiFi.MinimumSize = new System.Drawing.Size(17, 17);
-            this.bnfCheckWiFi.Name = "bnfCheckWiFi";
-            this.bnfCheckWiFi.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            this.bnfCheckWiFi.OnCheck.BorderRadius = 13;
-            this.bnfCheckWiFi.OnCheck.BorderThickness = 2;
-            this.bnfCheckWiFi.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            this.bnfCheckWiFi.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.bnfCheckWiFi.OnCheck.CheckmarkThickness = 3;
-            this.bnfCheckWiFi.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.bnfCheckWiFi.OnDisable.BorderRadius = 13;
-            this.bnfCheckWiFi.OnDisable.BorderThickness = 2;
-            this.bnfCheckWiFi.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.bnfCheckWiFi.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.bnfCheckWiFi.OnDisable.CheckmarkThickness = 2;
-            this.bnfCheckWiFi.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
-            this.bnfCheckWiFi.OnHoverChecked.BorderRadius = 13;
-            this.bnfCheckWiFi.OnHoverChecked.BorderThickness = 2;
-            this.bnfCheckWiFi.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
-            this.bnfCheckWiFi.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.bnfCheckWiFi.OnHoverChecked.CheckmarkThickness = 3;
-            this.bnfCheckWiFi.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
-            this.bnfCheckWiFi.OnHoverUnchecked.BorderRadius = 13;
-            this.bnfCheckWiFi.OnHoverUnchecked.BorderThickness = 2;
-            this.bnfCheckWiFi.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfCheckWiFi.OnUncheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfCheckWiFi.OnUncheck.BorderRadius = 13;
-            this.bnfCheckWiFi.OnUncheck.BorderThickness = 2;
-            this.bnfCheckWiFi.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfCheckWiFi.Size = new System.Drawing.Size(24, 24);
-            this.bnfCheckWiFi.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
-            this.bnfCheckWiFi.TabIndex = 10;
-            this.bnfCheckWiFi.TabStop = false;
-            this.bnfCheckWiFi.ThreeState = false;
-            this.bnfCheckWiFi.ToolTipText = null;
+            this.bnfCheckBoxWiFi.AllowBindingControlAnimation = false;
+            this.bnfCheckBoxWiFi.AllowBindingControlColorChanges = false;
+            this.bnfCheckBoxWiFi.AllowBindingControlLocation = false;
+            this.bnfCheckBoxWiFi.AllowCheckBoxAnimation = false;
+            this.bnfCheckBoxWiFi.AllowCheckmarkAnimation = true;
+            this.bnfCheckBoxWiFi.AllowOnHoverStates = true;
+            this.bnfCheckBoxWiFi.AutoCheck = true;
+            this.bnfCheckBoxWiFi.BackColor = System.Drawing.Color.Transparent;
+            this.bnfCheckBoxWiFi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfCheckBoxWiFi.BackgroundImage")));
+            this.bnfCheckBoxWiFi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bnfCheckBoxWiFi.BindingControl = this.lblWiFi;
+            this.bnfCheckBoxWiFi.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.bnfCheckBoxWiFi.BorderRadius = 25;
+            this.bnfCheckBoxWiFi.Checked = false;
+            this.bnfCheckBoxWiFi.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.bnfCheckBoxWiFi.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bnfCheckBoxWiFi.CustomCheckmarkImage = null;
+            this.bnfCheckBoxWiFi.Location = new System.Drawing.Point(330, 18);
+            this.bnfCheckBoxWiFi.MinimumSize = new System.Drawing.Size(17, 17);
+            this.bnfCheckBoxWiFi.Name = "bnfCheckBoxWiFi";
+            this.bnfCheckBoxWiFi.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.bnfCheckBoxWiFi.OnCheck.BorderRadius = 13;
+            this.bnfCheckBoxWiFi.OnCheck.BorderThickness = 2;
+            this.bnfCheckBoxWiFi.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.bnfCheckBoxWiFi.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.bnfCheckBoxWiFi.OnCheck.CheckmarkThickness = 3;
+            this.bnfCheckBoxWiFi.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.bnfCheckBoxWiFi.OnDisable.BorderRadius = 13;
+            this.bnfCheckBoxWiFi.OnDisable.BorderThickness = 2;
+            this.bnfCheckBoxWiFi.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.bnfCheckBoxWiFi.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.bnfCheckBoxWiFi.OnDisable.CheckmarkThickness = 2;
+            this.bnfCheckBoxWiFi.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.bnfCheckBoxWiFi.OnHoverChecked.BorderRadius = 13;
+            this.bnfCheckBoxWiFi.OnHoverChecked.BorderThickness = 2;
+            this.bnfCheckBoxWiFi.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.bnfCheckBoxWiFi.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.bnfCheckBoxWiFi.OnHoverChecked.CheckmarkThickness = 3;
+            this.bnfCheckBoxWiFi.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.bnfCheckBoxWiFi.OnHoverUnchecked.BorderRadius = 13;
+            this.bnfCheckBoxWiFi.OnHoverUnchecked.BorderThickness = 2;
+            this.bnfCheckBoxWiFi.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfCheckBoxWiFi.OnUncheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfCheckBoxWiFi.OnUncheck.BorderRadius = 13;
+            this.bnfCheckBoxWiFi.OnUncheck.BorderThickness = 2;
+            this.bnfCheckBoxWiFi.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfCheckBoxWiFi.Size = new System.Drawing.Size(24, 24);
+            this.bnfCheckBoxWiFi.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.bnfCheckBoxWiFi.TabIndex = 10;
+            this.bnfCheckBoxWiFi.TabStop = false;
+            this.bnfCheckBoxWiFi.ThreeState = false;
+            this.bnfCheckBoxWiFi.ToolTipText = null;
+            this.bnfCheckBoxWiFi.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.bnfCheckBoxWiFi_CheckedChanged);
             // 
             // lblWiFi
             // 
@@ -1957,6 +1960,7 @@
             this.bnfDropdownCategoriesForPeople.Text = "Люди...";
             this.bnfDropdownCategoriesForPeople.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.bnfDropdownCategoriesForPeople.TextLeftMargin = 5;
+            this.bnfDropdownCategoriesForPeople.SelectionChangeCommitted += new System.EventHandler(this.bnfDropdownCategoriesForPeople_SelectionChangeCommitted);
             // 
             // bnfDropdownCategoriesCountRooms
             // 
@@ -2003,6 +2007,7 @@
             this.bnfDropdownCategoriesCountRooms.Text = "Комнаты...";
             this.bnfDropdownCategoriesCountRooms.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.bnfDropdownCategoriesCountRooms.TextLeftMargin = 5;
+            this.bnfDropdownCategoriesCountRooms.SelectionChangeCommitted += new System.EventHandler(this.bnfDropdownCategoriesCountRooms_SelectionChangeCommitted);
             // 
             // bnfVScrollBarCategories
             // 
@@ -2124,79 +2129,6 @@
             this.gridCategories.TabStop = false;
             this.gridCategories.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
             // 
-            // CColumn1
-            // 
-            this.CColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.CColumn1.DefaultCellStyle = dataGridViewCellStyle21;
-            this.CColumn1.FillWeight = 120F;
-            this.CColumn1.HeaderText = "Категория";
-            this.CColumn1.MaxInputLength = 15;
-            this.CColumn1.Name = "CColumn1";
-            this.CColumn1.ReadOnly = true;
-            // 
-            // CColumn2
-            // 
-            this.CColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.CColumn2.DefaultCellStyle = dataGridViewCellStyle22;
-            this.CColumn2.FillWeight = 65F;
-            this.CColumn2.HeaderText = "Комнаты";
-            this.CColumn2.MaxInputLength = 2;
-            this.CColumn2.Name = "CColumn2";
-            this.CColumn2.ReadOnly = true;
-            // 
-            // CColumn3
-            // 
-            this.CColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.CColumn3.DefaultCellStyle = dataGridViewCellStyle23;
-            this.CColumn3.FillWeight = 55F;
-            this.CColumn3.HeaderText = "Люди";
-            this.CColumn3.MaxInputLength = 2;
-            this.CColumn3.Name = "CColumn3";
-            this.CColumn3.ReadOnly = true;
-            // 
-            // CColumn4
-            // 
-            this.CColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle24.NullValue")));
-            dataGridViewCellStyle24.Padding = new System.Windows.Forms.Padding(3);
-            this.CColumn4.DefaultCellStyle = dataGridViewCellStyle24;
-            this.CColumn4.FillWeight = 35F;
-            this.CColumn4.HeaderText = "WiFi";
-            this.CColumn4.Name = "CColumn4";
-            this.CColumn4.ReadOnly = true;
-            this.CColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.CColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // CColumn5
-            // 
-            this.CColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.Format = "g";
-            dataGridViewCellStyle25.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle25.NullValue")));
-            dataGridViewCellStyle25.Padding = new System.Windows.Forms.Padding(3);
-            this.CColumn5.DefaultCellStyle = dataGridViewCellStyle25;
-            this.CColumn5.FillWeight = 30F;
-            this.CColumn5.HeaderText = "TV";
-            this.CColumn5.Name = "CColumn5";
-            this.CColumn5.ReadOnly = true;
-            this.CColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.CColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // CColumn6
-            // 
-            dataGridViewCellStyle26.Format = "g";
-            dataGridViewCellStyle26.NullValue = null;
-            this.CColumn6.DefaultCellStyle = dataGridViewCellStyle26;
-            this.CColumn6.FillWeight = 50F;
-            this.CColumn6.HeaderText = "Создано";
-            this.CColumn6.MaxInputLength = 10;
-            this.CColumn6.Name = "CColumn6";
-            this.CColumn6.ReadOnly = true;
-            // 
             // btnRowAddCategory
             // 
             this.btnRowAddCategory.AllowAnimations = true;
@@ -2287,6 +2219,7 @@
             this.btnRowAddCategory.TextMarginLeft = 0;
             this.btnRowAddCategory.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnRowAddCategory.UseDefaultRadiusAndThickness = true;
+            this.btnRowAddCategory.Click += new System.EventHandler(this.btnRowAddCategory_Click);
             // 
             // btnRowEditCategory
             // 
@@ -2378,6 +2311,7 @@
             this.btnRowEditCategory.TextMarginLeft = 0;
             this.btnRowEditCategory.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnRowEditCategory.UseDefaultRadiusAndThickness = true;
+            this.btnRowEditCategory.Click += new System.EventHandler(this.btnRowEditCategory_Click);
             // 
             // btnRowDeleteCategory
             // 
@@ -2469,6 +2403,7 @@
             this.btnRowDeleteCategory.TextMarginLeft = 0;
             this.btnRowDeleteCategory.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnRowDeleteCategory.UseDefaultRadiusAndThickness = true;
+            this.btnRowDeleteCategory.Click += new System.EventHandler(this.btnRowDeleteCategory_Click);
             // 
             // Page_Users
             // 
@@ -2713,7 +2648,6 @@
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle35.Format = "g";
             dataGridViewCellStyle35.NullValue = null;
             this.Column6.DefaultCellStyle = dataGridViewCellStyle35;
@@ -3811,6 +3745,82 @@
             this.imgListFromSidebar.Images.SetKeyName(3, "Show_Sidepanel_Primary_32.png");
             this.imgListFromSidebar.Images.SetKeyName(4, "Logout_512.png");
             this.imgListFromSidebar.Images.SetKeyName(5, "Contact_512.png");
+            this.imgListFromSidebar.Images.SetKeyName(6, "Mark_Yes_32.png");
+            this.imgListFromSidebar.Images.SetKeyName(7, "Mark_No_32.png");
+            // 
+            // imgMarks
+            // 
+            this.imgMarks.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgMarks.ImageStream")));
+            this.imgMarks.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgMarks.Images.SetKeyName(0, "Mark_No_32.png");
+            this.imgMarks.Images.SetKeyName(1, "Mark_Yes_32.png");
+            // 
+            // CColumn1
+            // 
+            dataGridViewCellStyle21.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.CColumn1.DefaultCellStyle = dataGridViewCellStyle21;
+            this.CColumn1.FillWeight = 90F;
+            this.CColumn1.HeaderText = "Название";
+            this.CColumn1.MaxInputLength = 15;
+            this.CColumn1.Name = "CColumn1";
+            this.CColumn1.ReadOnly = true;
+            // 
+            // CColumn2
+            // 
+            dataGridViewCellStyle22.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
+            this.CColumn2.DefaultCellStyle = dataGridViewCellStyle22;
+            this.CColumn2.FillWeight = 65F;
+            this.CColumn2.HeaderText = "Комнаты";
+            this.CColumn2.MaxInputLength = 2;
+            this.CColumn2.Name = "CColumn2";
+            this.CColumn2.ReadOnly = true;
+            // 
+            // CColumn3
+            // 
+            dataGridViewCellStyle23.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.CColumn3.DefaultCellStyle = dataGridViewCellStyle23;
+            this.CColumn3.FillWeight = 55F;
+            this.CColumn3.HeaderText = "Люди";
+            this.CColumn3.MaxInputLength = 2;
+            this.CColumn3.Name = "CColumn3";
+            this.CColumn3.ReadOnly = true;
+            // 
+            // CColumn4
+            // 
+            this.CColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle24.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle24.NullValue")));
+            dataGridViewCellStyle24.Padding = new System.Windows.Forms.Padding(14, 10, 0, 10);
+            this.CColumn4.DefaultCellStyle = dataGridViewCellStyle24;
+            this.CColumn4.FillWeight = 35F;
+            this.CColumn4.HeaderText = "WiFi";
+            this.CColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.CColumn4.Name = "CColumn4";
+            this.CColumn4.ReadOnly = true;
+            this.CColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CColumn5
+            // 
+            this.CColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle25.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle25.NullValue")));
+            dataGridViewCellStyle25.Padding = new System.Windows.Forms.Padding(8, 10, 0, 10);
+            this.CColumn5.DefaultCellStyle = dataGridViewCellStyle25;
+            this.CColumn5.FillWeight = 30F;
+            this.CColumn5.HeaderText = "TV";
+            this.CColumn5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.CColumn5.Name = "CColumn5";
+            this.CColumn5.ReadOnly = true;
+            this.CColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CColumn6
+            // 
+            dataGridViewCellStyle26.Format = "g";
+            dataGridViewCellStyle26.NullValue = null;
+            this.CColumn6.DefaultCellStyle = dataGridViewCellStyle26;
+            this.CColumn6.FillWeight = 50F;
+            this.CColumn6.HeaderText = "Создано";
+            this.CColumn6.MaxInputLength = 10;
+            this.CColumn6.Name = "CColumn6";
+            this.CColumn6.ReadOnly = true;
             // 
             // fMain
             // 
@@ -3887,12 +3897,6 @@
         private Bunifu.UI.WinForms.BunifuVScrollBar bnfVScrollBarUsers;
         private Bunifu.UI.WinForms.BunifuDropdown bnfDropdownUsers;
         private Bunifu.UI.WinForms.BunifuSnackbar skbarValidation;
-        private System.Windows.Forms.DataGridViewImageColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         public System.Windows.Forms.ImageList imgListFromSidebar;
         private Bunifu.UI.WinForms.BunifuDropdown bnfDropdownCategoriesCountRooms;
         private Bunifu.UI.WinForms.BunifuVScrollBar bnfVScrollBarCategories;
@@ -3901,13 +3905,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowEditCategory;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowDeleteCategory;
         private Bunifu.UI.WinForms.BunifuDropdown bnfDropdownCategoriesForPeople;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CColumn3;
-        private System.Windows.Forms.DataGridViewImageColumn CColumn4;
-        private System.Windows.Forms.DataGridViewImageColumn CColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CColumn6;
-        private Bunifu.UI.WinForms.BunifuCheckBox bnfCheckWiFi;
+        private Bunifu.UI.WinForms.BunifuCheckBox bnfCheckBoxWiFi;
         private System.Windows.Forms.Label lblWiFi;
         private Bunifu.UI.WinForms.BunifuCheckBox bnfCheckBoxTV;
         private System.Windows.Forms.Label lblTV;
@@ -3918,12 +3916,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowAddCustomer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowEditCustomer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowDeleteCustomer;
-        private System.Windows.Forms.DataGridViewImageColumn KColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private Bunifu.UI.WinForms.BunifuDropdown bnfDropdownRooms;
         private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
         private Bunifu.UI.WinForms.BunifuDataGridView gridRooms;
@@ -3939,5 +3931,24 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn RColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn RColumn7;
+        private System.Windows.Forms.ImageList imgMarks;
+        private System.Windows.Forms.DataGridViewImageColumn KColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CColumn3;
+        private System.Windows.Forms.DataGridViewImageColumn CColumn4;
+        private System.Windows.Forms.DataGridViewImageColumn CColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CColumn6;
     }
 }

@@ -7,26 +7,28 @@ using System.Windows.Forms;
 
 namespace Hotel_Management_System.Forms
 {
-    public partial class fUser : Form
+    public partial class fCategory : Form
     {
         private int updateId = 0;
-        public fUser(bool isAdd = true, User user = null)
+        public fCategory(bool isAdd = true, Category category = null)
         {
             InitializeComponent();
             FormDock.SubscribeControlToDragEvents(lblTitle, true);
-            if (user != null)
-                updateId = user.Id;
+            if (category != null)
+                updateId = category.Id;
 
             if (isAdd)
-                SetDataForm("Добавить Пользователя", 0, 2, imgList.Images[2], Color.Lime, Color.Green);
+                SetDataForm("Добавить Категорию", 0, 2, imgList.Images[2], Color.Lime, Color.Green);
             else
             {
-                SetDataForm("Изменить Пользователя", 1, 4, imgList.Images[4], Color.Yellow, Color.Olive);
-                txtFullName.Text = user.FullName;
-                txtPhone.Text = user.Phone;
-                txtRole.Text = user.Role;
-                txtLogin.Text = user.Login;
-                txtPassword.Text = user.Password;
+                SetDataForm("Изменить Категорию", 1, 4, imgList.Images[4], Color.Yellow, Color.Olive);
+                txtTitle.Text = category.Title;
+                txtCountRooms.Text = category.CountRooms.ToString();
+                txtForPeople.Text = category.ForPeople.ToString();
+                txtDescription.Text = category.Description;
+
+                bnfCBisWiFi.Checked = category.isWIFI;
+                bnfCBisTV.Checked = category.isTV;
             }
         }
 
@@ -35,19 +37,10 @@ namespace Hotel_Management_System.Forms
             this.Close();
         #endregion
 
-        #region Кнопка Изменения Изображения
-        private void bnfUserImage_Click(object sender, EventArgs e)
-        {
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-                bnfUserImage.Image = Image.FromFile(openFileDialog.FileName);
-        }
-        #endregion
-
         #region Кнопка Добавления/Изменения
         private void btnAddOrChange_Click(object sender, EventArgs e)
         {
-            if (txtFullName.TextLength < 10 || txtPhone.TextLength < 11 ||
-                txtRole.TextLength < 4 || txtLogin.TextLength < 4 || txtPassword.TextLength < 8)
+            if (txtTitle.TextLength < 2 || txtCountRooms.TextLength < 1 || txtForPeople.TextLength < 1)
             {
                 skbarValidation.Show(this, "Заполните все поля!", BunifuSnackbar.MessageTypes.Warning,
                                          3000, "", BunifuSnackbar.Positions.BottomCenter,
@@ -55,25 +48,25 @@ namespace Hotel_Management_System.Forms
                 return;
             }
 
-            User user = new User
+            Category category = new Category
             {
-                FullName = txtFullName.Text,
-                Phone = txtPhone.Text,
-                Role = txtRole.Text,
-                Login = txtLogin.Text,
-                Password = txtPassword.Text,
-                Photo = fMain.GetImageFromBytes((Bitmap)bnfUserImage.Image)
+                Title = txtTitle.Text,
+                CountRooms = Int32.Parse(txtCountRooms.Text),
+                ForPeople = Int32.Parse(txtForPeople.Text),
+                Description = txtDescription.Text,
+                isWIFI = bnfCBisWiFi.Checked,
+                isTV = bnfCBisTV.Checked,
             };
 
             using (var db = DataBase.ApplicationContext.GetDbConnection())
             {
                 if (updateId == 0)
-                    db.Save(user);
+                    db.Save(category);
                 else
                 {
-                    user.Id = updateId;
-                    user.CreatedAt = DateTime.Now;
-                    db.Update(user);
+                    category.Id = updateId;
+                    category.CreatedAt = DateTime.Now;
+                    db.Update(category);
                 }
             }
 
@@ -108,11 +101,30 @@ namespace Hotel_Management_System.Forms
         #endregion
 
         #region События для ограничения ввода под цифры
-        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtCountRooms_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
-            if (!Char.IsDigit(ch) && ch != 8 && ch != 40 && ch != 41 && ch != 45)
+            if (!Char.IsDigit(ch) && ch != 8)
                 e.Handled = true;
+
+            if (txtCountRooms.Text.Length > 1)
+                e.Handled = true;
+
+            if (txtCountRooms.Text.Length == 2 && ch == 8)
+                e.Handled = false;
+        }
+
+        private void txtForPeople_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8)
+                e.Handled = true;
+
+            if (txtForPeople.Text.Length > 1)
+                e.Handled = true;
+
+            if (txtForPeople.Text.Length == 2 && ch == 8)
+                e.Handled = false;
         }
         #endregion
     }
