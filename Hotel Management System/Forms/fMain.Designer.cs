@@ -187,10 +187,17 @@
             this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.imgListFromSidebar = new System.Windows.Forms.ImageList(this.components);
             this.imgMarks = new System.Windows.Forms.ImageList(this.components);
+            this.bnfPnlWidget1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bnfPnlWidget4 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bnfPnlWidget5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bnfPnlWidget2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bnfPnlWidget6 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bnfPnlWidget3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
             this.bnfPages.SuspendLayout();
+            this.Page_Home.SuspendLayout();
             this.Page_Rooms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridRooms)).BeginInit();
             this.Page_Customers.SuspendLayout();
@@ -441,10 +448,10 @@
             this.bnfPages.Location = new System.Drawing.Point(0, 0);
             this.bnfPages.Multiline = true;
             this.bnfPages.Name = "bnfPages";
-            this.bnfPages.Page = this.Page_Rooms;
-            this.bnfPages.PageIndex = 1;
-            this.bnfPages.PageName = "Page_Rooms";
-            this.bnfPages.PageTitle = "Rooms";
+            this.bnfPages.Page = this.Page_Home;
+            this.bnfPages.PageIndex = 0;
+            this.bnfPages.PageName = "Page_Home";
+            this.bnfPages.PageTitle = "Home";
             this.bnfPages.SelectedIndex = 0;
             this.bnfPages.Size = new System.Drawing.Size(820, 564);
             this.bnfPages.TabIndex = 0;
@@ -470,6 +477,12 @@
             // Page_Home
             // 
             this.Page_Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.Page_Home.Controls.Add(this.bnfPnlWidget6);
+            this.Page_Home.Controls.Add(this.bnfPnlWidget3);
+            this.Page_Home.Controls.Add(this.bnfPnlWidget5);
+            this.Page_Home.Controls.Add(this.bnfPnlWidget2);
+            this.Page_Home.Controls.Add(this.bnfPnlWidget4);
+            this.Page_Home.Controls.Add(this.bnfPnlWidget1);
             this.Page_Home.Location = new System.Drawing.Point(4, 4);
             this.Page_Home.Name = "Page_Home";
             this.Page_Home.Size = new System.Drawing.Size(812, 538);
@@ -3841,6 +3854,144 @@
             this.imgMarks.Images.SetKeyName(0, "Mark_No_32.png");
             this.imgMarks.Images.SetKeyName(1, "Mark_Yes_32.png");
             // 
+            // bnfPnlWidget1
+            // 
+            this.bnfPnlWidget1.AutoSize = true;
+            this.bnfPnlWidget1.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget1.BorderRadius = 10;
+            this.bnfPnlWidget1.BorderThickness = 1;
+            this.bnfPnlWidget1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget1.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget1.Location = new System.Drawing.Point(20, 20);
+            this.bnfPnlWidget1.Name = "bnfPnlWidget1";
+            this.bnfPnlWidget1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget1.ShadowDept = 2;
+            this.bnfPnlWidget1.ShadowDepth = 5;
+            this.bnfPnlWidget1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget1.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget1.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget1.TabIndex = 0;
+            // 
+            // bnfPnlWidget4
+            // 
+            this.bnfPnlWidget4.AutoSize = true;
+            this.bnfPnlWidget4.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget4.BorderRadius = 10;
+            this.bnfPnlWidget4.BorderThickness = 1;
+            this.bnfPnlWidget4.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget4.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget4.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget4.Location = new System.Drawing.Point(20, 295);
+            this.bnfPnlWidget4.Name = "bnfPnlWidget4";
+            this.bnfPnlWidget4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget4.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget4.ShadowDept = 2;
+            this.bnfPnlWidget4.ShadowDepth = 5;
+            this.bnfPnlWidget4.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget4.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget4.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget4.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget4.TabIndex = 1;
+            // 
+            // bnfPnlWidget5
+            // 
+            this.bnfPnlWidget5.AutoSize = true;
+            this.bnfPnlWidget5.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget5.BorderRadius = 10;
+            this.bnfPnlWidget5.BorderThickness = 1;
+            this.bnfPnlWidget5.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget5.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget5.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget5.Location = new System.Drawing.Point(286, 295);
+            this.bnfPnlWidget5.Name = "bnfPnlWidget5";
+            this.bnfPnlWidget5.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget5.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget5.ShadowDept = 2;
+            this.bnfPnlWidget5.ShadowDepth = 5;
+            this.bnfPnlWidget5.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget5.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget5.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget5.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget5.TabIndex = 3;
+            // 
+            // bnfPnlWidget2
+            // 
+            this.bnfPnlWidget2.AutoSize = true;
+            this.bnfPnlWidget2.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget2.BorderRadius = 10;
+            this.bnfPnlWidget2.BorderThickness = 1;
+            this.bnfPnlWidget2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget2.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget2.Location = new System.Drawing.Point(286, 20);
+            this.bnfPnlWidget2.Name = "bnfPnlWidget2";
+            this.bnfPnlWidget2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget2.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget2.ShadowDept = 2;
+            this.bnfPnlWidget2.ShadowDepth = 5;
+            this.bnfPnlWidget2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget2.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget2.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget2.TabIndex = 2;
+            // 
+            // bnfPnlWidget6
+            // 
+            this.bnfPnlWidget6.AutoSize = true;
+            this.bnfPnlWidget6.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget6.BorderRadius = 10;
+            this.bnfPnlWidget6.BorderThickness = 1;
+            this.bnfPnlWidget6.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget6.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget6.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget6.Location = new System.Drawing.Point(552, 295);
+            this.bnfPnlWidget6.Name = "bnfPnlWidget6";
+            this.bnfPnlWidget6.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget6.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget6.ShadowDept = 2;
+            this.bnfPnlWidget6.ShadowDepth = 5;
+            this.bnfPnlWidget6.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget6.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget6.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget6.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget6.TabIndex = 5;
+            // 
+            // bnfPnlWidget3
+            // 
+            this.bnfPnlWidget3.AutoSize = true;
+            this.bnfPnlWidget3.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget3.BorderRadius = 10;
+            this.bnfPnlWidget3.BorderThickness = 1;
+            this.bnfPnlWidget3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget3.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget3.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget3.Location = new System.Drawing.Point(552, 20);
+            this.bnfPnlWidget3.Name = "bnfPnlWidget3";
+            this.bnfPnlWidget3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget3.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget3.ShadowDept = 2;
+            this.bnfPnlWidget3.ShadowDepth = 5;
+            this.bnfPnlWidget3.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget3.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget3.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget3.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget3.TabIndex = 4;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3861,6 +4012,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).EndInit();
             this.pnlForm.ResumeLayout(false);
             this.bnfPages.ResumeLayout(false);
+            this.Page_Home.ResumeLayout(false);
+            this.Page_Home.PerformLayout();
             this.Page_Rooms.ResumeLayout(false);
             this.Page_Rooms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridRooms)).EndInit();
@@ -3970,5 +4123,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn RColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn RColumn7;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget1;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget4;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget6;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget3;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget5;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget2;
     }
 }
