@@ -8,7 +8,7 @@ namespace Hotel_Management_System.DataBase
 {
     public static class ApplicationContext
     {
-        public static string connectionString = "Data Source=Data\\HMS.db; charset=utf8";
+        public static string connectionString = "Data\\HMS.db";
 
         public static IDbConnection GetDbConnection()
         {

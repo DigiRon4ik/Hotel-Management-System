@@ -110,16 +110,21 @@
             this.bnfPages = new Bunifu.UI.WinForms.BunifuPages();
             this.Page_Home = new System.Windows.Forms.TabPage();
             this.bnfPnlWidget6 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblAllCustomers = new System.Windows.Forms.Label();
             this.lblTitleAllCustomers = new System.Windows.Forms.Label();
             this.bnfPnlWidget3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblOverdueRent = new System.Windows.Forms.Label();
             this.lblTitleOverdueRent = new System.Windows.Forms.Label();
             this.bnfPnlWidget5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblAllSalary = new System.Windows.Forms.Label();
             this.lblTitleAllSalary = new System.Windows.Forms.Label();
             this.bnfPnlWidget2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.lblTitleBusiOrNot = new System.Windows.Forms.Label();
+            this.lblTitleBusyOrNot = new System.Windows.Forms.Label();
             this.bnfPnlWidget4 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblAllCategories = new System.Windows.Forms.Label();
             this.lblTitleAllCategories = new System.Windows.Forms.Label();
             this.bnfPnlWidget1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblAllNumbers = new System.Windows.Forms.Label();
             this.lblTitleAllNumbers = new System.Windows.Forms.Label();
             this.Page_Rooms = new System.Windows.Forms.TabPage();
             this.bnfCheckBoxFree = new Bunifu.UI.WinForms.BunifuCheckBox();
@@ -199,6 +204,9 @@
             this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.imgListFromSidebar = new System.Windows.Forms.ImageList(this.components);
             this.imgMarks = new System.Windows.Forms.ImageList(this.components);
+            this.lblBusy = new System.Windows.Forms.Label();
+            this.lblNotBusy = new System.Windows.Forms.Label();
+            this.lblSepBusy = new System.Windows.Forms.Label();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -508,6 +516,7 @@
             this.bnfPnlWidget6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.bnfPnlWidget6.BorderRadius = 10;
             this.bnfPnlWidget6.BorderThickness = 1;
+            this.bnfPnlWidget6.Controls.Add(this.lblAllCustomers);
             this.bnfPnlWidget6.Controls.Add(this.lblTitleAllCustomers);
             this.bnfPnlWidget6.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bnfPnlWidget6.ForeColor = System.Drawing.Color.White;
@@ -524,6 +533,18 @@
             this.bnfPnlWidget6.Size = new System.Drawing.Size(245, 250);
             this.bnfPnlWidget6.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
             this.bnfPnlWidget6.TabIndex = 5;
+            // 
+            // lblAllCustomers
+            // 
+            this.lblAllCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.lblAllCustomers.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAllCustomers.ForeColor = System.Drawing.Color.Gold;
+            this.lblAllCustomers.Location = new System.Drawing.Point(4, 65);
+            this.lblAllCustomers.Name = "lblAllCustomers";
+            this.lblAllCustomers.Size = new System.Drawing.Size(237, 121);
+            this.lblAllCustomers.TabIndex = 4;
+            this.lblAllCustomers.Text = "2";
+            this.lblAllCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitleAllCustomers
             // 
@@ -542,6 +563,7 @@
             this.bnfPnlWidget3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.bnfPnlWidget3.BorderRadius = 10;
             this.bnfPnlWidget3.BorderThickness = 1;
+            this.bnfPnlWidget3.Controls.Add(this.lblOverdueRent);
             this.bnfPnlWidget3.Controls.Add(this.lblTitleOverdueRent);
             this.bnfPnlWidget3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bnfPnlWidget3.ForeColor = System.Drawing.Color.White;
@@ -558,6 +580,18 @@
             this.bnfPnlWidget3.Size = new System.Drawing.Size(245, 250);
             this.bnfPnlWidget3.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
             this.bnfPnlWidget3.TabIndex = 4;
+            // 
+            // lblOverdueRent
+            // 
+            this.lblOverdueRent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.lblOverdueRent.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblOverdueRent.ForeColor = System.Drawing.Color.Red;
+            this.lblOverdueRent.Location = new System.Drawing.Point(4, 65);
+            this.lblOverdueRent.Name = "lblOverdueRent";
+            this.lblOverdueRent.Size = new System.Drawing.Size(237, 121);
+            this.lblOverdueRent.TabIndex = 3;
+            this.lblOverdueRent.Text = "1";
+            this.lblOverdueRent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitleOverdueRent
             // 
@@ -576,6 +610,7 @@
             this.bnfPnlWidget5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.bnfPnlWidget5.BorderRadius = 10;
             this.bnfPnlWidget5.BorderThickness = 1;
+            this.bnfPnlWidget5.Controls.Add(this.lblAllSalary);
             this.bnfPnlWidget5.Controls.Add(this.lblTitleAllSalary);
             this.bnfPnlWidget5.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bnfPnlWidget5.ForeColor = System.Drawing.Color.White;
@@ -592,6 +627,18 @@
             this.bnfPnlWidget5.Size = new System.Drawing.Size(245, 250);
             this.bnfPnlWidget5.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
             this.bnfPnlWidget5.TabIndex = 3;
+            // 
+            // lblAllSalary
+            // 
+            this.lblAllSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.lblAllSalary.Font = new System.Drawing.Font("Comfortaa", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAllSalary.ForeColor = System.Drawing.Color.Lime;
+            this.lblAllSalary.Location = new System.Drawing.Point(4, 65);
+            this.lblAllSalary.Name = "lblAllSalary";
+            this.lblAllSalary.Size = new System.Drawing.Size(237, 121);
+            this.lblAllSalary.TabIndex = 3;
+            this.lblAllSalary.Text = "90497000₽";
+            this.lblAllSalary.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitleAllSalary
             // 
@@ -610,7 +657,10 @@
             this.bnfPnlWidget2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.bnfPnlWidget2.BorderRadius = 10;
             this.bnfPnlWidget2.BorderThickness = 1;
-            this.bnfPnlWidget2.Controls.Add(this.lblTitleBusiOrNot);
+            this.bnfPnlWidget2.Controls.Add(this.lblSepBusy);
+            this.bnfPnlWidget2.Controls.Add(this.lblNotBusy);
+            this.bnfPnlWidget2.Controls.Add(this.lblBusy);
+            this.bnfPnlWidget2.Controls.Add(this.lblTitleBusyOrNot);
             this.bnfPnlWidget2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bnfPnlWidget2.ForeColor = System.Drawing.Color.White;
             this.bnfPnlWidget2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
@@ -627,15 +677,15 @@
             this.bnfPnlWidget2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
             this.bnfPnlWidget2.TabIndex = 2;
             // 
-            // lblTitleBusiOrNot
+            // lblTitleBusyOrNot
             // 
-            this.lblTitleBusiOrNot.AutoSize = true;
-            this.lblTitleBusiOrNot.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblTitleBusiOrNot.Location = new System.Drawing.Point(20, 10);
-            this.lblTitleBusiOrNot.Name = "lblTitleBusiOrNot";
-            this.lblTitleBusiOrNot.Size = new System.Drawing.Size(205, 24);
-            this.lblTitleBusiOrNot.TabIndex = 1;
-            this.lblTitleBusiOrNot.Text = "Занято / Свободно";
+            this.lblTitleBusyOrNot.AutoSize = true;
+            this.lblTitleBusyOrNot.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTitleBusyOrNot.Location = new System.Drawing.Point(20, 10);
+            this.lblTitleBusyOrNot.Name = "lblTitleBusyOrNot";
+            this.lblTitleBusyOrNot.Size = new System.Drawing.Size(205, 24);
+            this.lblTitleBusyOrNot.TabIndex = 1;
+            this.lblTitleBusyOrNot.Text = "Занято / Свободно";
             // 
             // bnfPnlWidget4
             // 
@@ -644,6 +694,7 @@
             this.bnfPnlWidget4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.bnfPnlWidget4.BorderRadius = 10;
             this.bnfPnlWidget4.BorderThickness = 1;
+            this.bnfPnlWidget4.Controls.Add(this.lblAllCategories);
             this.bnfPnlWidget4.Controls.Add(this.lblTitleAllCategories);
             this.bnfPnlWidget4.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bnfPnlWidget4.ForeColor = System.Drawing.Color.White;
@@ -660,6 +711,18 @@
             this.bnfPnlWidget4.Size = new System.Drawing.Size(245, 250);
             this.bnfPnlWidget4.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
             this.bnfPnlWidget4.TabIndex = 1;
+            // 
+            // lblAllCategories
+            // 
+            this.lblAllCategories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.lblAllCategories.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAllCategories.ForeColor = System.Drawing.Color.Violet;
+            this.lblAllCategories.Location = new System.Drawing.Point(4, 65);
+            this.lblAllCategories.Name = "lblAllCategories";
+            this.lblAllCategories.Size = new System.Drawing.Size(237, 121);
+            this.lblAllCategories.TabIndex = 2;
+            this.lblAllCategories.Text = "6";
+            this.lblAllCategories.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitleAllCategories
             // 
@@ -678,6 +741,7 @@
             this.bnfPnlWidget1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.bnfPnlWidget1.BorderRadius = 10;
             this.bnfPnlWidget1.BorderThickness = 1;
+            this.bnfPnlWidget1.Controls.Add(this.lblAllNumbers);
             this.bnfPnlWidget1.Controls.Add(this.lblTitleAllNumbers);
             this.bnfPnlWidget1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bnfPnlWidget1.ForeColor = System.Drawing.Color.White;
@@ -694,6 +758,18 @@
             this.bnfPnlWidget1.Size = new System.Drawing.Size(245, 250);
             this.bnfPnlWidget1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
             this.bnfPnlWidget1.TabIndex = 0;
+            // 
+            // lblAllNumbers
+            // 
+            this.lblAllNumbers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.lblAllNumbers.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAllNumbers.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblAllNumbers.Location = new System.Drawing.Point(4, 65);
+            this.lblAllNumbers.Name = "lblAllNumbers";
+            this.lblAllNumbers.Size = new System.Drawing.Size(237, 121);
+            this.lblAllNumbers.TabIndex = 1;
+            this.lblAllNumbers.Text = "23";
+            this.lblAllNumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitleAllNumbers
             // 
@@ -4070,6 +4146,40 @@
             this.imgMarks.Images.SetKeyName(0, "Mark_No_32.png");
             this.imgMarks.Images.SetKeyName(1, "Mark_Yes_32.png");
             // 
+            // lblBusy
+            // 
+            this.lblBusy.BackColor = System.Drawing.Color.Transparent;
+            this.lblBusy.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblBusy.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblBusy.Location = new System.Drawing.Point(4, 32);
+            this.lblBusy.Name = "lblBusy";
+            this.lblBusy.Size = new System.Drawing.Size(237, 86);
+            this.lblBusy.TabIndex = 2;
+            this.lblBusy.Text = "7";
+            this.lblBusy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblNotBusy
+            // 
+            this.lblNotBusy.BackColor = System.Drawing.Color.Transparent;
+            this.lblNotBusy.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblNotBusy.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblNotBusy.Location = new System.Drawing.Point(4, 144);
+            this.lblNotBusy.Name = "lblNotBusy";
+            this.lblNotBusy.Size = new System.Drawing.Size(237, 86);
+            this.lblNotBusy.TabIndex = 3;
+            this.lblNotBusy.Text = "16";
+            this.lblNotBusy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblSepBusy
+            // 
+            this.lblSepBusy.AutoSize = true;
+            this.lblSepBusy.Font = new System.Drawing.Font("Comfortaa", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblSepBusy.Location = new System.Drawing.Point(104, 114);
+            this.lblSepBusy.Name = "lblSepBusy";
+            this.lblSepBusy.Size = new System.Drawing.Size(37, 47);
+            this.lblSepBusy.TabIndex = 4;
+            this.lblSepBusy.Text = "/";
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4220,10 +4330,18 @@
         private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget5;
         private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget2;
         private System.Windows.Forms.Label lblTitleOverdueRent;
-        private System.Windows.Forms.Label lblTitleBusiOrNot;
+        private System.Windows.Forms.Label lblTitleBusyOrNot;
         private System.Windows.Forms.Label lblTitleAllNumbers;
         private System.Windows.Forms.Label lblTitleAllCategories;
         private System.Windows.Forms.Label lblTitleAllCustomers;
         private System.Windows.Forms.Label lblTitleAllSalary;
+        private System.Windows.Forms.Label lblOverdueRent;
+        private System.Windows.Forms.Label lblAllSalary;
+        private System.Windows.Forms.Label lblAllCategories;
+        private System.Windows.Forms.Label lblAllNumbers;
+        private System.Windows.Forms.Label lblAllCustomers;
+        private System.Windows.Forms.Label lblNotBusy;
+        private System.Windows.Forms.Label lblBusy;
+        private System.Windows.Forms.Label lblSepBusy;
     }
 }

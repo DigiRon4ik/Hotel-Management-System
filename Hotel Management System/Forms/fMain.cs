@@ -59,6 +59,7 @@ namespace Hotel_Management_System.Forms
             PageCategories_Load();
             PageCustomers_Load();
             PageRooms_Load();
+            PageHome_Load();
         }
 
         #region Кнопка Закрытия
@@ -162,8 +163,11 @@ namespace Hotel_Management_System.Forms
         #endregion
 
         #region Кнопки Переключения Страниц
-        private void btnPageHome_Enter(object sender, EventArgs e) =>
+        private void btnPageHome_Enter(object sender, EventArgs e)
+        {
+            PageHome_Load();
             bnfPages.SetPage("Home");
+        }
 
         private void btnPageRooms_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Rooms");
@@ -718,6 +722,24 @@ namespace Hotel_Management_System.Forms
         }
         #endregion
 
+        #endregion
+
+
+
+        #region Загрузка Страницы
+        private void PageHome_Load()
+        {
+            using (var db = DataBase.ApplicationContext.GetDbConnection())
+            {
+                lblAllNumbers.Text = db.Count<Room>().ToString();
+                lblBusy.Text = db.Count<Room>(x => x.isFree == false).ToString();
+                lblNotBusy.Text = db.Count<Room>(x => x.isFree == false).ToString();
+                lblOverdueRent.Text = db.Count<Room>(x => x.isFree == false && x.Until < DateTime.Now).ToString();
+                lblAllCategories.Text = db.Count<Category>().ToString();
+                lblAllSalary.Text = db.Scalar<Salary, string>(x => Sql.Sum(x.salary)) + "₽";
+                lblAllCustomers.Text = db.Count<Customer>().ToString();
+            }
+        }
         #endregion
     }
 }
