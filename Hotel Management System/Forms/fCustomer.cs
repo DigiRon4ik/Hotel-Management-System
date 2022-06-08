@@ -44,14 +44,19 @@ namespace Hotel_Management_System.Forms
         #endregion
 
         #region Кнопка Добавления/Изменения
+        private void CallWarning(string text)
+        {
+            skbarValidation.Show(this, text, BunifuSnackbar.MessageTypes.Warning,
+                3000, "", BunifuSnackbar.Positions.BottomCenter,
+                BunifuSnackbar.Hosts.FormOwner);
+        }
+
         private void btnAddOrChange_Click(object sender, EventArgs e)
         {
             if (txtFullName.TextLength < 10 || txtPhone.TextLength < 11 ||
                 txtCountry.TextLength < 3 || txtPassport.TextLength < 6)
             {
-                skbarValidation.Show(this, "Заполните все поля!", BunifuSnackbar.MessageTypes.Warning,
-                                         3000, "", BunifuSnackbar.Positions.BottomCenter,
-                                         BunifuSnackbar.Hosts.FormOwner);
+                CallWarning("Заполните все поля!");
                 return;
             }
 
@@ -66,6 +71,17 @@ namespace Hotel_Management_System.Forms
 
             using (var db = DataBase.ApplicationContext.GetDbConnection())
             {
+                if (db.Exists<Customer>(x => x.Passport == customer.Passport))
+                {
+                    CallWarning("Такой ПАСПОРТ уже существует!");
+                    return;
+                }
+                else if (db.Exists<Customer>(x => x.Phone == customer.Phone))
+                {
+                    CallWarning("Такой ТЕЛЕФОН уже существует!");
+                    return;
+                }
+
                 if (updateId == 0)
                     db.Save(customer);
                 else

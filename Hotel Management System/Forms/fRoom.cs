@@ -130,22 +130,25 @@ namespace Hotel_Management_System.Forms
             }
         }
 
+        private void CallWarning(string text)
+        {
+            skbarValidation.Show(this, text, BunifuSnackbar.MessageTypes.Warning,
+                3000, "", BunifuSnackbar.Positions.BottomCenter,
+                BunifuSnackbar.Hosts.FormOwner);
+        }
+
         private void btnAddOrChange_Click(object sender, EventArgs e)
         {
             SetValueFromRoom();
             if (txtNumber.Text.Length < 1 || txtPrice.Text.Length < 1 || _category == "")
             {
-                skbarValidation.Show(this, "Заполните все поля!", BunifuSnackbar.MessageTypes.Warning,
-                                         3000, "", BunifuSnackbar.Positions.BottomCenter,
-                                         BunifuSnackbar.Hosts.FormOwner);
+                CallWarning("Заполните все поля!");
                 return;
             }
 
             if (_customer != "Нет" && arenda <= 0)
             {
-                skbarValidation.Show(this, "Начальная дата не может быть больше конечной!", BunifuSnackbar.MessageTypes.Warning,
-                                         3000, "", BunifuSnackbar.Positions.BottomCenter,
-                                         BunifuSnackbar.Hosts.FormOwner);
+                CallWarning("Начальная дата не может быть больше конечной!");
                 return;
             }
 
@@ -166,6 +169,12 @@ namespace Hotel_Management_System.Forms
                     From = _customer == "Нет" ? new DateTime() : bnfDateFrom.Value,
                     Until = _customer == "Нет" ? new DateTime() : bnfDateUntil.Value,
                 };
+
+                if (db.Exists<Room>(x => x.Number == room.Number))
+                {
+                    CallWarning("Такой НОМЕР уже существует!");
+                    return;
+                }
 
                 if (updateId == 0)
                     db.Save(room);

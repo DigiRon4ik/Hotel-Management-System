@@ -38,13 +38,18 @@ namespace Hotel_Management_System.Forms
         #endregion
 
         #region Кнопка Добавления/Изменения
+        private void CallWarning(string text)
+        {
+            skbarValidation.Show(this, text, BunifuSnackbar.MessageTypes.Warning,
+                3000, "", BunifuSnackbar.Positions.BottomCenter,
+                BunifuSnackbar.Hosts.FormOwner);
+        }
+
         private void btnAddOrChange_Click(object sender, EventArgs e)
         {
             if (txtTitle.TextLength < 2 || txtCountRooms.TextLength < 1 || txtForPeople.TextLength < 1)
             {
-                skbarValidation.Show(this, "Заполните все поля!", BunifuSnackbar.MessageTypes.Warning,
-                                         3000, "", BunifuSnackbar.Positions.BottomCenter,
-                                         BunifuSnackbar.Hosts.FormOwner);
+                CallWarning("Заполните все поля!");
                 return;
             }
 
@@ -60,6 +65,12 @@ namespace Hotel_Management_System.Forms
 
             using (var db = DataBase.ApplicationContext.GetDbConnection())
             {
+                if (db.Exists<Category>(x => x.Title == category.Title))
+                {
+                    CallWarning("Такое НАЗВАНИЕ уже существует!");
+                    return;
+                }
+
                 if (updateId == 0)
                     db.Save(category);
                 else
