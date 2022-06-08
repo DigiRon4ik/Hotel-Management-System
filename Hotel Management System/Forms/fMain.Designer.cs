@@ -33,13 +33,14 @@
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -47,15 +48,15 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -63,21 +64,27 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -91,12 +98,6 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.pnlTitle = new Bunifu.UI.WinForms.BunifuPanel();
             this.pctrSidebar = new System.Windows.Forms.PictureBox();
@@ -106,19 +107,20 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.ElipseFormMain = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlForm = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bnfVScrollBarRooms = new Bunifu.UI.WinForms.BunifuPages();
+            this.bnfPages = new Bunifu.UI.WinForms.BunifuPages();
             this.Page_Home = new System.Windows.Forms.TabPage();
             this.Page_Rooms = new System.Windows.Forms.TabPage();
-            this.bnfCheckFree = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.bnfCheckBoxFree = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.lblFree = new System.Windows.Forms.Label();
             this.bnfDropdownRooms = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
+            this.bnfVScrollBarRooms = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.gridRooms = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.RColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.RColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearchRooms = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnRowAddRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -147,6 +149,12 @@
             this.bnfDropdownCategoriesCountRooms = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bnfVScrollBarCategories = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.gridCategories = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.CColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.CColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.CColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRowAddCategory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnRowEditCategory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnRowDeleteCategory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -179,16 +187,10 @@
             this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.imgListFromSidebar = new System.Windows.Forms.ImageList(this.components);
             this.imgMarks = new System.Windows.Forms.ImageList(this.components);
-            this.CColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.CColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.CColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
-            this.bnfVScrollBarRooms.SuspendLayout();
+            this.bnfPages.SuspendLayout();
             this.Page_Rooms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridRooms)).BeginInit();
             this.Page_Customers.SuspendLayout();
@@ -417,7 +419,7 @@
             this.pnlForm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.pnlForm.BorderRadius = 0;
             this.pnlForm.BorderThickness = 0;
-            this.pnlForm.Controls.Add(this.bnfVScrollBarRooms);
+            this.pnlForm.Controls.Add(this.bnfPages);
             this.pnlForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlForm.Location = new System.Drawing.Point(180, 36);
             this.pnlForm.Name = "pnlForm";
@@ -425,28 +427,28 @@
             this.pnlForm.Size = new System.Drawing.Size(820, 564);
             this.pnlForm.TabIndex = 0;
             // 
-            // bnfVScrollBarRooms
+            // bnfPages
             // 
-            this.bnfVScrollBarRooms.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.bnfVScrollBarRooms.AllowTransitions = false;
-            this.bnfVScrollBarRooms.Controls.Add(this.Page_Home);
-            this.bnfVScrollBarRooms.Controls.Add(this.Page_Rooms);
-            this.bnfVScrollBarRooms.Controls.Add(this.Page_Customers);
-            this.bnfVScrollBarRooms.Controls.Add(this.Page_Categories);
-            this.bnfVScrollBarRooms.Controls.Add(this.Page_Users);
-            this.bnfVScrollBarRooms.Controls.Add(this.Page_Settings);
-            this.bnfVScrollBarRooms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bnfVScrollBarRooms.Location = new System.Drawing.Point(0, 0);
-            this.bnfVScrollBarRooms.Multiline = true;
-            this.bnfVScrollBarRooms.Name = "bnfVScrollBarRooms";
-            this.bnfVScrollBarRooms.Page = this.Page_Categories;
-            this.bnfVScrollBarRooms.PageIndex = 3;
-            this.bnfVScrollBarRooms.PageName = "Page_Categories";
-            this.bnfVScrollBarRooms.PageTitle = "Categories";
-            this.bnfVScrollBarRooms.SelectedIndex = 0;
-            this.bnfVScrollBarRooms.Size = new System.Drawing.Size(820, 564);
-            this.bnfVScrollBarRooms.TabIndex = 0;
-            this.bnfVScrollBarRooms.TabStop = false;
+            this.bnfPages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.bnfPages.AllowTransitions = false;
+            this.bnfPages.Controls.Add(this.Page_Home);
+            this.bnfPages.Controls.Add(this.Page_Rooms);
+            this.bnfPages.Controls.Add(this.Page_Customers);
+            this.bnfPages.Controls.Add(this.Page_Categories);
+            this.bnfPages.Controls.Add(this.Page_Users);
+            this.bnfPages.Controls.Add(this.Page_Settings);
+            this.bnfPages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bnfPages.Location = new System.Drawing.Point(0, 0);
+            this.bnfPages.Multiline = true;
+            this.bnfPages.Name = "bnfPages";
+            this.bnfPages.Page = this.Page_Rooms;
+            this.bnfPages.PageIndex = 1;
+            this.bnfPages.PageName = "Page_Rooms";
+            this.bnfPages.PageTitle = "Rooms";
+            this.bnfPages.SelectedIndex = 0;
+            this.bnfPages.Size = new System.Drawing.Size(820, 564);
+            this.bnfPages.TabIndex = 0;
+            this.bnfPages.TabStop = false;
             animation1.AnimateOnlyDifferences = false;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
             animation1.LeafCoeff = 0F;
@@ -462,8 +464,8 @@
             animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
-            this.bnfVScrollBarRooms.Transition = animation1;
-            this.bnfVScrollBarRooms.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            this.bnfPages.Transition = animation1;
+            this.bnfPages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // Page_Home
             // 
@@ -477,10 +479,10 @@
             // Page_Rooms
             // 
             this.Page_Rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.Page_Rooms.Controls.Add(this.bnfCheckFree);
+            this.Page_Rooms.Controls.Add(this.bnfCheckBoxFree);
             this.Page_Rooms.Controls.Add(this.lblFree);
             this.Page_Rooms.Controls.Add(this.bnfDropdownRooms);
-            this.Page_Rooms.Controls.Add(this.bunifuVScrollBar1);
+            this.Page_Rooms.Controls.Add(this.bnfVScrollBarRooms);
             this.Page_Rooms.Controls.Add(this.gridRooms);
             this.Page_Rooms.Controls.Add(this.txtSearchRooms);
             this.Page_Rooms.Controls.Add(this.btnRowAddRoom);
@@ -492,60 +494,61 @@
             this.Page_Rooms.TabIndex = 1;
             this.Page_Rooms.Text = "Rooms";
             // 
-            // bnfCheckFree
+            // bnfCheckBoxFree
             // 
-            this.bnfCheckFree.AllowBindingControlAnimation = false;
-            this.bnfCheckFree.AllowBindingControlColorChanges = false;
-            this.bnfCheckFree.AllowBindingControlLocation = false;
-            this.bnfCheckFree.AllowCheckBoxAnimation = false;
-            this.bnfCheckFree.AllowCheckmarkAnimation = true;
-            this.bnfCheckFree.AllowOnHoverStates = true;
-            this.bnfCheckFree.AutoCheck = true;
-            this.bnfCheckFree.BackColor = System.Drawing.Color.Transparent;
-            this.bnfCheckFree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfCheckFree.BackgroundImage")));
-            this.bnfCheckFree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bnfCheckFree.BindingControl = this.lblFree;
-            this.bnfCheckFree.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.bnfCheckFree.BorderRadius = 25;
-            this.bnfCheckFree.Checked = false;
-            this.bnfCheckFree.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
-            this.bnfCheckFree.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bnfCheckFree.CustomCheckmarkImage = null;
-            this.bnfCheckFree.Location = new System.Drawing.Point(358, 18);
-            this.bnfCheckFree.MinimumSize = new System.Drawing.Size(17, 17);
-            this.bnfCheckFree.Name = "bnfCheckFree";
-            this.bnfCheckFree.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            this.bnfCheckFree.OnCheck.BorderRadius = 13;
-            this.bnfCheckFree.OnCheck.BorderThickness = 2;
-            this.bnfCheckFree.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            this.bnfCheckFree.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.bnfCheckFree.OnCheck.CheckmarkThickness = 3;
-            this.bnfCheckFree.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.bnfCheckFree.OnDisable.BorderRadius = 13;
-            this.bnfCheckFree.OnDisable.BorderThickness = 2;
-            this.bnfCheckFree.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.bnfCheckFree.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.bnfCheckFree.OnDisable.CheckmarkThickness = 2;
-            this.bnfCheckFree.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
-            this.bnfCheckFree.OnHoverChecked.BorderRadius = 13;
-            this.bnfCheckFree.OnHoverChecked.BorderThickness = 2;
-            this.bnfCheckFree.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
-            this.bnfCheckFree.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.bnfCheckFree.OnHoverChecked.CheckmarkThickness = 3;
-            this.bnfCheckFree.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
-            this.bnfCheckFree.OnHoverUnchecked.BorderRadius = 13;
-            this.bnfCheckFree.OnHoverUnchecked.BorderThickness = 2;
-            this.bnfCheckFree.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfCheckFree.OnUncheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfCheckFree.OnUncheck.BorderRadius = 13;
-            this.bnfCheckFree.OnUncheck.BorderThickness = 2;
-            this.bnfCheckFree.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfCheckFree.Size = new System.Drawing.Size(24, 24);
-            this.bnfCheckFree.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
-            this.bnfCheckFree.TabIndex = 12;
-            this.bnfCheckFree.TabStop = false;
-            this.bnfCheckFree.ThreeState = false;
-            this.bnfCheckFree.ToolTipText = null;
+            this.bnfCheckBoxFree.AllowBindingControlAnimation = false;
+            this.bnfCheckBoxFree.AllowBindingControlColorChanges = false;
+            this.bnfCheckBoxFree.AllowBindingControlLocation = false;
+            this.bnfCheckBoxFree.AllowCheckBoxAnimation = false;
+            this.bnfCheckBoxFree.AllowCheckmarkAnimation = true;
+            this.bnfCheckBoxFree.AllowOnHoverStates = true;
+            this.bnfCheckBoxFree.AutoCheck = true;
+            this.bnfCheckBoxFree.BackColor = System.Drawing.Color.Transparent;
+            this.bnfCheckBoxFree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfCheckBoxFree.BackgroundImage")));
+            this.bnfCheckBoxFree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bnfCheckBoxFree.BindingControl = this.lblFree;
+            this.bnfCheckBoxFree.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.bnfCheckBoxFree.BorderRadius = 25;
+            this.bnfCheckBoxFree.Checked = false;
+            this.bnfCheckBoxFree.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.bnfCheckBoxFree.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bnfCheckBoxFree.CustomCheckmarkImage = null;
+            this.bnfCheckBoxFree.Location = new System.Drawing.Point(358, 18);
+            this.bnfCheckBoxFree.MinimumSize = new System.Drawing.Size(17, 17);
+            this.bnfCheckBoxFree.Name = "bnfCheckBoxFree";
+            this.bnfCheckBoxFree.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.bnfCheckBoxFree.OnCheck.BorderRadius = 13;
+            this.bnfCheckBoxFree.OnCheck.BorderThickness = 2;
+            this.bnfCheckBoxFree.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.bnfCheckBoxFree.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.bnfCheckBoxFree.OnCheck.CheckmarkThickness = 3;
+            this.bnfCheckBoxFree.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.bnfCheckBoxFree.OnDisable.BorderRadius = 13;
+            this.bnfCheckBoxFree.OnDisable.BorderThickness = 2;
+            this.bnfCheckBoxFree.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.bnfCheckBoxFree.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.bnfCheckBoxFree.OnDisable.CheckmarkThickness = 2;
+            this.bnfCheckBoxFree.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.bnfCheckBoxFree.OnHoverChecked.BorderRadius = 13;
+            this.bnfCheckBoxFree.OnHoverChecked.BorderThickness = 2;
+            this.bnfCheckBoxFree.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.bnfCheckBoxFree.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.bnfCheckBoxFree.OnHoverChecked.CheckmarkThickness = 3;
+            this.bnfCheckBoxFree.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.bnfCheckBoxFree.OnHoverUnchecked.BorderRadius = 13;
+            this.bnfCheckBoxFree.OnHoverUnchecked.BorderThickness = 2;
+            this.bnfCheckBoxFree.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfCheckBoxFree.OnUncheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfCheckBoxFree.OnUncheck.BorderRadius = 13;
+            this.bnfCheckBoxFree.OnUncheck.BorderThickness = 2;
+            this.bnfCheckBoxFree.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfCheckBoxFree.Size = new System.Drawing.Size(24, 24);
+            this.bnfCheckBoxFree.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.bnfCheckBoxFree.TabIndex = 12;
+            this.bnfCheckBoxFree.TabStop = false;
+            this.bnfCheckBoxFree.ThreeState = false;
+            this.bnfCheckBoxFree.ToolTipText = null;
+            this.bnfCheckBoxFree.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.bnfCheckBoxFree_CheckedChanged);
             // 
             // lblFree
             // 
@@ -606,47 +609,48 @@
             this.bnfDropdownRooms.Text = "Категория...";
             this.bnfDropdownRooms.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.bnfDropdownRooms.TextLeftMargin = 5;
+            this.bnfDropdownRooms.SelectionChangeCommitted += new System.EventHandler(this.bnfDropdownRooms_SelectionChangeCommitted);
             // 
-            // bunifuVScrollBar1
+            // bnfVScrollBarRooms
             // 
-            this.bunifuVScrollBar1.AllowCursorChanges = false;
-            this.bunifuVScrollBar1.AllowHomeEndKeysDetection = false;
-            this.bunifuVScrollBar1.AllowIncrementalClickMoves = true;
-            this.bunifuVScrollBar1.AllowMouseDownEffects = true;
-            this.bunifuVScrollBar1.AllowMouseHoverEffects = true;
-            this.bunifuVScrollBar1.AllowScrollingAnimations = true;
-            this.bunifuVScrollBar1.AllowScrollKeysDetection = false;
-            this.bunifuVScrollBar1.AllowScrollOptionsMenu = false;
-            this.bunifuVScrollBar1.AllowShrinkingOnFocusLost = false;
-            this.bunifuVScrollBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.bnfVScrollBarRooms.AllowCursorChanges = false;
+            this.bnfVScrollBarRooms.AllowHomeEndKeysDetection = false;
+            this.bnfVScrollBarRooms.AllowIncrementalClickMoves = true;
+            this.bnfVScrollBarRooms.AllowMouseDownEffects = true;
+            this.bnfVScrollBarRooms.AllowMouseHoverEffects = true;
+            this.bnfVScrollBarRooms.AllowScrollingAnimations = true;
+            this.bnfVScrollBarRooms.AllowScrollKeysDetection = false;
+            this.bnfVScrollBarRooms.AllowScrollOptionsMenu = false;
+            this.bnfVScrollBarRooms.AllowShrinkingOnFocusLost = false;
+            this.bnfVScrollBarRooms.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuVScrollBar1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bunifuVScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar1.BackgroundImage")));
-            this.bunifuVScrollBar1.BindingContainer = null;
-            this.bunifuVScrollBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bunifuVScrollBar1.BorderRadius = 10;
-            this.bunifuVScrollBar1.BorderThickness = 1;
-            this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
-            this.bunifuVScrollBar1.LargeChange = 2;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(781, 56);
-            this.bunifuVScrollBar1.Maximum = 1;
-            this.bunifuVScrollBar1.Minimum = 0;
-            this.bunifuVScrollBar1.MinimumThumbLength = 18;
-            this.bunifuVScrollBar1.Name = "bunifuVScrollBar1";
-            this.bunifuVScrollBar1.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
-            this.bunifuVScrollBar1.OnDisable.ThumbColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(16, 470);
-            this.bunifuVScrollBar1.SmallChange = 1;
-            this.bunifuVScrollBar1.TabIndex = 8;
-            this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
-            this.bunifuVScrollBar1.ThumbLength = 468;
-            this.bunifuVScrollBar1.ThumbMargin = 1;
-            this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
-            this.bunifuVScrollBar1.Value = 0;
+            this.bnfVScrollBarRooms.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfVScrollBarRooms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfVScrollBarRooms.BackgroundImage")));
+            this.bnfVScrollBarRooms.BindingContainer = null;
+            this.bnfVScrollBarRooms.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfVScrollBarRooms.BorderRadius = 10;
+            this.bnfVScrollBarRooms.BorderThickness = 1;
+            this.bnfVScrollBarRooms.DurationBeforeShrink = 2000;
+            this.bnfVScrollBarRooms.LargeChange = 2;
+            this.bnfVScrollBarRooms.Location = new System.Drawing.Point(781, 56);
+            this.bnfVScrollBarRooms.Maximum = 1;
+            this.bnfVScrollBarRooms.Minimum = 0;
+            this.bnfVScrollBarRooms.MinimumThumbLength = 18;
+            this.bnfVScrollBarRooms.Name = "bnfVScrollBarRooms";
+            this.bnfVScrollBarRooms.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.bnfVScrollBarRooms.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
+            this.bnfVScrollBarRooms.OnDisable.ThumbColor = System.Drawing.Color.Silver;
+            this.bnfVScrollBarRooms.ScrollBarBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfVScrollBarRooms.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfVScrollBarRooms.ShrinkSizeLimit = 3;
+            this.bnfVScrollBarRooms.Size = new System.Drawing.Size(16, 470);
+            this.bnfVScrollBarRooms.SmallChange = 1;
+            this.bnfVScrollBarRooms.TabIndex = 8;
+            this.bnfVScrollBarRooms.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
+            this.bnfVScrollBarRooms.ThumbLength = 468;
+            this.bnfVScrollBarRooms.ThumbMargin = 1;
+            this.bnfVScrollBarRooms.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
+            this.bnfVScrollBarRooms.Value = 0;
             // 
             // gridRooms
             // 
@@ -679,8 +683,9 @@
             this.RColumn1,
             this.RColumn2,
             this.RColumn3,
-            this.RColumn4,
             this.RColumn5,
+            this.RColumn4,
+            this.RColumn6,
             this.RColumn7});
             this.gridRooms.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.gridRooms.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -700,14 +705,14 @@
             this.gridRooms.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.gridRooms.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
             this.gridRooms.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridRooms.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridRooms.DefaultCellStyle = dataGridViewCellStyle10;
             this.gridRooms.EnableHeadersVisualStyles = false;
             this.gridRooms.GridColor = System.Drawing.Color.Aqua;
             this.gridRooms.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
@@ -730,11 +735,10 @@
             // RColumn1
             // 
             this.RColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(23, 6, 0, 6);
             this.RColumn1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.RColumn1.FillWeight = 35F;
+            this.RColumn1.FillWeight = 40F;
             this.RColumn1.HeaderText = "Статус";
             this.RColumn1.Image = ((System.Drawing.Image)(resources.GetObject("RColumn1.Image")));
             this.RColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
@@ -747,7 +751,7 @@
             this.RColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.RColumn2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.RColumn2.FillWeight = 60F;
+            this.RColumn2.FillWeight = 70F;
             this.RColumn2.HeaderText = "Категория";
             this.RColumn2.MaxInputLength = 15;
             this.RColumn2.Name = "RColumn2";
@@ -756,7 +760,7 @@
             // RColumn3
             // 
             this.RColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
             this.RColumn3.DefaultCellStyle = dataGridViewCellStyle5;
             this.RColumn3.FillWeight = 40F;
             this.RColumn3.HeaderText = "Номер";
@@ -764,36 +768,47 @@
             this.RColumn3.Name = "RColumn3";
             this.RColumn3.ReadOnly = true;
             // 
+            // RColumn5
+            // 
+            dataGridViewCellStyle6.Format = "C0";
+            dataGridViewCellStyle6.NullValue = "0";
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.RColumn5.DefaultCellStyle = dataGridViewCellStyle6;
+            this.RColumn5.FillWeight = 65F;
+            this.RColumn5.HeaderText = "Цена (день)";
+            this.RColumn5.Name = "RColumn5";
+            this.RColumn5.ReadOnly = true;
+            // 
             // RColumn4
             // 
             this.RColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.RColumn4.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.RColumn4.DefaultCellStyle = dataGridViewCellStyle7;
+            this.RColumn4.FillWeight = 90F;
             this.RColumn4.HeaderText = "Занял";
             this.RColumn4.MaxInputLength = 41;
             this.RColumn4.Name = "RColumn4";
             this.RColumn4.ReadOnly = true;
             // 
-            // RColumn5
+            // RColumn6
             // 
-            this.RColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.Format = "g";
-            this.RColumn5.DefaultCellStyle = dataGridViewCellStyle7;
-            this.RColumn5.FillWeight = 50F;
-            this.RColumn5.HeaderText = "От";
-            this.RColumn5.MaxInputLength = 10;
-            this.RColumn5.Name = "RColumn5";
-            this.RColumn5.ReadOnly = true;
+            this.RColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle8.Format = "M";
+            dataGridViewCellStyle8.NullValue = null;
+            this.RColumn6.DefaultCellStyle = dataGridViewCellStyle8;
+            this.RColumn6.FillWeight = 40F;
+            this.RColumn6.HeaderText = "От";
+            this.RColumn6.MaxInputLength = 10;
+            this.RColumn6.Name = "RColumn6";
+            this.RColumn6.ReadOnly = true;
             // 
             // RColumn7
             // 
             this.RColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.Format = "g";
-            dataGridViewCellStyle8.NullValue = null;
-            this.RColumn7.DefaultCellStyle = dataGridViewCellStyle8;
-            this.RColumn7.FillWeight = 50F;
+            dataGridViewCellStyle9.Format = "M";
+            dataGridViewCellStyle9.NullValue = null;
+            this.RColumn7.DefaultCellStyle = dataGridViewCellStyle9;
+            this.RColumn7.FillWeight = 40F;
             this.RColumn7.HeaderText = "До";
             this.RColumn7.MaxInputLength = 10;
             this.RColumn7.Name = "RColumn7";
@@ -875,6 +890,7 @@
             this.txtSearchRooms.TextPlaceholder = "Поиск по Номеру...";
             this.txtSearchRooms.UseSystemPasswordChar = false;
             this.txtSearchRooms.WordWrap = true;
+            this.txtSearchRooms.TextChange += new System.EventHandler(this.txtSearchRooms_TextChange);
             // 
             // btnRowAddRoom
             // 
@@ -966,6 +982,7 @@
             this.btnRowAddRoom.TextMarginLeft = 0;
             this.btnRowAddRoom.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnRowAddRoom.UseDefaultRadiusAndThickness = true;
+            this.btnRowAddRoom.Click += new System.EventHandler(this.btnRowAddRoom_Click);
             // 
             // btnRowEditRoom
             // 
@@ -1057,6 +1074,7 @@
             this.btnRowEditRoom.TextMarginLeft = 0;
             this.btnRowEditRoom.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnRowEditRoom.UseDefaultRadiusAndThickness = true;
+            this.btnRowEditRoom.Click += new System.EventHandler(this.btnRowEditRoom_Click);
             // 
             // btnRowDeleteRoom
             // 
@@ -1148,6 +1166,7 @@
             this.btnRowDeleteRoom.TextMarginLeft = 0;
             this.btnRowDeleteRoom.TextPadding = new System.Windows.Forms.Padding(32, 1, 0, 0);
             this.btnRowDeleteRoom.UseDefaultRadiusAndThickness = true;
+            this.btnRowDeleteRoom.Click += new System.EventHandler(this.btnRowDeleteRoom_Click);
             // 
             // Page_Customers
             // 
@@ -1259,9 +1278,9 @@
             this.gridCustomers.AllowUserToAddRows = false;
             this.gridCustomers.AllowUserToDeleteRows = false;
             this.gridCustomers.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            this.gridCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            this.gridCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.gridCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1270,14 +1289,14 @@
             this.gridCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tektur Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tektur Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gridCustomers.ColumnHeadersHeight = 40;
             this.gridCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1305,14 +1324,14 @@
             this.gridCustomers.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.gridCustomers.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
             this.gridCustomers.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCustomers.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCustomers.DefaultCellStyle = dataGridViewCellStyle19;
             this.gridCustomers.EnableHeadersVisualStyles = false;
             this.gridCustomers.GridColor = System.Drawing.Color.Aqua;
             this.gridCustomers.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
@@ -1335,10 +1354,10 @@
             // KColumn1
             // 
             this.KColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle12.NullValue")));
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(3);
-            this.KColumn1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle13.NullValue")));
+            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(3);
+            this.KColumn1.DefaultCellStyle = dataGridViewCellStyle13;
             this.KColumn1.FillWeight = 20F;
             this.KColumn1.HeaderText = "";
             this.KColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
@@ -1349,8 +1368,8 @@
             // KColumn2
             // 
             this.KColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.KColumn2.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.KColumn2.DefaultCellStyle = dataGridViewCellStyle14;
             this.KColumn2.HeaderText = "ФИО";
             this.KColumn2.MaxInputLength = 41;
             this.KColumn2.Name = "KColumn2";
@@ -1359,8 +1378,8 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewTextBoxColumn2.FillWeight = 80F;
             this.dataGridViewTextBoxColumn2.HeaderText = "Страна";
             this.dataGridViewTextBoxColumn2.MaxInputLength = 20;
@@ -1370,8 +1389,8 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewTextBoxColumn4.FillWeight = 70F;
             this.dataGridViewTextBoxColumn4.HeaderText = "Паспорт";
             this.dataGridViewTextBoxColumn4.MaxInputLength = 20;
@@ -1381,8 +1400,8 @@
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewTextBoxColumn3.FillWeight = 70F;
             this.dataGridViewTextBoxColumn3.HeaderText = "Телефон";
             this.dataGridViewTextBoxColumn3.MaxInputLength = 20;
@@ -1392,9 +1411,9 @@
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle17.Format = "g";
-            dataGridViewCellStyle17.NullValue = null;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle18.Format = "g";
+            dataGridViewCellStyle18.NullValue = null;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewTextBoxColumn5.FillWeight = 50F;
             this.dataGridViewTextBoxColumn5.HeaderText = "Создано";
             this.dataGridViewTextBoxColumn5.MaxInputLength = 10;
@@ -2056,9 +2075,9 @@
             this.gridCategories.AllowUserToAddRows = false;
             this.gridCategories.AllowUserToDeleteRows = false;
             this.gridCategories.AllowUserToResizeRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
-            this.gridCategories.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            this.gridCategories.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
             this.gridCategories.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2067,14 +2086,14 @@
             this.gridCategories.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCategories.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridCategories.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Tektur Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCategories.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Tektur Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCategories.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.gridCategories.ColumnHeadersHeight = 40;
             this.gridCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridCategories.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2102,14 +2121,14 @@
             this.gridCategories.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.gridCategories.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
             this.gridCategories.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCategories.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCategories.DefaultCellStyle = dataGridViewCellStyle28;
             this.gridCategories.EnableHeadersVisualStyles = false;
             this.gridCategories.GridColor = System.Drawing.Color.Aqua;
             this.gridCategories.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
@@ -2128,6 +2147,73 @@
             this.gridCategories.TabIndex = 3;
             this.gridCategories.TabStop = false;
             this.gridCategories.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+            // 
+            // CColumn1
+            // 
+            dataGridViewCellStyle22.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.CColumn1.DefaultCellStyle = dataGridViewCellStyle22;
+            this.CColumn1.FillWeight = 90F;
+            this.CColumn1.HeaderText = "Название";
+            this.CColumn1.MaxInputLength = 15;
+            this.CColumn1.Name = "CColumn1";
+            this.CColumn1.ReadOnly = true;
+            // 
+            // CColumn2
+            // 
+            dataGridViewCellStyle23.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
+            this.CColumn2.DefaultCellStyle = dataGridViewCellStyle23;
+            this.CColumn2.FillWeight = 65F;
+            this.CColumn2.HeaderText = "Комнаты";
+            this.CColumn2.MaxInputLength = 2;
+            this.CColumn2.Name = "CColumn2";
+            this.CColumn2.ReadOnly = true;
+            // 
+            // CColumn3
+            // 
+            dataGridViewCellStyle24.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.CColumn3.DefaultCellStyle = dataGridViewCellStyle24;
+            this.CColumn3.FillWeight = 55F;
+            this.CColumn3.HeaderText = "Люди";
+            this.CColumn3.MaxInputLength = 2;
+            this.CColumn3.Name = "CColumn3";
+            this.CColumn3.ReadOnly = true;
+            // 
+            // CColumn4
+            // 
+            this.CColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle25.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle25.NullValue")));
+            dataGridViewCellStyle25.Padding = new System.Windows.Forms.Padding(14, 10, 0, 10);
+            this.CColumn4.DefaultCellStyle = dataGridViewCellStyle25;
+            this.CColumn4.FillWeight = 35F;
+            this.CColumn4.HeaderText = "WiFi";
+            this.CColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.CColumn4.Name = "CColumn4";
+            this.CColumn4.ReadOnly = true;
+            this.CColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CColumn5
+            // 
+            this.CColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle26.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle26.NullValue")));
+            dataGridViewCellStyle26.Padding = new System.Windows.Forms.Padding(8, 10, 0, 10);
+            this.CColumn5.DefaultCellStyle = dataGridViewCellStyle26;
+            this.CColumn5.FillWeight = 30F;
+            this.CColumn5.HeaderText = "TV";
+            this.CColumn5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.CColumn5.Name = "CColumn5";
+            this.CColumn5.ReadOnly = true;
+            this.CColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CColumn6
+            // 
+            dataGridViewCellStyle27.Format = "g";
+            dataGridViewCellStyle27.NullValue = null;
+            this.CColumn6.DefaultCellStyle = dataGridViewCellStyle27;
+            this.CColumn6.FillWeight = 50F;
+            this.CColumn6.HeaderText = "Создано";
+            this.CColumn6.MaxInputLength = 10;
+            this.CColumn6.Name = "CColumn6";
+            this.CColumn6.ReadOnly = true;
             // 
             // btnRowAddCategory
             // 
@@ -2515,9 +2601,9 @@
             this.gridUsers.AllowUserToAddRows = false;
             this.gridUsers.AllowUserToDeleteRows = false;
             this.gridUsers.AllowUserToResizeRows = false;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
-            this.gridUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
+            this.gridUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
             this.gridUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2526,14 +2612,14 @@
             this.gridUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridUsers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Tektur Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Tektur Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.gridUsers.ColumnHeadersHeight = 40;
             this.gridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2561,14 +2647,14 @@
             this.gridUsers.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.gridUsers.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
             this.gridUsers.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridUsers.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridUsers.DefaultCellStyle = dataGridViewCellStyle37;
             this.gridUsers.EnableHeadersVisualStyles = false;
             this.gridUsers.GridColor = System.Drawing.Color.Aqua;
             this.gridUsers.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
@@ -2591,10 +2677,10 @@
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle30.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle30.NullValue")));
-            dataGridViewCellStyle30.Padding = new System.Windows.Forms.Padding(3);
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle31.NullValue")));
+            dataGridViewCellStyle31.Padding = new System.Windows.Forms.Padding(3);
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle31;
             this.Column1.FillWeight = 20F;
             this.Column1.HeaderText = "";
             this.Column1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
@@ -2605,8 +2691,8 @@
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle32;
             this.Column2.HeaderText = "ФИО";
             this.Column2.MaxInputLength = 45;
             this.Column2.Name = "Column2";
@@ -2615,8 +2701,8 @@
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle33;
             this.Column3.FillWeight = 75F;
             this.Column3.HeaderText = "Роль";
             this.Column3.MaxInputLength = 15;
@@ -2626,8 +2712,8 @@
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle34;
             this.Column4.FillWeight = 70F;
             this.Column4.HeaderText = "Телефон";
             this.Column4.MaxInputLength = 20;
@@ -2637,8 +2723,8 @@
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle35;
             this.Column5.FillWeight = 80F;
             this.Column5.HeaderText = "Логин";
             this.Column5.MaxInputLength = 20;
@@ -2648,9 +2734,9 @@
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle35.Format = "g";
-            dataGridViewCellStyle35.NullValue = null;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle36.Format = "g";
+            dataGridViewCellStyle36.NullValue = null;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle36;
             this.Column6.FillWeight = 50F;
             this.Column6.HeaderText = "Создано";
             this.Column6.MaxInputLength = 10;
@@ -3755,73 +3841,6 @@
             this.imgMarks.Images.SetKeyName(0, "Mark_No_32.png");
             this.imgMarks.Images.SetKeyName(1, "Mark_Yes_32.png");
             // 
-            // CColumn1
-            // 
-            dataGridViewCellStyle21.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.CColumn1.DefaultCellStyle = dataGridViewCellStyle21;
-            this.CColumn1.FillWeight = 90F;
-            this.CColumn1.HeaderText = "Название";
-            this.CColumn1.MaxInputLength = 15;
-            this.CColumn1.Name = "CColumn1";
-            this.CColumn1.ReadOnly = true;
-            // 
-            // CColumn2
-            // 
-            dataGridViewCellStyle22.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
-            this.CColumn2.DefaultCellStyle = dataGridViewCellStyle22;
-            this.CColumn2.FillWeight = 65F;
-            this.CColumn2.HeaderText = "Комнаты";
-            this.CColumn2.MaxInputLength = 2;
-            this.CColumn2.Name = "CColumn2";
-            this.CColumn2.ReadOnly = true;
-            // 
-            // CColumn3
-            // 
-            dataGridViewCellStyle23.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
-            this.CColumn3.DefaultCellStyle = dataGridViewCellStyle23;
-            this.CColumn3.FillWeight = 55F;
-            this.CColumn3.HeaderText = "Люди";
-            this.CColumn3.MaxInputLength = 2;
-            this.CColumn3.Name = "CColumn3";
-            this.CColumn3.ReadOnly = true;
-            // 
-            // CColumn4
-            // 
-            this.CColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle24.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle24.NullValue")));
-            dataGridViewCellStyle24.Padding = new System.Windows.Forms.Padding(14, 10, 0, 10);
-            this.CColumn4.DefaultCellStyle = dataGridViewCellStyle24;
-            this.CColumn4.FillWeight = 35F;
-            this.CColumn4.HeaderText = "WiFi";
-            this.CColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.CColumn4.Name = "CColumn4";
-            this.CColumn4.ReadOnly = true;
-            this.CColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CColumn5
-            // 
-            this.CColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle25.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle25.NullValue")));
-            dataGridViewCellStyle25.Padding = new System.Windows.Forms.Padding(8, 10, 0, 10);
-            this.CColumn5.DefaultCellStyle = dataGridViewCellStyle25;
-            this.CColumn5.FillWeight = 30F;
-            this.CColumn5.HeaderText = "TV";
-            this.CColumn5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.CColumn5.Name = "CColumn5";
-            this.CColumn5.ReadOnly = true;
-            this.CColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CColumn6
-            // 
-            dataGridViewCellStyle26.Format = "g";
-            dataGridViewCellStyle26.NullValue = null;
-            this.CColumn6.DefaultCellStyle = dataGridViewCellStyle26;
-            this.CColumn6.FillWeight = 50F;
-            this.CColumn6.HeaderText = "Создано";
-            this.CColumn6.MaxInputLength = 10;
-            this.CColumn6.Name = "CColumn6";
-            this.CColumn6.ReadOnly = true;
-            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3841,7 +3860,7 @@
             this.pnlTitle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).EndInit();
             this.pnlForm.ResumeLayout(false);
-            this.bnfVScrollBarRooms.ResumeLayout(false);
+            this.bnfPages.ResumeLayout(false);
             this.Page_Rooms.ResumeLayout(false);
             this.Page_Rooms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridRooms)).EndInit();
@@ -3882,7 +3901,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnPageUsers;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnPageCategories;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnPageSettings;
-        private Bunifu.UI.WinForms.BunifuPages bnfVScrollBarRooms;
+        private Bunifu.UI.WinForms.BunifuPages bnfPages;
         private System.Windows.Forms.TabPage Page_Home;
         private System.Windows.Forms.TabPage Page_Rooms;
         private System.Windows.Forms.TabPage Page_Customers;
@@ -3917,20 +3936,14 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowEditCustomer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowDeleteCustomer;
         private Bunifu.UI.WinForms.BunifuDropdown bnfDropdownRooms;
-        private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
+        private Bunifu.UI.WinForms.BunifuVScrollBar bnfVScrollBarRooms;
         private Bunifu.UI.WinForms.BunifuDataGridView gridRooms;
         private Bunifu.UI.WinForms.BunifuTextBox txtSearchRooms;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowAddRoom;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowEditRoom;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRowDeleteRoom;
-        private Bunifu.UI.WinForms.BunifuCheckBox bnfCheckFree;
+        private Bunifu.UI.WinForms.BunifuCheckBox bnfCheckBoxFree;
         private System.Windows.Forms.Label lblFree;
-        private System.Windows.Forms.DataGridViewImageColumn RColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn7;
         private System.Windows.Forms.ImageList imgMarks;
         private System.Windows.Forms.DataGridViewImageColumn KColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn KColumn2;
@@ -3950,5 +3963,12 @@
         private System.Windows.Forms.DataGridViewImageColumn CColumn4;
         private System.Windows.Forms.DataGridViewImageColumn CColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn CColumn6;
+        private System.Windows.Forms.DataGridViewImageColumn RColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RColumn7;
     }
 }

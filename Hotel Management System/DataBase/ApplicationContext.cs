@@ -2,6 +2,7 @@
 using ServiceStack.OrmLite;
 using ServiceStack.OrmLite.Converters;
 using Hotel_Management_System.DataBase.Models;
+using System;
 
 namespace Hotel_Management_System.DataBase
 {
@@ -114,6 +115,31 @@ namespace Hotel_Management_System.DataBase
                             Description = "Эти номера предназначены для групп туристов из 4-х и меньше человек."
                         });
                 }
+
+                if (db.CreateTableIfNotExists<Room>())
+                {
+                    db.Save(
+                        new Room
+                        {
+                            isFree = false,
+                            CategoryId = 3,
+                            Number = 303,
+                            CustomerId = 2,
+                            Price = 15000,
+                            From = DateTime.Now,
+                            Until = DateTime.Now.AddDays(5)
+                        },
+                        new Room
+                        {
+                            isFree = true,
+                            CategoryId = 1,
+                            Number = 301,
+                            Price = 3000
+                        });
+                }
+
+                if (db.CreateTableIfNotExists<Salary>())
+                    db.Save(new Salary { salary = 15000 * 5 });
             }
         }
     }

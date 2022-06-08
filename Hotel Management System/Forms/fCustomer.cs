@@ -10,6 +10,7 @@ namespace Hotel_Management_System.Forms
     public partial class fCustomer : Form
     {
         private int updateId = 0;
+
         public fCustomer(bool isAdd = true, Customer customer = null)
         {
             InitializeComponent();

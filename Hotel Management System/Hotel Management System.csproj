@@ -203,6 +203,8 @@
     <Compile Include="DataBase\ApplicationContext.cs" />
     <Compile Include="DataBase\Models\Category.cs" />
     <Compile Include="DataBase\Models\Customer.cs" />
+    <Compile Include="DataBase\Models\Room.cs" />
+    <Compile Include="DataBase\Models\Salary.cs" />
     <Compile Include="DataBase\Models\User.cs" />
     <Compile Include="Forms\fCategory.cs">
       <SubType>Form</SubType>
@@ -228,6 +230,12 @@
     <Compile Include="Forms\fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fRoom.Designer.cs">
+      <DependentUpon>fRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fRoom.resx">
+      <DependentUpon>fRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fUser.resx">
       <DependentUpon>fUser.cs</DependentUpon>
