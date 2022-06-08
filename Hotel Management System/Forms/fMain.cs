@@ -181,8 +181,18 @@ namespace Hotel_Management_System.Forms
         #region Инициализация Пользователя
         private void InitUser()
         {
+            bnfPages.SetPage("Home");
+            btnPageHome.Select();
+
             lblUserName.Text = account.FullName;
             lblUserRole.Text = account.Role;
+
+            void SetEnabledBtnRowCategory(bool isOn)
+            {
+                btnRowAddCategory.Enabled = isOn;
+                btnRowEditCategory.Enabled = isOn;
+                btnRowDeleteCategory.Enabled = isOn;
+            }
 
             if (account.Role == "Support")
             {
@@ -194,6 +204,11 @@ namespace Hotel_Management_System.Forms
                 btnPageUsers.Visible = false;
                 btnPageUsers.Enabled = false;
             }
+
+            if (account.Role == "Support" || account.Role == "Администратор")
+                SetEnabledBtnRowCategory(true);
+            else
+                SetEnabledBtnRowCategory(false);
         }
         #endregion
 
