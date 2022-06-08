@@ -109,6 +109,18 @@
             this.pnlForm = new Bunifu.UI.WinForms.BunifuPanel();
             this.bnfPages = new Bunifu.UI.WinForms.BunifuPages();
             this.Page_Home = new System.Windows.Forms.TabPage();
+            this.bnfPnlWidget6 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblTitleAllCustomers = new System.Windows.Forms.Label();
+            this.bnfPnlWidget3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblTitleOverdueRent = new System.Windows.Forms.Label();
+            this.bnfPnlWidget5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblTitleAllSalary = new System.Windows.Forms.Label();
+            this.bnfPnlWidget2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblTitleBusiOrNot = new System.Windows.Forms.Label();
+            this.bnfPnlWidget4 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblTitleAllCategories = new System.Windows.Forms.Label();
+            this.bnfPnlWidget1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblTitleAllNumbers = new System.Windows.Forms.Label();
             this.Page_Rooms = new System.Windows.Forms.TabPage();
             this.bnfCheckBoxFree = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.lblFree = new System.Windows.Forms.Label();
@@ -187,23 +199,17 @@
             this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.imgListFromSidebar = new System.Windows.Forms.ImageList(this.components);
             this.imgMarks = new System.Windows.Forms.ImageList(this.components);
-            this.bnfPnlWidget1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bnfPnlWidget4 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bnfPnlWidget5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bnfPnlWidget2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bnfPnlWidget6 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bnfPnlWidget3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.lblCountNumbers = new System.Windows.Forms.Label();
-            this.lblBusiOrNot = new System.Windows.Forms.Label();
-            this.lblOverdueRent = new System.Windows.Forms.Label();
-            this.lblCountCategories = new System.Windows.Forms.Label();
-            this.lblAllSalary = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrSidebar)).BeginInit();
             this.pnlForm.SuspendLayout();
             this.bnfPages.SuspendLayout();
             this.Page_Home.SuspendLayout();
+            this.bnfPnlWidget6.SuspendLayout();
+            this.bnfPnlWidget3.SuspendLayout();
+            this.bnfPnlWidget5.SuspendLayout();
+            this.bnfPnlWidget2.SuspendLayout();
+            this.bnfPnlWidget4.SuspendLayout();
+            this.bnfPnlWidget1.SuspendLayout();
             this.Page_Rooms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridRooms)).BeginInit();
             this.Page_Customers.SuspendLayout();
@@ -215,12 +221,6 @@
             this.pnlSidebar.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bnfUserPicture)).BeginInit();
-            this.bnfPnlWidget1.SuspendLayout();
-            this.bnfPnlWidget4.SuspendLayout();
-            this.bnfPnlWidget5.SuspendLayout();
-            this.bnfPnlWidget2.SuspendLayout();
-            this.bnfPnlWidget6.SuspendLayout();
-            this.bnfPnlWidget3.SuspendLayout();
             this.SuspendLayout();
             // 
             // FormDock
@@ -500,6 +500,210 @@
             this.Page_Home.Size = new System.Drawing.Size(812, 538);
             this.Page_Home.TabIndex = 0;
             this.Page_Home.Text = "Home";
+            // 
+            // bnfPnlWidget6
+            // 
+            this.bnfPnlWidget6.AutoSize = true;
+            this.bnfPnlWidget6.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget6.BorderRadius = 10;
+            this.bnfPnlWidget6.BorderThickness = 1;
+            this.bnfPnlWidget6.Controls.Add(this.lblTitleAllCustomers);
+            this.bnfPnlWidget6.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget6.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget6.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget6.Location = new System.Drawing.Point(552, 295);
+            this.bnfPnlWidget6.Name = "bnfPnlWidget6";
+            this.bnfPnlWidget6.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget6.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget6.ShadowDept = 2;
+            this.bnfPnlWidget6.ShadowDepth = 5;
+            this.bnfPnlWidget6.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget6.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget6.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget6.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget6.TabIndex = 5;
+            // 
+            // lblTitleAllCustomers
+            // 
+            this.lblTitleAllCustomers.AutoSize = true;
+            this.lblTitleAllCustomers.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTitleAllCustomers.Location = new System.Drawing.Point(35, 10);
+            this.lblTitleAllCustomers.Name = "lblTitleAllCustomers";
+            this.lblTitleAllCustomers.Size = new System.Drawing.Size(175, 24);
+            this.lblTitleAllCustomers.TabIndex = 3;
+            this.lblTitleAllCustomers.Text = "Всего Клиентов";
+            // 
+            // bnfPnlWidget3
+            // 
+            this.bnfPnlWidget3.AutoSize = true;
+            this.bnfPnlWidget3.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget3.BorderRadius = 10;
+            this.bnfPnlWidget3.BorderThickness = 1;
+            this.bnfPnlWidget3.Controls.Add(this.lblTitleOverdueRent);
+            this.bnfPnlWidget3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget3.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget3.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget3.Location = new System.Drawing.Point(552, 20);
+            this.bnfPnlWidget3.Name = "bnfPnlWidget3";
+            this.bnfPnlWidget3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget3.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget3.ShadowDept = 2;
+            this.bnfPnlWidget3.ShadowDepth = 5;
+            this.bnfPnlWidget3.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget3.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget3.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget3.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget3.TabIndex = 4;
+            // 
+            // lblTitleOverdueRent
+            // 
+            this.lblTitleOverdueRent.AutoSize = true;
+            this.lblTitleOverdueRent.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTitleOverdueRent.Location = new System.Drawing.Point(20, 10);
+            this.lblTitleOverdueRent.Name = "lblTitleOverdueRent";
+            this.lblTitleOverdueRent.Size = new System.Drawing.Size(204, 24);
+            this.lblTitleOverdueRent.TabIndex = 2;
+            this.lblTitleOverdueRent.Text = "Аренд Просрочено";
+            // 
+            // bnfPnlWidget5
+            // 
+            this.bnfPnlWidget5.AutoSize = true;
+            this.bnfPnlWidget5.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget5.BorderRadius = 10;
+            this.bnfPnlWidget5.BorderThickness = 1;
+            this.bnfPnlWidget5.Controls.Add(this.lblTitleAllSalary);
+            this.bnfPnlWidget5.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget5.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget5.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget5.Location = new System.Drawing.Point(286, 295);
+            this.bnfPnlWidget5.Name = "bnfPnlWidget5";
+            this.bnfPnlWidget5.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget5.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget5.ShadowDept = 2;
+            this.bnfPnlWidget5.ShadowDepth = 5;
+            this.bnfPnlWidget5.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget5.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget5.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget5.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget5.TabIndex = 3;
+            // 
+            // lblTitleAllSalary
+            // 
+            this.lblTitleAllSalary.AutoSize = true;
+            this.lblTitleAllSalary.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTitleAllSalary.Location = new System.Drawing.Point(23, 10);
+            this.lblTitleAllSalary.Name = "lblTitleAllSalary";
+            this.lblTitleAllSalary.Size = new System.Drawing.Size(198, 24);
+            this.lblTitleAllSalary.TabIndex = 2;
+            this.lblTitleAllSalary.Text = "Заработано Всего";
+            // 
+            // bnfPnlWidget2
+            // 
+            this.bnfPnlWidget2.AutoSize = true;
+            this.bnfPnlWidget2.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget2.BorderRadius = 10;
+            this.bnfPnlWidget2.BorderThickness = 1;
+            this.bnfPnlWidget2.Controls.Add(this.lblTitleBusiOrNot);
+            this.bnfPnlWidget2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget2.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget2.Location = new System.Drawing.Point(286, 20);
+            this.bnfPnlWidget2.Name = "bnfPnlWidget2";
+            this.bnfPnlWidget2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget2.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget2.ShadowDept = 2;
+            this.bnfPnlWidget2.ShadowDepth = 5;
+            this.bnfPnlWidget2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget2.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget2.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget2.TabIndex = 2;
+            // 
+            // lblTitleBusiOrNot
+            // 
+            this.lblTitleBusiOrNot.AutoSize = true;
+            this.lblTitleBusiOrNot.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTitleBusiOrNot.Location = new System.Drawing.Point(20, 10);
+            this.lblTitleBusiOrNot.Name = "lblTitleBusiOrNot";
+            this.lblTitleBusiOrNot.Size = new System.Drawing.Size(205, 24);
+            this.lblTitleBusiOrNot.TabIndex = 1;
+            this.lblTitleBusiOrNot.Text = "Занято / Свободно";
+            // 
+            // bnfPnlWidget4
+            // 
+            this.bnfPnlWidget4.AutoSize = true;
+            this.bnfPnlWidget4.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget4.BorderRadius = 10;
+            this.bnfPnlWidget4.BorderThickness = 1;
+            this.bnfPnlWidget4.Controls.Add(this.lblTitleAllCategories);
+            this.bnfPnlWidget4.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget4.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget4.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget4.Location = new System.Drawing.Point(20, 295);
+            this.bnfPnlWidget4.Name = "bnfPnlWidget4";
+            this.bnfPnlWidget4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget4.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget4.ShadowDept = 2;
+            this.bnfPnlWidget4.ShadowDepth = 5;
+            this.bnfPnlWidget4.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget4.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget4.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget4.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget4.TabIndex = 1;
+            // 
+            // lblTitleAllCategories
+            // 
+            this.lblTitleAllCategories.AutoSize = true;
+            this.lblTitleAllCategories.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTitleAllCategories.Location = new System.Drawing.Point(30, 10);
+            this.lblTitleAllCategories.Name = "lblTitleAllCategories";
+            this.lblTitleAllCategories.Size = new System.Drawing.Size(184, 24);
+            this.lblTitleAllCategories.TabIndex = 1;
+            this.lblTitleAllCategories.Text = "Всего Категорий";
+            // 
+            // bnfPnlWidget1
+            // 
+            this.bnfPnlWidget1.AutoSize = true;
+            this.bnfPnlWidget1.BackColor = System.Drawing.Color.Transparent;
+            this.bnfPnlWidget1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfPnlWidget1.BorderRadius = 10;
+            this.bnfPnlWidget1.BorderThickness = 1;
+            this.bnfPnlWidget1.Controls.Add(this.lblTitleAllNumbers);
+            this.bnfPnlWidget1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bnfPnlWidget1.ForeColor = System.Drawing.Color.White;
+            this.bnfPnlWidget1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bnfPnlWidget1.Location = new System.Drawing.Point(20, 20);
+            this.bnfPnlWidget1.Name = "bnfPnlWidget1";
+            this.bnfPnlWidget1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfPnlWidget1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+            this.bnfPnlWidget1.ShadowDept = 2;
+            this.bnfPnlWidget1.ShadowDepth = 5;
+            this.bnfPnlWidget1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.bnfPnlWidget1.ShadowTopLeftVisible = false;
+            this.bnfPnlWidget1.Size = new System.Drawing.Size(245, 250);
+            this.bnfPnlWidget1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
+            this.bnfPnlWidget1.TabIndex = 0;
+            // 
+            // lblTitleAllNumbers
+            // 
+            this.lblTitleAllNumbers.AutoSize = true;
+            this.lblTitleAllNumbers.Font = new System.Drawing.Font("Tektur Med", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTitleAllNumbers.Location = new System.Drawing.Point(40, 10);
+            this.lblTitleAllNumbers.Name = "lblTitleAllNumbers";
+            this.lblTitleAllNumbers.Size = new System.Drawing.Size(165, 24);
+            this.lblTitleAllNumbers.TabIndex = 0;
+            this.lblTitleAllNumbers.Text = "Всего Номеров";
             // 
             // Page_Rooms
             // 
@@ -3866,210 +4070,6 @@
             this.imgMarks.Images.SetKeyName(0, "Mark_No_32.png");
             this.imgMarks.Images.SetKeyName(1, "Mark_Yes_32.png");
             // 
-            // bnfPnlWidget1
-            // 
-            this.bnfPnlWidget1.AutoSize = true;
-            this.bnfPnlWidget1.BackColor = System.Drawing.Color.Transparent;
-            this.bnfPnlWidget1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfPnlWidget1.BorderRadius = 10;
-            this.bnfPnlWidget1.BorderThickness = 1;
-            this.bnfPnlWidget1.Controls.Add(this.lblCountNumbers);
-            this.bnfPnlWidget1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bnfPnlWidget1.ForeColor = System.Drawing.Color.White;
-            this.bnfPnlWidget1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bnfPnlWidget1.Location = new System.Drawing.Point(20, 20);
-            this.bnfPnlWidget1.Name = "bnfPnlWidget1";
-            this.bnfPnlWidget1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
-            this.bnfPnlWidget1.ShadowDept = 2;
-            this.bnfPnlWidget1.ShadowDepth = 5;
-            this.bnfPnlWidget1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
-            this.bnfPnlWidget1.ShadowTopLeftVisible = false;
-            this.bnfPnlWidget1.Size = new System.Drawing.Size(245, 250);
-            this.bnfPnlWidget1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
-            this.bnfPnlWidget1.TabIndex = 0;
-            // 
-            // bnfPnlWidget4
-            // 
-            this.bnfPnlWidget4.AutoSize = true;
-            this.bnfPnlWidget4.BackColor = System.Drawing.Color.Transparent;
-            this.bnfPnlWidget4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfPnlWidget4.BorderRadius = 10;
-            this.bnfPnlWidget4.BorderThickness = 1;
-            this.bnfPnlWidget4.Controls.Add(this.lblCountCategories);
-            this.bnfPnlWidget4.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bnfPnlWidget4.ForeColor = System.Drawing.Color.White;
-            this.bnfPnlWidget4.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bnfPnlWidget4.Location = new System.Drawing.Point(20, 295);
-            this.bnfPnlWidget4.Name = "bnfPnlWidget4";
-            this.bnfPnlWidget4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget4.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
-            this.bnfPnlWidget4.ShadowDept = 2;
-            this.bnfPnlWidget4.ShadowDepth = 5;
-            this.bnfPnlWidget4.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
-            this.bnfPnlWidget4.ShadowTopLeftVisible = false;
-            this.bnfPnlWidget4.Size = new System.Drawing.Size(245, 250);
-            this.bnfPnlWidget4.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
-            this.bnfPnlWidget4.TabIndex = 1;
-            // 
-            // bnfPnlWidget5
-            // 
-            this.bnfPnlWidget5.AutoSize = true;
-            this.bnfPnlWidget5.BackColor = System.Drawing.Color.Transparent;
-            this.bnfPnlWidget5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfPnlWidget5.BorderRadius = 10;
-            this.bnfPnlWidget5.BorderThickness = 1;
-            this.bnfPnlWidget5.Controls.Add(this.lblAllSalary);
-            this.bnfPnlWidget5.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bnfPnlWidget5.ForeColor = System.Drawing.Color.White;
-            this.bnfPnlWidget5.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bnfPnlWidget5.Location = new System.Drawing.Point(286, 295);
-            this.bnfPnlWidget5.Name = "bnfPnlWidget5";
-            this.bnfPnlWidget5.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget5.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
-            this.bnfPnlWidget5.ShadowDept = 2;
-            this.bnfPnlWidget5.ShadowDepth = 5;
-            this.bnfPnlWidget5.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
-            this.bnfPnlWidget5.ShadowTopLeftVisible = false;
-            this.bnfPnlWidget5.Size = new System.Drawing.Size(245, 250);
-            this.bnfPnlWidget5.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
-            this.bnfPnlWidget5.TabIndex = 3;
-            // 
-            // bnfPnlWidget2
-            // 
-            this.bnfPnlWidget2.AutoSize = true;
-            this.bnfPnlWidget2.BackColor = System.Drawing.Color.Transparent;
-            this.bnfPnlWidget2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfPnlWidget2.BorderRadius = 10;
-            this.bnfPnlWidget2.BorderThickness = 1;
-            this.bnfPnlWidget2.Controls.Add(this.lblBusiOrNot);
-            this.bnfPnlWidget2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bnfPnlWidget2.ForeColor = System.Drawing.Color.White;
-            this.bnfPnlWidget2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bnfPnlWidget2.Location = new System.Drawing.Point(286, 20);
-            this.bnfPnlWidget2.Name = "bnfPnlWidget2";
-            this.bnfPnlWidget2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget2.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
-            this.bnfPnlWidget2.ShadowDept = 2;
-            this.bnfPnlWidget2.ShadowDepth = 5;
-            this.bnfPnlWidget2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
-            this.bnfPnlWidget2.ShadowTopLeftVisible = false;
-            this.bnfPnlWidget2.Size = new System.Drawing.Size(245, 250);
-            this.bnfPnlWidget2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
-            this.bnfPnlWidget2.TabIndex = 2;
-            // 
-            // bnfPnlWidget6
-            // 
-            this.bnfPnlWidget6.AutoSize = true;
-            this.bnfPnlWidget6.BackColor = System.Drawing.Color.Transparent;
-            this.bnfPnlWidget6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfPnlWidget6.BorderRadius = 10;
-            this.bnfPnlWidget6.BorderThickness = 1;
-            this.bnfPnlWidget6.Controls.Add(this.label1);
-            this.bnfPnlWidget6.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bnfPnlWidget6.ForeColor = System.Drawing.Color.White;
-            this.bnfPnlWidget6.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bnfPnlWidget6.Location = new System.Drawing.Point(552, 295);
-            this.bnfPnlWidget6.Name = "bnfPnlWidget6";
-            this.bnfPnlWidget6.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget6.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
-            this.bnfPnlWidget6.ShadowDept = 2;
-            this.bnfPnlWidget6.ShadowDepth = 5;
-            this.bnfPnlWidget6.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
-            this.bnfPnlWidget6.ShadowTopLeftVisible = false;
-            this.bnfPnlWidget6.Size = new System.Drawing.Size(245, 250);
-            this.bnfPnlWidget6.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
-            this.bnfPnlWidget6.TabIndex = 5;
-            // 
-            // bnfPnlWidget3
-            // 
-            this.bnfPnlWidget3.AutoSize = true;
-            this.bnfPnlWidget3.BackColor = System.Drawing.Color.Transparent;
-            this.bnfPnlWidget3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfPnlWidget3.BorderRadius = 10;
-            this.bnfPnlWidget3.BorderThickness = 1;
-            this.bnfPnlWidget3.Controls.Add(this.lblOverdueRent);
-            this.bnfPnlWidget3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bnfPnlWidget3.ForeColor = System.Drawing.Color.White;
-            this.bnfPnlWidget3.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bnfPnlWidget3.Location = new System.Drawing.Point(552, 20);
-            this.bnfPnlWidget3.Name = "bnfPnlWidget3";
-            this.bnfPnlWidget3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget3.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfPnlWidget3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
-            this.bnfPnlWidget3.ShadowDept = 2;
-            this.bnfPnlWidget3.ShadowDepth = 5;
-            this.bnfPnlWidget3.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
-            this.bnfPnlWidget3.ShadowTopLeftVisible = false;
-            this.bnfPnlWidget3.Size = new System.Drawing.Size(245, 250);
-            this.bnfPnlWidget3.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Raised;
-            this.bnfPnlWidget3.TabIndex = 4;
-            // 
-            // lblCountNumbers
-            // 
-            this.lblCountNumbers.AutoSize = true;
-            this.lblCountNumbers.Font = new System.Drawing.Font("Comfortaa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCountNumbers.Location = new System.Drawing.Point(12, 10);
-            this.lblCountNumbers.Name = "lblCountNumbers";
-            this.lblCountNumbers.Size = new System.Drawing.Size(218, 25);
-            this.lblCountNumbers.TabIndex = 0;
-            this.lblCountNumbers.Text = "Количество Номеров";
-            // 
-            // lblBusiOrNot
-            // 
-            this.lblBusiOrNot.AutoSize = true;
-            this.lblBusiOrNot.Font = new System.Drawing.Font("Comfortaa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblBusiOrNot.Location = new System.Drawing.Point(24, 10);
-            this.lblBusiOrNot.Name = "lblBusiOrNot";
-            this.lblBusiOrNot.Size = new System.Drawing.Size(196, 25);
-            this.lblBusiOrNot.TabIndex = 1;
-            this.lblBusiOrNot.Text = "Занято / Свободно";
-            // 
-            // lblOverdueRent
-            // 
-            this.lblOverdueRent.AutoSize = true;
-            this.lblOverdueRent.Font = new System.Drawing.Font("Comfortaa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblOverdueRent.Location = new System.Drawing.Point(30, 10);
-            this.lblOverdueRent.Name = "lblOverdueRent";
-            this.lblOverdueRent.Size = new System.Drawing.Size(191, 25);
-            this.lblOverdueRent.TabIndex = 2;
-            this.lblOverdueRent.Text = "Аренд Просрочено";
-            // 
-            // lblCountCategories
-            // 
-            this.lblCountCategories.AutoSize = true;
-            this.lblCountCategories.Font = new System.Drawing.Font("Comfortaa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCountCategories.Location = new System.Drawing.Point(4, 10);
-            this.lblCountCategories.Name = "lblCountCategories";
-            this.lblCountCategories.Size = new System.Drawing.Size(238, 25);
-            this.lblCountCategories.TabIndex = 1;
-            this.lblCountCategories.Text = "Количество Категорий";
-            // 
-            // lblAllSalary
-            // 
-            this.lblAllSalary.AutoSize = true;
-            this.lblAllSalary.Font = new System.Drawing.Font("Comfortaa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblAllSalary.Location = new System.Drawing.Point(28, 10);
-            this.lblAllSalary.Name = "lblAllSalary";
-            this.lblAllSalary.Size = new System.Drawing.Size(190, 25);
-            this.lblAllSalary.TabIndex = 2;
-            this.lblAllSalary.Text = "Заработано Всего";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comfortaa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(44, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Всего Клиентов";
-            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4092,6 +4092,18 @@
             this.bnfPages.ResumeLayout(false);
             this.Page_Home.ResumeLayout(false);
             this.Page_Home.PerformLayout();
+            this.bnfPnlWidget6.ResumeLayout(false);
+            this.bnfPnlWidget6.PerformLayout();
+            this.bnfPnlWidget3.ResumeLayout(false);
+            this.bnfPnlWidget3.PerformLayout();
+            this.bnfPnlWidget5.ResumeLayout(false);
+            this.bnfPnlWidget5.PerformLayout();
+            this.bnfPnlWidget2.ResumeLayout(false);
+            this.bnfPnlWidget2.PerformLayout();
+            this.bnfPnlWidget4.ResumeLayout(false);
+            this.bnfPnlWidget4.PerformLayout();
+            this.bnfPnlWidget1.ResumeLayout(false);
+            this.bnfPnlWidget1.PerformLayout();
             this.Page_Rooms.ResumeLayout(false);
             this.Page_Rooms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridRooms)).EndInit();
@@ -4106,18 +4118,6 @@
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bnfUserPicture)).EndInit();
-            this.bnfPnlWidget1.ResumeLayout(false);
-            this.bnfPnlWidget1.PerformLayout();
-            this.bnfPnlWidget4.ResumeLayout(false);
-            this.bnfPnlWidget4.PerformLayout();
-            this.bnfPnlWidget5.ResumeLayout(false);
-            this.bnfPnlWidget5.PerformLayout();
-            this.bnfPnlWidget2.ResumeLayout(false);
-            this.bnfPnlWidget2.PerformLayout();
-            this.bnfPnlWidget6.ResumeLayout(false);
-            this.bnfPnlWidget6.PerformLayout();
-            this.bnfPnlWidget3.ResumeLayout(false);
-            this.bnfPnlWidget3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4219,11 +4219,11 @@
         private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget3;
         private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget5;
         private Bunifu.UI.WinForms.BunifuShadowPanel bnfPnlWidget2;
-        private System.Windows.Forms.Label lblOverdueRent;
-        private System.Windows.Forms.Label lblBusiOrNot;
-        private System.Windows.Forms.Label lblCountNumbers;
-        private System.Windows.Forms.Label lblCountCategories;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblAllSalary;
+        private System.Windows.Forms.Label lblTitleOverdueRent;
+        private System.Windows.Forms.Label lblTitleBusiOrNot;
+        private System.Windows.Forms.Label lblTitleAllNumbers;
+        private System.Windows.Forms.Label lblTitleAllCategories;
+        private System.Windows.Forms.Label lblTitleAllCustomers;
+        private System.Windows.Forms.Label lblTitleAllSalary;
     }
 }
