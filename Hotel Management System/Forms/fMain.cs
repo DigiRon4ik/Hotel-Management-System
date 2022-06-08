@@ -1,16 +1,12 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms;
+using Hotel_Management_System.DataBase.Models;
+using ServiceStack.OrmLite;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bunifu.UI.WinForms;
-using ServiceStack.OrmLite;
-using Hotel_Management_System.DataBase.Models;
 
 namespace Hotel_Management_System.Forms
 {
@@ -32,7 +28,7 @@ namespace Hotel_Management_System.Forms
         private IEnumerable<Room> rooms;
 
         public static byte[] defaultImage;
-        
+
         public fMain()
         {
             InitializeComponent();
@@ -42,7 +38,7 @@ namespace Hotel_Management_System.Forms
                 account = flogin.account;
             else
                 Environment.Exit(0);
-            
+
             if (pnlSidebar.Width >= sidebarWithOpen)
             {
                 pctrSidebar.Image = imgListFromSidebar.Images[0];
@@ -180,9 +176,6 @@ namespace Hotel_Management_System.Forms
 
         private void btnPageUsers_Enter(object sender, EventArgs e) =>
             bnfPages.SetPage("Users");
-
-        private void btnPageSettings_Enter(object sender, EventArgs e) =>
-            bnfPages.SetPage("Settings");
         #endregion
 
         #region Инициализация Пользователя
@@ -726,6 +719,8 @@ namespace Hotel_Management_System.Forms
 
 
 
+        #region Page_Home
+
         #region Загрузка Страницы
         private void PageHome_Load()
         {
@@ -740,6 +735,8 @@ namespace Hotel_Management_System.Forms
                 lblAllCustomers.Text = db.Count<Customer>().ToString();
             }
         }
+        #endregion
+
         #endregion
     }
 }
