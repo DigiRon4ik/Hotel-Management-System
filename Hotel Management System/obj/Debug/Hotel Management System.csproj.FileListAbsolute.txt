@@ -110,3 +110,4 @@ S:\MyProjects\CSharp\Hotel-Management-System\Hotel Management System\obj\Debug\H
 S:\MyProjects\CSharp\Hotel-Management-System\Hotel Management System\obj\Debug\Hotel Management System.csproj.CopyComplete
 S:\MyProjects\CSharp\Hotel-Management-System\Hotel Management System\obj\Debug\Hotel Management System.exe
 S:\MyProjects\CSharp\Hotel-Management-System\Hotel Management System\obj\Debug\Hotel Management System.pdb
+S:\MyProjects\CSharp\Hotel-Management-System\Hotel Management System\obj\Debug\Hotel_Management_System.Forms.fDeletionWarning.resources

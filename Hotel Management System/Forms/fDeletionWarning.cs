@@ -8,6 +8,7 @@ namespace Hotel_Management_System.Forms
         public fDeletionWarning()
         {
             InitializeComponent();
+            FormDock.SubscribeControlToDragEvents(lblTitle, true);
         }
 
         #region Кнопки

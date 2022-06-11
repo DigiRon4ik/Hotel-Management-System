@@ -8,7 +8,7 @@ namespace Hotel_Management_System.DataBase
 {
     public static class ApplicationContext
     {
-        public static string connectionString = "Data\\HMS.db";
+        public static string connectionString = "DataBase\\HMS.db";
 
         public static IDbConnection GetDbConnection()
         {
