@@ -464,10 +464,10 @@
             this.bnfPages.Location = new System.Drawing.Point(0, 0);
             this.bnfPages.Multiline = true;
             this.bnfPages.Name = "bnfPages";
-            this.bnfPages.Page = this.Page_Categories;
-            this.bnfPages.PageIndex = 3;
-            this.bnfPages.PageName = "Page_Categories";
-            this.bnfPages.PageTitle = "Categories";
+            this.bnfPages.Page = this.Page_Home;
+            this.bnfPages.PageIndex = 0;
+            this.bnfPages.PageName = "Page_Home";
+            this.bnfPages.PageTitle = "Home";
             this.bnfPages.SelectedIndex = 0;
             this.bnfPages.Size = new System.Drawing.Size(820, 564);
             this.bnfPages.TabIndex = 0;
@@ -534,7 +534,7 @@
             // 
             this.lblAllCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.lblAllCustomers.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblAllCustomers.ForeColor = System.Drawing.Color.Gold;
+            this.lblAllCustomers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(96)))), ((int)(((byte)(232)))));
             this.lblAllCustomers.Location = new System.Drawing.Point(4, 65);
             this.lblAllCustomers.Name = "lblAllCustomers";
             this.lblAllCustomers.Size = new System.Drawing.Size(237, 121);
@@ -581,7 +581,7 @@
             // 
             this.lblOverdueRent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.lblOverdueRent.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblOverdueRent.ForeColor = System.Drawing.Color.Red;
+            this.lblOverdueRent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(96)))), ((int)(((byte)(232)))));
             this.lblOverdueRent.Location = new System.Drawing.Point(4, 65);
             this.lblOverdueRent.Name = "lblOverdueRent";
             this.lblOverdueRent.Size = new System.Drawing.Size(237, 121);
@@ -628,7 +628,7 @@
             // 
             this.lblAllSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.lblAllSalary.Font = new System.Drawing.Font("Comfortaa", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblAllSalary.ForeColor = System.Drawing.Color.Lime;
+            this.lblAllSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(96)))), ((int)(((byte)(232)))));
             this.lblAllSalary.Location = new System.Drawing.Point(4, 65);
             this.lblAllSalary.Name = "lblAllSalary";
             this.lblAllSalary.Size = new System.Drawing.Size(237, 121);
@@ -687,7 +687,7 @@
             // 
             this.lblNotBusy.BackColor = System.Drawing.Color.Transparent;
             this.lblNotBusy.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblNotBusy.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblNotBusy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(96)))), ((int)(((byte)(232)))));
             this.lblNotBusy.Location = new System.Drawing.Point(4, 144);
             this.lblNotBusy.Name = "lblNotBusy";
             this.lblNotBusy.Size = new System.Drawing.Size(237, 86);
@@ -699,7 +699,7 @@
             // 
             this.lblBusy.BackColor = System.Drawing.Color.Transparent;
             this.lblBusy.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblBusy.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblBusy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(96)))), ((int)(((byte)(232)))));
             this.lblBusy.Location = new System.Drawing.Point(4, 32);
             this.lblBusy.Name = "lblBusy";
             this.lblBusy.Size = new System.Drawing.Size(237, 86);
@@ -746,7 +746,7 @@
             // 
             this.lblAllCategories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.lblAllCategories.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblAllCategories.ForeColor = System.Drawing.Color.Violet;
+            this.lblAllCategories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(96)))), ((int)(((byte)(232)))));
             this.lblAllCategories.Location = new System.Drawing.Point(4, 65);
             this.lblAllCategories.Name = "lblAllCategories";
             this.lblAllCategories.Size = new System.Drawing.Size(237, 121);
@@ -793,7 +793,7 @@
             // 
             this.lblAllNumbers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.lblAllNumbers.Font = new System.Drawing.Font("Comfortaa", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblAllNumbers.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblAllNumbers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(96)))), ((int)(((byte)(232)))));
             this.lblAllNumbers.Location = new System.Drawing.Point(4, 65);
             this.lblAllNumbers.Name = "lblAllNumbers";
             this.lblAllNumbers.Size = new System.Drawing.Size(237, 121);

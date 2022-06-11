@@ -44,6 +44,12 @@
             this.btnImgTitleClose = new Bunifu.UI.WinForms.BunifuImageButton();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlForm = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lblArenda = new System.Windows.Forms.Label();
+            this.lblSalary = new System.Windows.Forms.Label();
+            this.bnfDateUntil = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.bnfDateFrom = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.bnfDropdownCategory = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.bnfDropdownCustomer = new Bunifu.UI.WinForms.BunifuDropdown();
             this.txtPrice = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtNumber = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnAddOrChange = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -51,12 +57,6 @@
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.imgList = new System.Windows.Forms.ImageList(this.components);
             this.skbarValidation = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
-            this.bnfDropdownCustomer = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.bnfDropdownCategory = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.bnfDateFrom = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.bnfDateUntil = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.lblSalary = new System.Windows.Forms.Label();
-            this.lblArenda = new System.Windows.Forms.Label();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrIcon)).BeginInit();
             this.pnlForm.SuspendLayout();
@@ -136,9 +136,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(46, 6);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(142, 24);
+            this.lblTitle.Size = new System.Drawing.Size(143, 24);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Д/И Клиента";
+            this.lblTitle.Text = "Д/И Комнату";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnlForm
@@ -164,6 +164,198 @@
             this.pnlForm.ShowBorders = true;
             this.pnlForm.Size = new System.Drawing.Size(410, 276);
             this.pnlForm.TabIndex = 2;
+            // 
+            // lblArenda
+            // 
+            this.lblArenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblArenda.AutoSize = true;
+            this.lblArenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.lblArenda.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.lblArenda.ForeColor = System.Drawing.Color.White;
+            this.lblArenda.Location = new System.Drawing.Point(270, 202);
+            this.lblArenda.Name = "lblArenda";
+            this.lblArenda.Size = new System.Drawing.Size(107, 20);
+            this.lblArenda.TabIndex = 7;
+            this.lblArenda.Text = "Аренда на: 1Д";
+            // 
+            // lblSalary
+            // 
+            this.lblSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblSalary.AutoSize = true;
+            this.lblSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.lblSalary.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.lblSalary.ForeColor = System.Drawing.Color.White;
+            this.lblSalary.Location = new System.Drawing.Point(20, 202);
+            this.lblSalary.Name = "lblSalary";
+            this.lblSalary.Size = new System.Drawing.Size(181, 20);
+            this.lblSalary.TabIndex = 0;
+            this.lblSalary.Text = "Итоговая Цена: 100 000₽";
+            // 
+            // bnfDateUntil
+            // 
+            this.bnfDateUntil.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bnfDateUntil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfDateUntil.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDateUntil.BorderRadius = 10;
+            this.bnfDateUntil.CalendarFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.bnfDateUntil.CalendarForeColor = System.Drawing.Color.White;
+            this.bnfDateUntil.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfDateUntil.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfDateUntil.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.bnfDateUntil.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDateUntil.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
+            this.bnfDateUntil.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.bnfDateUntil.DisabledColor = System.Drawing.Color.Gray;
+            this.bnfDateUntil.DisplayWeekNumbers = false;
+            this.bnfDateUntil.DPHeight = 0;
+            this.bnfDateUntil.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.bnfDateUntil.FillDatePicker = false;
+            this.bnfDateUntil.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.bnfDateUntil.ForeColor = System.Drawing.Color.White;
+            this.bnfDateUntil.Icon = ((System.Drawing.Image)(resources.GetObject("bnfDateUntil.Icon")));
+            this.bnfDateUntil.IconColor = System.Drawing.Color.White;
+            this.bnfDateUntil.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.bnfDateUntil.LeftTextMargin = 5;
+            this.bnfDateUntil.Location = new System.Drawing.Point(86, 152);
+            this.bnfDateUntil.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
+            this.bnfDateUntil.MinDate = new System.DateTime(2022, 6, 8, 0, 0, 0, 0);
+            this.bnfDateUntil.MinimumSize = new System.Drawing.Size(4, 32);
+            this.bnfDateUntil.Name = "bnfDateUntil";
+            this.bnfDateUntil.Size = new System.Drawing.Size(220, 32);
+            this.bnfDateUntil.TabIndex = 6;
+            this.bnfDateUntil.Value = new System.DateTime(2022, 6, 9, 0, 0, 0, 0);
+            this.bnfDateUntil.ValueChanged += new System.EventHandler(this.bnfDateUntil_ValueChanged);
+            // 
+            // bnfDateFrom
+            // 
+            this.bnfDateFrom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bnfDateFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfDateFrom.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDateFrom.BorderRadius = 10;
+            this.bnfDateFrom.CalendarFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.bnfDateFrom.CalendarForeColor = System.Drawing.Color.White;
+            this.bnfDateFrom.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfDateFrom.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.bnfDateFrom.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.bnfDateFrom.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDateFrom.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
+            this.bnfDateFrom.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.bnfDateFrom.DisabledColor = System.Drawing.Color.Gray;
+            this.bnfDateFrom.DisplayWeekNumbers = false;
+            this.bnfDateFrom.DPHeight = 0;
+            this.bnfDateFrom.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.bnfDateFrom.FillDatePicker = false;
+            this.bnfDateFrom.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.bnfDateFrom.ForeColor = System.Drawing.Color.White;
+            this.bnfDateFrom.Icon = ((System.Drawing.Image)(resources.GetObject("bnfDateFrom.Icon")));
+            this.bnfDateFrom.IconColor = System.Drawing.Color.White;
+            this.bnfDateFrom.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.bnfDateFrom.LeftTextMargin = 5;
+            this.bnfDateFrom.Location = new System.Drawing.Point(86, 114);
+            this.bnfDateFrom.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
+            this.bnfDateFrom.MinDate = new System.DateTime(2022, 6, 8, 0, 0, 0, 0);
+            this.bnfDateFrom.MinimumSize = new System.Drawing.Size(4, 32);
+            this.bnfDateFrom.Name = "bnfDateFrom";
+            this.bnfDateFrom.Size = new System.Drawing.Size(220, 32);
+            this.bnfDateFrom.TabIndex = 5;
+            this.bnfDateFrom.Value = new System.DateTime(2022, 6, 8, 2, 36, 34, 0);
+            this.bnfDateFrom.ValueChanged += new System.EventHandler(this.bnfDateFrom_ValueChanged);
+            // 
+            // bnfDropdownCategory
+            // 
+            this.bnfDropdownCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bnfDropdownCategory.BackColor = System.Drawing.Color.Transparent;
+            this.bnfDropdownCategory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfDropdownCategory.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownCategory.BorderRadius = 10;
+            this.bnfDropdownCategory.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownCategory.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.bnfDropdownCategory.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.bnfDropdownCategory.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bnfDropdownCategory.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.bnfDropdownCategory.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.bnfDropdownCategory.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.bnfDropdownCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.bnfDropdownCategory.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.bnfDropdownCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bnfDropdownCategory.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.bnfDropdownCategory.FillDropDown = true;
+            this.bnfDropdownCategory.FillIndicator = false;
+            this.bnfDropdownCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnfDropdownCategory.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.bnfDropdownCategory.ForeColor = System.Drawing.Color.Gainsboro;
+            this.bnfDropdownCategory.FormattingEnabled = true;
+            this.bnfDropdownCategory.Icon = null;
+            this.bnfDropdownCategory.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.bnfDropdownCategory.IndicatorColor = System.Drawing.Color.Gainsboro;
+            this.bnfDropdownCategory.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.bnfDropdownCategory.IndicatorThickness = 13;
+            this.bnfDropdownCategory.IsDropdownOpened = false;
+            this.bnfDropdownCategory.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            this.bnfDropdownCategory.ItemBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownCategory.ItemForeColor = System.Drawing.Color.White;
+            this.bnfDropdownCategory.ItemHeight = 26;
+            this.bnfDropdownCategory.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.bnfDropdownCategory.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.bnfDropdownCategory.ItemTopMargin = 3;
+            this.bnfDropdownCategory.Location = new System.Drawing.Point(211, 14);
+            this.bnfDropdownCategory.MaxDropDownItems = 3;
+            this.bnfDropdownCategory.Name = "bnfDropdownCategory";
+            this.bnfDropdownCategory.Size = new System.Drawing.Size(185, 32);
+            this.bnfDropdownCategory.TabIndex = 3;
+            this.bnfDropdownCategory.Text = "Категория";
+            this.bnfDropdownCategory.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.bnfDropdownCategory.TextLeftMargin = 5;
+            // 
+            // bnfDropdownCustomer
+            // 
+            this.bnfDropdownCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bnfDropdownCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.bnfDropdownCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
+            this.bnfDropdownCustomer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownCustomer.BorderRadius = 10;
+            this.bnfDropdownCustomer.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownCustomer.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.bnfDropdownCustomer.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.bnfDropdownCustomer.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bnfDropdownCustomer.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.bnfDropdownCustomer.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.bnfDropdownCustomer.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.bnfDropdownCustomer.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.bnfDropdownCustomer.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.bnfDropdownCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bnfDropdownCustomer.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.bnfDropdownCustomer.DropDownWidth = 190;
+            this.bnfDropdownCustomer.FillDropDown = true;
+            this.bnfDropdownCustomer.FillIndicator = false;
+            this.bnfDropdownCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnfDropdownCustomer.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.bnfDropdownCustomer.ForeColor = System.Drawing.Color.Gainsboro;
+            this.bnfDropdownCustomer.FormattingEnabled = true;
+            this.bnfDropdownCustomer.Icon = null;
+            this.bnfDropdownCustomer.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.bnfDropdownCustomer.IndicatorColor = System.Drawing.Color.Gainsboro;
+            this.bnfDropdownCustomer.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.bnfDropdownCustomer.IndicatorThickness = 13;
+            this.bnfDropdownCustomer.IsDropdownOpened = false;
+            this.bnfDropdownCustomer.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
+            this.bnfDropdownCustomer.ItemBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
+            this.bnfDropdownCustomer.ItemForeColor = System.Drawing.Color.White;
+            this.bnfDropdownCustomer.ItemHeight = 26;
+            this.bnfDropdownCustomer.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
+            this.bnfDropdownCustomer.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.bnfDropdownCustomer.ItemTopMargin = 3;
+            this.bnfDropdownCustomer.Location = new System.Drawing.Point(211, 60);
+            this.bnfDropdownCustomer.MaxDropDownItems = 3;
+            this.bnfDropdownCustomer.Name = "bnfDropdownCustomer";
+            this.bnfDropdownCustomer.Size = new System.Drawing.Size(185, 32);
+            this.bnfDropdownCustomer.TabIndex = 4;
+            this.bnfDropdownCustomer.Text = "Клиент";
+            this.bnfDropdownCustomer.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.bnfDropdownCustomer.TextLeftMargin = 5;
+            this.bnfDropdownCustomer.SelectionChangeCommitted += new System.EventHandler(this.bnfDropdownCustomer_SelectionChangeCommitted);
             // 
             // txtPrice
             // 
@@ -536,196 +728,6 @@
             this.skbarValidation.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
             this.skbarValidation.WarningOptions.IconLeftMargin = 12;
             this.skbarValidation.ZoomCloseIcon = true;
-            // 
-            // bnfDropdownCustomer
-            // 
-            this.bnfDropdownCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnfDropdownCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.bnfDropdownCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfDropdownCustomer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownCustomer.BorderRadius = 10;
-            this.bnfDropdownCustomer.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownCustomer.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.bnfDropdownCustomer.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bnfDropdownCustomer.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bnfDropdownCustomer.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bnfDropdownCustomer.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.bnfDropdownCustomer.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.bnfDropdownCustomer.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.bnfDropdownCustomer.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
-            this.bnfDropdownCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.bnfDropdownCustomer.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bnfDropdownCustomer.DropDownWidth = 190;
-            this.bnfDropdownCustomer.FillDropDown = true;
-            this.bnfDropdownCustomer.FillIndicator = false;
-            this.bnfDropdownCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnfDropdownCustomer.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.bnfDropdownCustomer.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bnfDropdownCustomer.FormattingEnabled = true;
-            this.bnfDropdownCustomer.Icon = null;
-            this.bnfDropdownCustomer.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bnfDropdownCustomer.IndicatorColor = System.Drawing.Color.Gainsboro;
-            this.bnfDropdownCustomer.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bnfDropdownCustomer.IndicatorThickness = 13;
-            this.bnfDropdownCustomer.IsDropdownOpened = false;
-            this.bnfDropdownCustomer.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            this.bnfDropdownCustomer.ItemBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownCustomer.ItemForeColor = System.Drawing.Color.White;
-            this.bnfDropdownCustomer.ItemHeight = 26;
-            this.bnfDropdownCustomer.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            this.bnfDropdownCustomer.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.bnfDropdownCustomer.ItemTopMargin = 3;
-            this.bnfDropdownCustomer.Location = new System.Drawing.Point(211, 60);
-            this.bnfDropdownCustomer.MaxDropDownItems = 3;
-            this.bnfDropdownCustomer.Name = "bnfDropdownCustomer";
-            this.bnfDropdownCustomer.Size = new System.Drawing.Size(185, 32);
-            this.bnfDropdownCustomer.TabIndex = 4;
-            this.bnfDropdownCustomer.Text = "Клиент";
-            this.bnfDropdownCustomer.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bnfDropdownCustomer.TextLeftMargin = 5;
-            this.bnfDropdownCustomer.SelectionChangeCommitted += new System.EventHandler(this.bnfDropdownCustomer_SelectionChangeCommitted);
-            // 
-            // bnfDropdownCategory
-            // 
-            this.bnfDropdownCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnfDropdownCategory.BackColor = System.Drawing.Color.Transparent;
-            this.bnfDropdownCategory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfDropdownCategory.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownCategory.BorderRadius = 10;
-            this.bnfDropdownCategory.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownCategory.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.bnfDropdownCategory.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bnfDropdownCategory.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bnfDropdownCategory.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bnfDropdownCategory.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.bnfDropdownCategory.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.bnfDropdownCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.bnfDropdownCategory.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
-            this.bnfDropdownCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.bnfDropdownCategory.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bnfDropdownCategory.FillDropDown = true;
-            this.bnfDropdownCategory.FillIndicator = false;
-            this.bnfDropdownCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnfDropdownCategory.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.bnfDropdownCategory.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bnfDropdownCategory.FormattingEnabled = true;
-            this.bnfDropdownCategory.Icon = null;
-            this.bnfDropdownCategory.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bnfDropdownCategory.IndicatorColor = System.Drawing.Color.Gainsboro;
-            this.bnfDropdownCategory.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bnfDropdownCategory.IndicatorThickness = 13;
-            this.bnfDropdownCategory.IsDropdownOpened = false;
-            this.bnfDropdownCategory.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(71)))), ((int)(((byte)(128)))));
-            this.bnfDropdownCategory.ItemBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDropdownCategory.ItemForeColor = System.Drawing.Color.White;
-            this.bnfDropdownCategory.ItemHeight = 26;
-            this.bnfDropdownCategory.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(92)))), ((int)(((byte)(169)))));
-            this.bnfDropdownCategory.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.bnfDropdownCategory.ItemTopMargin = 3;
-            this.bnfDropdownCategory.Location = new System.Drawing.Point(211, 14);
-            this.bnfDropdownCategory.MaxDropDownItems = 3;
-            this.bnfDropdownCategory.Name = "bnfDropdownCategory";
-            this.bnfDropdownCategory.Size = new System.Drawing.Size(185, 32);
-            this.bnfDropdownCategory.TabIndex = 3;
-            this.bnfDropdownCategory.Text = "Категория";
-            this.bnfDropdownCategory.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bnfDropdownCategory.TextLeftMargin = 5;
-            // 
-            // bnfDateFrom
-            // 
-            this.bnfDateFrom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnfDateFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfDateFrom.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDateFrom.BorderRadius = 10;
-            this.bnfDateFrom.CalendarFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.bnfDateFrom.CalendarForeColor = System.Drawing.Color.White;
-            this.bnfDateFrom.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfDateFrom.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfDateFrom.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.bnfDateFrom.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDateFrom.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
-            this.bnfDateFrom.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.bnfDateFrom.DisabledColor = System.Drawing.Color.Gray;
-            this.bnfDateFrom.DisplayWeekNumbers = false;
-            this.bnfDateFrom.DPHeight = 0;
-            this.bnfDateFrom.FillDatePicker = false;
-            this.bnfDateFrom.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.bnfDateFrom.ForeColor = System.Drawing.Color.White;
-            this.bnfDateFrom.Icon = ((System.Drawing.Image)(resources.GetObject("bnfDateFrom.Icon")));
-            this.bnfDateFrom.IconColor = System.Drawing.Color.White;
-            this.bnfDateFrom.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.bnfDateFrom.LeftTextMargin = 5;
-            this.bnfDateFrom.Location = new System.Drawing.Point(86, 114);
-            this.bnfDateFrom.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
-            this.bnfDateFrom.MinDate = new System.DateTime(2022, 6, 8, 0, 0, 0, 0);
-            this.bnfDateFrom.MinimumSize = new System.Drawing.Size(0, 32);
-            this.bnfDateFrom.Name = "bnfDateFrom";
-            this.bnfDateFrom.Size = new System.Drawing.Size(220, 32);
-            this.bnfDateFrom.TabIndex = 5;
-            this.bnfDateFrom.Value = new System.DateTime(2022, 6, 8, 2, 36, 34, 0);
-            this.bnfDateFrom.ValueChanged += new System.EventHandler(this.bnfDateFrom_ValueChanged);
-            // 
-            // bnfDateUntil
-            // 
-            this.bnfDateUntil.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnfDateUntil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfDateUntil.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDateUntil.BorderRadius = 10;
-            this.bnfDateUntil.CalendarFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.bnfDateUntil.CalendarForeColor = System.Drawing.Color.White;
-            this.bnfDateUntil.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.bnfDateUntil.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.bnfDateUntil.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.bnfDateUntil.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(120)))), ((int)(((byte)(170)))));
-            this.bnfDateUntil.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
-            this.bnfDateUntil.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.bnfDateUntil.DisabledColor = System.Drawing.Color.Gray;
-            this.bnfDateUntil.DisplayWeekNumbers = false;
-            this.bnfDateUntil.DPHeight = 0;
-            this.bnfDateUntil.FillDatePicker = false;
-            this.bnfDateUntil.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.bnfDateUntil.ForeColor = System.Drawing.Color.White;
-            this.bnfDateUntil.Icon = ((System.Drawing.Image)(resources.GetObject("bnfDateUntil.Icon")));
-            this.bnfDateUntil.IconColor = System.Drawing.Color.White;
-            this.bnfDateUntil.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.bnfDateUntil.LeftTextMargin = 5;
-            this.bnfDateUntil.Location = new System.Drawing.Point(86, 152);
-            this.bnfDateUntil.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
-            this.bnfDateUntil.MinDate = new System.DateTime(2022, 6, 8, 0, 0, 0, 0);
-            this.bnfDateUntil.MinimumSize = new System.Drawing.Size(0, 32);
-            this.bnfDateUntil.Name = "bnfDateUntil";
-            this.bnfDateUntil.Size = new System.Drawing.Size(220, 32);
-            this.bnfDateUntil.TabIndex = 6;
-            this.bnfDateUntil.Value = new System.DateTime(2022, 6, 9, 0, 0, 0, 0);
-            this.bnfDateUntil.ValueChanged += new System.EventHandler(this.bnfDateUntil_ValueChanged);
-            // 
-            // lblSalary
-            // 
-            this.lblSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblSalary.AutoSize = true;
-            this.lblSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.lblSalary.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.lblSalary.ForeColor = System.Drawing.Color.White;
-            this.lblSalary.Location = new System.Drawing.Point(20, 202);
-            this.lblSalary.Name = "lblSalary";
-            this.lblSalary.Size = new System.Drawing.Size(181, 20);
-            this.lblSalary.TabIndex = 0;
-            this.lblSalary.Text = "Итоговая Цена: 100 000₽";
-            // 
-            // lblArenda
-            // 
-            this.lblArenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblArenda.AutoSize = true;
-            this.lblArenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.lblArenda.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.lblArenda.ForeColor = System.Drawing.Color.White;
-            this.lblArenda.Location = new System.Drawing.Point(270, 202);
-            this.lblArenda.Name = "lblArenda";
-            this.lblArenda.Size = new System.Drawing.Size(107, 20);
-            this.lblArenda.TabIndex = 7;
-            this.lblArenda.Text = "Аренда на: 1Д";
             // 
             // fRoom
             // 
