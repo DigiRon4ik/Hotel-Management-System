@@ -221,6 +221,12 @@
     <Compile Include="Forms\fCustomer.Designer.cs">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fDeletionWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fDeletionWarning.Designer.cs">
+      <DependentUpon>fDeletionWarning.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fCustomer.resx">
       <DependentUpon>fCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fDeletionWarning.resx">
+      <DependentUpon>fDeletionWarning.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>

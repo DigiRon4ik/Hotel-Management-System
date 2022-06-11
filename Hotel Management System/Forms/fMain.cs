@@ -236,6 +236,22 @@ namespace Hotel_Management_System.Forms
         }
         #endregion
 
+        #region Функция вызова формы удаления
+        private bool ShowDeleteForm()
+        {
+            fDeletionWarning fdw = new fDeletionWarning();
+            DialogResult result = fdw.ShowDialog();
+            if (result == DialogResult.Yes)
+            {
+                skbarValidation.Show(this, "Удалено!", BunifuSnackbar.MessageTypes.Success,
+                                         2500, "", BunifuSnackbar.Positions.BottomCenter,
+                                         BunifuSnackbar.Hosts.FormOwner);
+                return true;
+            }
+            return false;
+        }
+        #endregion
+
 
 
         #region Page_Users
@@ -344,6 +360,9 @@ namespace Hotel_Management_System.Forms
 
         private void btnRowDeleteUser_Click(object sender, EventArgs e)
         {
+            if (!ShowDeleteForm())
+                return;
+
             using (var db = DataBase.ApplicationContext.GetDbConnection())
                 db.Delete<User>(x => x.Login == gridUsers[4, gridUsers.CurrentRow.Index].Value.ToString());
             UpdateGridUsers();
@@ -483,6 +502,9 @@ namespace Hotel_Management_System.Forms
 
         private void btnRowDeleteCategory_Click(object sender, EventArgs e)
         {
+            if (!ShowDeleteForm())
+                return;
+
             using (var db = DataBase.ApplicationContext.GetDbConnection())
                 db.Delete<Category>(x => x.Title == gridCategories[0, gridCategories.CurrentRow.Index].Value.ToString());
             UpdateGridCategories();
@@ -600,6 +622,9 @@ namespace Hotel_Management_System.Forms
 
         private void btnRowDeleteCustomer_Click(object sender, EventArgs e)
         {
+            if (!ShowDeleteForm())
+                return;
+
             using (var db = DataBase.ApplicationContext.GetDbConnection())
                 db.Delete<Customer>(x => x.Passport == gridCustomers[3, gridCustomers.CurrentRow.Index].Value.ToString());
             UpdateGridCustomers();
@@ -731,6 +756,9 @@ namespace Hotel_Management_System.Forms
 
         private void btnRowDeleteRoom_Click(object sender, EventArgs e)
         {
+            if (!ShowDeleteForm())
+                return;
+
             using (var db = DataBase.ApplicationContext.GetDbConnection())
                 db.Delete<Room>(x => x.Number.ToString() == gridRooms[2, gridRooms.CurrentRow.Index].Value.ToString());
             UpdateGridRooms();
