@@ -23,7 +23,12 @@ namespace Hotel_Management_System.Forms
             if (room != null)
                 updateId = room.Id;
 
-            bnfDateUntil.MinDate = DateTime.Now.AddDays(1);
+            if (updateId == 0)
+            {
+                bnfDateFrom.MinDate = DateTime.Now;
+                bnfDateFrom.Value = DateTime.Now;
+                bnfDateUntil.MinDate = DateTime.Now.AddDays(1);
+            }
 
             if (isAdd)
             {
@@ -170,7 +175,7 @@ namespace Hotel_Management_System.Forms
                     Until = _customer == "Нет" ? new DateTime() : bnfDateUntil.Value,
                 };
 
-                if (db.Exists<Room>(x => x.Number == room.Number))
+                if (db.Exists<Room>(x => x.Number == room.Number) && updateId == 0)
                 {
                     CallWarning("Такой НОМЕР уже существует!");
                     return;

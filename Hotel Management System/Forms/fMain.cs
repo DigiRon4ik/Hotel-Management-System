@@ -743,7 +743,7 @@ namespace Hotel_Management_System.Forms
             {
                 lblAllNumbers.Text = db.Count<Room>().ToString();
                 lblBusy.Text = db.Count<Room>(x => x.isFree == false).ToString();
-                lblNotBusy.Text = db.Count<Room>(x => x.isFree == false).ToString();
+                lblNotBusy.Text = db.Count<Room>(x => x.isFree == true).ToString();
                 lblOverdueRent.Text = db.Count<Room>(x => x.isFree == false && x.Until < DateTime.Now).ToString();
                 lblAllCategories.Text = db.Count<Category>().ToString();
                 lblAllSalary.Text = db.Scalar<Salary, string>(x => Sql.Sum(x.salary)) + "₽";
