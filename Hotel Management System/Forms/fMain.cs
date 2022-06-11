@@ -183,9 +183,16 @@ namespace Hotel_Management_System.Forms
         {
             bnfPages.SetPage("Home");
             btnPageHome.Select();
+            string fullName = account.FullName;
+            string role = account.Role;
 
-            lblUserName.Text = account.FullName;
-            lblUserRole.Text = account.Role;
+            if (account.FullName.Length > 13)
+                fullName = account.FullName.Substring(0, 13);
+            if (account.Role.Length > 13)
+                role = account.Role.Substring(0, 13);
+            
+            lblUserName.Text = fullName;
+            lblUserRole.Text = role;
 
             void SetEnabledBtnRowCategory(bool isOn)
             {
