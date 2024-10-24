@@ -24,8 +24,8 @@
 ---
 
 ### Screenshots:
-<img src="https://i.ibb.co/p3WHVT3/Main1.png" alt="Main1" border="0">
-<img src="https://i.ibb.co/BfrkvXj/Main2.png" alt="Main2" border="0">
-<img src="https://i.ibb.co/4KRWWqP/Login1.png" alt="Login1" border="0">
+<img src="https://i.ibb.co/BZqJmNK/Main.png" alt="Main" border="0">
+<img src="https://i.ibb.co/WG6CdZ7/Login.png" alt="Login" border="0">
+<a href="https://i.ibb.co/TtDBmDr/HMS-Overview-Gif.gif"><img src="https://i.ibb.co/TtDBmDr/HMS-Overview-Gif.gif" alt="HMS-Overview-Gif" border="0"></a>
 
 ---
